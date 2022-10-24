@@ -57,11 +57,11 @@
             <section class="sponsors">
                 <h1>Sponsors</h1>
                 <p>
-                    <img src="images/logo-bonduelle.png" alt="logo bonduelle" width=150px>
-                    <img src="images/logo-lustucru.png" alt="logo lustucru" width=150px> 
-                    <img src="images/logo-nestle.png" alt="logo nestlé" width=150px>
-                    <img src="images/logo-volvic.png" alt="logo volvic" width=150px>
-                    <img src="images/logo-styorre.png" alt="logo St Yorre" width=150px>
+                    <img src="image/logo-partenaires/logo-bonduelle.png" alt="logo bonduelle" width=150px>
+                    <img src="image/logo-partenaires/logo-lustucru.png" alt="logo lustucru" width=150px> 
+                    <img src="image/logo-partenaires/logo-nestle.png" alt="logo nestlé" width=150px>
+                    <img src="image/logo-partenaires/logo-volvic.png" alt="logo volvic" width=150px>
+                    <img src="image/logo-partenaires/logo-styorre.png" alt="logo St Yorre" width=150px>
                 </p>
             </section>
             <footer>
