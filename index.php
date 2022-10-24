@@ -4,7 +4,7 @@
 
 <html>
     <head>
-        <link rel = "stylesheet" type = "text/css" href = "style/index.css">
+        <link rel = "stylesheet" type = "text/css" href = "CSS/index.css">
     </head>
     <body>
         <section class="container">
