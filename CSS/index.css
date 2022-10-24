@@ -1,6 +1,13 @@
 .container {
     display: flex;
     flex-direction: column ;
+    font-family: Josefin Sans Thin;
+    font-size : 20px;
+}
+h1 {
+    color : #e8a670;
+    font-family: Bittermilk;
+    font-size : 42px;
 }
 h1, p {
     text-align: center;
@@ -8,7 +15,12 @@ h1, p {
 button {
     width : 300px;
     display: block;
-    margin: auto;
+    margin: 50px auto 50px auto;
+    padding: 10px;
+    background-color: #e5cb91;
+    font-family: Josefin Sans Thin;
+    font-size : 20px;
+    border-radius: 30px;
 }
 a {
     text-decoration: none;
@@ -17,9 +29,24 @@ a {
     display: flex;
     flex-direction: column;
 }
-.imgIntro {
-    align-items: center;
+.intro {
+    background-image: url("../images/puy.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+    z-index: 1;
 }
-.sponsors > p > img {
-    justify-content: space-around;
+.filtre {
+    background: linear-gradient(#e5cb91,#e8a670);
+    background-repeat: no-repeat;
+    opacity: 50%;
+    z-index: 2;
+}
+.intro > h1 {
+    font-family: Last Dream;
+    font-size : 58px;
+}
+#liste {
+    display: block;
+    margin: auto;
 }
