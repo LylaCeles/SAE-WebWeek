@@ -20,12 +20,11 @@
                     </ul>
                 </span>
             </header> -->
-            <div class="imgIntro">
-                <img src="" alt="">
-                <p>Description</p>
-            </div>
+            <section class="intro filtre">
+                <h1>The European Meals Tour</h1>
+            </section>
+            <p>Description</p>
             <section class="planning">
-                <!-- Définir notre hiérarchie de titres -->
                 <h1>Planning</h1>
                 <img src="" alt="">
                 <a href=""><button>Plus d'informations sur les animations</button></a>
@@ -43,14 +42,17 @@
             <section class="question">
                 <h1>Des questions ?</h1>
                 <p>Trouvez ici les questions qui nous sont plus posées</p>
-                <!-- <select id="">
+                <!-- <select id="liste">
                     <option>Question 1</option>
+                    <option>Réponse à la question 1</option>
                 </select>
-                <select id="">
+                <select id="liste">
                     <option>Question 2</option>
+                    <option>Réponse à la question 2</option>
                 </select>
-                <select id="">
+                <select id="liste">
                     <option>Question 3</option>
+                    <option>Réponse à la question 3</option>
                 </select> -->
                 <a href=""><button>Plus de questions ici</button></a>
             </section>
