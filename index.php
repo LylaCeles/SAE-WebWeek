@@ -21,7 +21,11 @@
             <section class="banniere filtre">
                 <h1 id="titre">The European Meals Tour</h1>
             </section>
-            <p>Description</p>
+            <br>
+            <p>Bienvenue sur le site du salon "The European Meals Tour" !
+                <br>Vous pourrez retrouver les différentes animations proposées avec leur date et horaires. De plus, chaque plat proposé par les chefs des régions est détaillé.
+                <br>N'hésitez pas à vous pré-inscrire aux nombreuses activités !
+            </p>
             <section class="planning">
                 <h1>Planning</h1>
                 <img src="" alt="">
@@ -57,11 +61,11 @@
             <section class="sponsors">
                 <h1>Sponsors</h1>
                 <p>
-                    <img src="Image/logo-partenaires/logo-bonduelle.png" alt="logo bonduelle" width=150px>
-                    <img src="Image/logo-partenaires/logo-lustucru.png" alt="logo lustucru" width=150px> 
-                    <img src="Image/logo-partenaires/logo-nestle.png" alt="logo nestlé" width=150px>
-                    <img src="Image/logo-partenaires/logo-volvic.png" alt="logo volvic" width=150px>
-                    <img src="Image/logo-partenaires/logo-styorre.png" alt="logo St Yorre" width=150px>
+                    <img src="images/logo-bonduelle.png" alt="logo bonduelle" width=150px>
+                    <img src="images/logo-lustucru.png" alt="logo lustucru" width=150px> 
+                    <img src="images/logo-nestle.png" alt="logo nestlé" width=150px>
+                    <img src="images/logo-volvic.png" alt="logo volvic" width=150px>
+                    <img src="images/logo-styorre.png" alt="logo St Yorre" width=150px>
                 </p>
             </section>
             <footer>
