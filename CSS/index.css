@@ -1,4 +1,4 @@
-.container {
+.main {
     display: flex;
     flex-direction: column ;
     font-family: Josefin Sans Thin;
@@ -29,19 +29,29 @@ a {
     display: flex;
     flex-direction: column;
 }
-.intro {
-    background-image: url("../images/puy.jpg");
+.banniere {
+    background-image: url("../Image/images-accueil/marche.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    margin: auto;
-    z-index: 1;
+    position: relative;
+    background-attachment: fixed;
+    height : 900px;
+    width: 100%;
+    z-index: -20;
 }
-.filtre {
+#titre {
+    color: #e8a670;
+    margin: 20% auto;
+    font-size: 70px;
+    background-color: white;
+     width : 40%;
+     z-index: 100;
+}
+/*.filtre {
     background: linear-gradient(#e5cb91,#e8a670);
-    background-repeat: no-repeat;
-    opacity: 50%;
-    z-index: 2;
-}
+    opacity: 20%;
+    z-index: 10;
+}*/
 .intro > h1 {
     font-family: Last Dream;
     font-size : 58px;
@@ -49,4 +59,7 @@ a {
 #liste {
     display: block;
     margin: auto;
+}
+.sponsors > p >img {
+   margin: 0px 5%; 
 }

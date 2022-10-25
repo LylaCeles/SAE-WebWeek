@@ -1,13 +1,11 @@
-<php
 
-?>
 
 <html>
     <head>
         <link rel = "stylesheet" type = "text/css" href = "style/index.css">
     </head>
     <body>
-        <section class="container">
+        <section class="main">
             <!-- <header class="header">
                 <span class="logo"><img src="" alt=""></span>
                 <span class="menu">
@@ -20,8 +18,8 @@
                     </ul>
                 </span>
             </header> -->
-            <section class="intro filtre">
-                <h1>The European Meals Tour</h1>
+            <section class="banniere filtre">
+                <h1 id="titre">The European Meals Tour</h1>
             </section>
             <p>Description</p>
             <section class="planning">
@@ -59,11 +57,11 @@
             <section class="sponsors">
                 <h1>Sponsors</h1>
                 <p>
-                    <img src="images/logo-bonduelle.png" alt="logo bonduelle" width=150px>
-                    <img src="images/logo-lustucru.png" alt="logo lustucru" width=150px> 
-                    <img src="images/logo-nestle.png" alt="logo nestlé" width=150px>
-                    <img src="images/logo-volvic.png" alt="logo volvic" width=150px>
-                    <img src="images/logo-styorre.png" alt="logo St Yorre" width=150px>
+                    <img src="Image/logo-partenaires/logo-bonduelle.png" alt="logo bonduelle" width=150px>
+                    <img src="Image/logo-partenaires/logo-lustucru.png" alt="logo lustucru" width=150px> 
+                    <img src="Image/logo-partenaires/logo-nestle.png" alt="logo nestlé" width=150px>
+                    <img src="Image/logo-partenaires/logo-volvic.png" alt="logo volvic" width=150px>
+                    <img src="Image/logo-partenaires/logo-styorre.png" alt="logo St Yorre" width=150px>
                 </p>
             </section>
             <footer>
