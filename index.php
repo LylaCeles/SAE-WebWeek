@@ -1,13 +1,11 @@
-<php
 
-?>
 
 <html>
     <head>
         <link rel = "stylesheet" type = "text/css" href = "CSS/index.css">
     </head>
     <body>
-        <section class="container">
+        <section class="main">
             <!-- <header class="header">
                 <span class="logo"><img src="" alt=""></span>
                 <span class="menu">
@@ -20,10 +18,14 @@
                     </ul>
                 </span>
             </header> -->
-            <section class="intro filtre">
-                <h1>The European Meals Tour</h1>
+            <section class="banniere filtre">
+                <h1 id="titre">The European Meals Tour</h1>
             </section>
-            <p>Description</p>
+            <br>
+            <p>Bienvenue sur le site du salon "The European Meals Tour" !
+                <br>Vous pourrez retrouver les différentes animations proposées avec leur date et horaires. De plus, chaque plat proposé par les chefs des régions est détaillé.
+                <br>N'hésitez pas à vous pré-inscrire aux nombreuses activités !
+            </p>
             <section class="planning">
                 <h1>Planning</h1>
                 <img src="" alt="">
