@@ -30,7 +30,7 @@ a {
     flex-direction: column;
 }
 .banniere {
-    background-image: url("../Image/images-accueil/marche.jpg");
+    background-image: url("../Image/images-accueil/marche.png");
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
