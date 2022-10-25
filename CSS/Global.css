@@ -1,0 +1,21 @@
+/* fichier à link avec toutes les pages du site */
+
+
+
+
+
+/* --------------------------- Import fonts --------------------------- */
+
+
+@font-face {
+    font-family: "Last Dream";
+    src: url("../Font/LastDream.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Bittermilk";
+    src: url("../Font/Bittermilk.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Josefin Sans";
+    src: url("../Font/JosefinSans-Regular.ttf") format("truetype");
+}
