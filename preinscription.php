@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="./CSS/preinscription.css">
     <link rel="stylesheet" href="./CSS/accordion.css">
     <script src="./Script/accordion.js" defer></script>
-    <script src="./Script/preinscription.js" defer></script>
     <?php
       require_once("Php/meta.php");
     ?>

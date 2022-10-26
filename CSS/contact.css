@@ -13,15 +13,7 @@ ul {
   margin: 0;
   padding: 0;
 }
-li {
-  list-style-type: none;
-}
-h2 {
-  text-transform: uppercase;
-  text-align: center;
-  padding-top: 30px;
-  font-size: 2em;
-}
+
 a {
   text-decoration: none;
   color: black;
@@ -71,12 +63,8 @@ h1 {
   background-color: #FFFAE1;
   box-shadow: 1px 3px 2px black;
 }
-h3 {
-  text-align: center;
-  color:antiquewhite;
-  font-size: 3em;
-  text-shadow: 1px 3px 2px black;
-}
+
+
 /* *************** PRESENTATION ********************** */
 #presentation {
   background-color: #FFFAE1;
@@ -160,16 +148,9 @@ h3 {
 #formulaire {
   background-color: #524A3A;
   color: #FFFAE1;
-  padding: 20px 0 10px 0;
-  text-align: center;
 }
 
-footer {
-    background-color: #524A3A;
-    color: #FFFAE1;
-    padding: 20px 0 10px 0;
-    text-align: center;
-  }
+
 form {
   margin: 0 auto;
   max-width: 900px;

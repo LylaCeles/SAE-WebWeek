@@ -1,8 +1,16 @@
 /* **************** TITRE ************* */
-.flex{
+section.flex{
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+}
+
+section.flex > h2{
+  margin-top: 70px;
+}
+section.flex > h3{
+  margin-top: 70px;
 }
 
 #premierTrait {
@@ -12,7 +20,11 @@
   background-color: #e8a670;
 }
 
+/* **************** IMAGE ************* */
 
+.img{
+  width: 50%;
+}
 
 
 /* ******************* CARTES ******************** */
@@ -60,15 +72,14 @@
   gap: 5rem;
 }
 
-.back > h1 {
-font-size: 3em;
-margin-top: 0px;
+.back > p {
+  padding: 0 10px;
 }
 
 .lescartes {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin : 50px 50px 0px 50px;
+  margin : 50px 50px 30px 50px;
   row-gap: 50px; 
 }

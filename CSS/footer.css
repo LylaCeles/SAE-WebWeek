@@ -4,6 +4,8 @@ footer {
     width: 100%;
     background: #524a3a;
     color: rgb(255, 255, 255);
+    padding: 20px 0 10px 0;
+    text-align: center;
 }
 .content-footer {
     max-width: 1000px;
@@ -18,6 +20,10 @@ footer {
 .bloc {
     flex-basis: 20%;
     margin: 0 30px;
+}
+
+footer li, footer p{
+    font-family: "Josefin Sans";
 }
 
 /* contact */
@@ -41,6 +47,7 @@ footer {
 .media-list {
     list-style-type: none;
     padding: 0;
+    margin: 0;
 }
 .services-list li {
     padding: 2px 0;
