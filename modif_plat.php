@@ -5,14 +5,12 @@
 <html lang="fr">
 
 	<head>
-	  	<link rel="stylesheet" type="text/css" href="CSS/Global.css">
 	  	<link rel="stylesheet" type="text/css" href="CSS/connexion.css">
-	  	<meta http-equiv="content-type" content="text/html"; charset="UTF-8"/>
-		<link rel="icon" type="image/x-icon" href="">
-
-	  	<meta name="description" content=""/>
-		<title>The european meals tour</title>
-		</head>
+		<title>The European Meals Tour - Modification de plats</title>
+		<?php
+      		require_once("Php/meta.php");
+    	?>
+	</head>
 	<body>
 		<?php
 

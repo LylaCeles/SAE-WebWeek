@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
-    <meta charset="UTF-8">
-
-    <title>European Meal Tour</title>
+    <title>The European Meals Tour - Régions</title>
 
     <link rel="stylesheet" href="./CSS/region.css">   
     <link rel="stylesheet" href="./CSS/accordion.css">   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     <script src="./Script/accordion.js" defer></script>
+    <?php
+      require_once("Php/meta.php");
+    ?>
 
   </head>
   <body>
