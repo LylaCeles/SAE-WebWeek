@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./CSS/preinscription.css">
     <link rel="stylesheet" href="./CSS/accordion.css">
     <script src="./Script/accordion.js" defer></script>
+    <script src="./Script/preinscription.js" defer></script>
     <?php
       require_once("Php/meta.php");
     ?>
@@ -19,19 +20,25 @@
     ?>
 
     <div class="container">
-        <!-- class à passer en flex -->
+        <?php
+            if (!isset($_POST["email"])) {
+        ?>
         <h1>Formulaire de préinscription</h1>
         <p>Vous pouvez vous préinscrire pour participer aux différentes animations. Le réglement se fera sur place </p>
 
         <form action="" method="POST">
-            <label for="nom">Nom :</label>
-            <input type="text" name="nom">
-
-            <label for="prenom">Prenom :</label>
-            <input type="text" name="prenom">
-
-            <label for="email">Adresse mail :</label>
-            <input type="email" name="email">
+            <div class="form_group">
+                <label for="nom">Nom :</label>
+                <input type="text" name="nom" required>
+            </div>
+            <div class="form_group">
+                <label for="prenom">Prenom :</label>
+                <input type="text" name="prenom" required>
+            </div>
+            <div class="form_group">
+                <label for="email">Adresse mail :</label>
+                <input type="email" name="email" required>
+            </div>
 
             <div class="accordion">
                 <div class="accordion-item">
@@ -89,7 +96,7 @@
                 </div>
                 <div class="accordion-item">
                     <div class="accordion-item-header">
-                        <h2>Concour</h2>
+                        <h2>Concours</h2>
                     </div>
                     <div class="accordion-item-body">
                         <div class="accordion-item-body-content">
@@ -115,10 +122,14 @@
                 </div>
             </div>
 
-            <input type="submit">
+            <div class="flex">
+                <input class="btn" type="submit" name="btn">
+            </div>
+            
         </form>
 
         <?php
+            }
         if(isset($_POST["email"])){
             ?>
             <section>

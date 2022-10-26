@@ -7,6 +7,9 @@
         <?php
             require_once("Php/meta.php");
         ?>
+        <link rel = "stylesheet" href = "./CSS/index.css">
+        <link rel="stylesheet" href="./CSS/accordion.css"> 
+        <script src="./Script/accordion.js" defer></script>
     </head>
     <body>
         <!-- Appel du header -->
