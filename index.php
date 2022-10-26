@@ -1,3 +1,6 @@
+<!DOCTYPE html>
+<html lang="fr">
+
 <html>
     <head>
         <link rel = "stylesheet" href = "./CSS/index.css">
