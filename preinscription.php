@@ -24,7 +24,7 @@
             if (!isset($_POST["email"])) {
         ?>
         <h2>Formulaire de préinscription</h2>
-        <p>Vous pouvez vous préinscrire pour participer aux différentes animations. Le réglement se fera sur place.</p>
+        <p>Vous pouvez vous préinscrire pour participer aux différentes animations. Le réglement se fera sur place </p>
 
         <form action="" method="POST">
             <div class="form_group">
