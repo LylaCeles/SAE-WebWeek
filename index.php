@@ -32,7 +32,7 @@
             <!-- Planning -->
             <section class="planning">
                 <h1>Planning</h1>
-                <p>Le salon ouvre de 11h à 24h, du 19 au 21 mai 2023.</p>
+                <p>Le salon ouvre de 11h à 0h00, du 19 au 21 mai 2023.</p>
                 <br>
 
                 <?php

@@ -35,10 +35,9 @@ a{
 }
 h1{
     color : #e8a670;
-    font-family: Bittermilk;
+    font-family: Last Dream;
     font-size: 70px;
     margin: 20% auto;
-    background-color: white;
     width : 40%;
     z-index: 100;
 }
@@ -49,9 +48,9 @@ h2{
 }
 h3 {
     text-align: center;
-    color : #e8a670;
-    font-family: Bittermilk;
-    font-size : 32px;
+    color : #000;
+    font-family: Josefin Sans;
+    font-size : 26px;
 }
 button {
     width : 300px;

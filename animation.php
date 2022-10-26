@@ -95,9 +95,7 @@
         </table>
 
         <div id="premierTrait"></div>
-
-
-
+        
         <div class="card">
           <div class="left">
               <h1>Concours</h1>
@@ -108,7 +106,6 @@
               <img src="./Image/tournoi.jpg" alt="">
           </div>
       </div>
-
 
       <table class="table-style">
 

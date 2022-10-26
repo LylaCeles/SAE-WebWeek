@@ -1,30 +1,9 @@
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  padding: 0;
-  margin: 0;
-}
-
-h2 {
-  text-transform: uppercase;
-  text-align: center;
-  padding-top: 30px;
-  font-size: 2em;
-}
-a {
-  text-decoration: none;
-  color: black;
-}
-
 /* **************** TITRE ************* */
 
 #TextePrincipal {
-    padding-top: 60px;
-    background-size: cover;
-    height: 500px;
+  padding-top: 60px;
+  background-size: cover;
+  height: 500px;
 }
 
 #imagePrincipale {
@@ -35,31 +14,14 @@ a {
   background-size: cover;
   height: 650px;
 }
-h1 {
-  text-align: center;
-  font-size: 6em;
-  margin-top: 100px;
-  text-shadow: 1px 3px 2px black;
-}
 #premierTrait {
   height: 1px;
   width: 25%;
   margin: -3px auto;
-  background-color: #ffffff;
-  box-shadow: 1px 3px 2px black;
+  background-color: #e8a670;
 }
-
-/* ******************* SOUS TITRE  ******************** */
-
-h3 {
-  text-align: center;
-  font-size: 3em;
-  text-shadow: 1px 3px 2px black;
-}
-
 
 /* ******************* CARTES ******************** */
-
 
 .container {
   width: 300px;
@@ -110,44 +72,9 @@ margin-top: 0px;
 }
 
 .lescartes {
-
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   margin : 50px 50px 0px 50px;
   row-gap: 50px; 
-
-
-}
-
-/* ******************* FOOTER ******************** */
-footer {
-  background-color: #524A3A;
-  color: #FFFAE1;
-  padding: 20px 0 10px 0;
-  text-align: center;
-}
-#copyrightEtIcons {
-display: flex;
-margin-bottom: 20px;
-padding: 0 10%;
-}
-#copyright {
-width: 50%;
-text-align: left;
-color: #FFFAE1;
-}
-#icons {
-width: 50%;
-text-align: right;
-}
-#icons a {
-display: inline-block;
-padding: 0 15px;
-font-size: 1.3em;
-color: #FFFAE1;
-}
-#icons a:hover {
-transform: scale(1.5);
-transition: 0.1s;
 }
