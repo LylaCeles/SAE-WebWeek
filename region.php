@@ -23,70 +23,83 @@
         <h3>Découvrez ici la gastronomie Française ! <br>
             Choisissez un plat : vous aurez son histoire , ses ingrédients et sa recette. </h3>
       </div>
-      <div id="imagePrincipale">
-      </div>
-    </section>
-    <section id="presentation">
-      <div id="texteIntro">
-        <h2>Les produits par régions</h2>
-      </div>
     </section>
 
-    <section id="region">
-      <div class="accordion">
-        <div class="accordion-item">
-            <div class="accordion-item-header">
-                <h2>Intitulé de l'accordéon</h2>
-            </div>
-            <div class="accordion-item-body">
-                <div class="accordion-item-body-content">
-                  <div class="lescartes">
 
-                    <div class="container">
-                      <div class="card">
-                        <div class="front"></div>
-                        <div class="back">
-                          <h1>Back of Card</h1>
-                          <p>Additional info on the back of the card</p>
-                        </div>
-                      </div>
-                    </div>
-            
-                    <div class="container">
-                      <div class="card">
-                        <div class="front"></div>
-                        <div class="back">
-                          <h1>Back of Card</h1>
-                          <p>Additional info on the back of the card</p>
-                        </div>
-                      </div>
-                    </div>
-            
-                    <div class="container">
-                      <div class="card">
-                        <div class="front"></div>
-                        <div class="back">
-                          <h1>Back of Card</h1>
-                          <p>Additional info on the back of the card</p>
-                        </div>
-                      </div>
-                    </div>
+    <div id="imagePrincipale">
+        Mettre une mosaique
+      </div>
 
-                    <div class="container">
-                      <div class="card">
-                        <div class="front"></div>
-                        <div class="back">
-                          <h1>Back of Card</h1>
-                          <p>Additional info on the back of the card</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-            </div>
+
+    <section class="region">
+
+<h2>Les produits par régions</h2>
+
+<!-- Accordéon -->
+<div class="accordion">
+    <div class="accordion-item">
+    <div class="accordion-item-header">
+        <p>Que faites-vous des plats invendus ?</p>
+    </div>
+        <div class="accordion-item-body">
+            <div class="accordion-item-body-content">
+                
+            <div class="lescartes">
+
+<div class="container">
+  <div class="card">
+    <div class="front"></div>
+    <div class="back">
+      <h1>Back of Card</h1>
+      <p>Additional info on the back of the card</p>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="card">
+    <div class="front"></div>
+    <div class="back">
+      <h1>Back of Card</h1>
+      <p>Additional info on the back of the card</p>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="card">
+    <div class="front"></div>
+    <div class="back">
+      <h1>Back of Card</h1>
+      <p>Additional info on the back of the card</p>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="card">
+    <div class="front"></div>
+    <div class="back">
+      <h1>Back of Card</h1>
+      <p>Additional info on the back of the card</p>
+    </div>
+  </div>
+</div>
+</div>
+            </div>  
         </div>
-      </div>
-    </section>
+    </div>
+</div>
+
+
+
+
+</section>
+
+
+
+
+
 
     <?php
       require_once("./Php/footer.php")

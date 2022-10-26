@@ -2,7 +2,7 @@
     <head>
         <title>The European Meals Tour - Accueil</title>
         <link rel = "stylesheet" href = "./CSS/index.css">
-        <link rel="stylesheet" href="./CSS/accordion.css"> 
+        <link rel="stylesheet" href="./CSS/accordion.css">
         <script src="./Script/accordion.js" defer></script>
         <?php
             require_once("Php/meta.php");
@@ -125,7 +125,9 @@
                     </div>
                 </div>
 
-                <a href="faq.php"><button>Plus de questions ici</button></a>
+                <a href="faq.php">
+                <button class="btn" type="button"  >Plus de questions ici</button>
+                </a> 
             </section>
 
             <!-- Sponsors -->

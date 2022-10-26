@@ -3,7 +3,7 @@
   
   <head>
         <?php
-            require_once("./Php/header.php")
+            require_once("./Php/meta.php")
         ?>
         <link rel = "stylesheet" href = "./CSS/faq.css">
         <link rel = "stylesheet" href = "./CSS/bouton.css">
@@ -11,11 +11,15 @@
         <script src="./Script/accordion.js" defer></script>
     </head>
 
+    <?php
+        require_once("./Php/header.php")
+    ?>
 <body>
     
 
   <section class="question">
-                <h1>FAQ</h1>
+
+                <h2>FAQ</h2>
                 <p>Trouvez l'ensemble de nos questions les plus posées.</p>
                 
                 <!-- Accordéon -->
@@ -121,8 +125,13 @@
                     </div>
                 </div>
 
-                <p>Vous n'avez pas trouvé réponse à vos questions ?</p>
-                <button class="btn" type="button">Nous contacter</button>
+
+            <p>Vous n'avez pas trouvé réponse à vos questions ?</p>
+                <a href="contact.php">
+                <button class="btn" type="button"  >Nous contacter</button>
+                </a> 
+
+                </section>
 
 </body>
 
@@ -133,6 +142,6 @@
     ?>
 
 </footer>
-            </section>
+            
 
 </html>
