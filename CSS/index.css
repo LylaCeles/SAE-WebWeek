@@ -25,12 +25,16 @@ button {
 a {
     text-decoration: none;
 }
+
+/* Flex des sections */
 .planning, .plat, .question, .sponsors {
     display: flex;
     flex-direction: column;
 }
+
+/* Introduction */
 .banniere {
-    background-image: url("../Image/images-accueil/marche.png");
+    background-image: url("../Image/images-accueil/marche.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -47,19 +51,24 @@ a {
      width : 40%;
      z-index: 100;
 }
-/*.filtre {
-    background: linear-gradient(#e5cb91,#e8a670);
-    opacity: 20%;
-    z-index: 10;
-}*/
 .intro > h1 {
     font-family: Last Dream;
     font-size : 58px;
 }
-#liste {
-    display: block;
-    margin: auto;
-}
+
+/* Sponsors images */
 .sponsors > p >img {
    margin: 0px 5%; 
+}
+
+/* Tableau planning */
+#planning {
+    margin : 50px;
+    background-color: #e7e7e7;
+}
+#entete {
+    text-align: left;
+}
+#ligne {
+    padding : 50px;
 }
