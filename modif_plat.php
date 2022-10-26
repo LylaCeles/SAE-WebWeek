@@ -15,6 +15,9 @@
 		</head>
 	<body>
 		<?php
+			require_once("./Php/header.php")
+		?>
+		<?php
 
 			// Protection pour que personne ne puisse accèder a la page s'il n'est pas passé par le formulaire de la page connexion.php
 			if (isset($_GET["id"])){
@@ -69,7 +72,9 @@
 
 
 
-        
+		<?php
+      		require_once("./Php/footer.php")
+   		?>				
     </body>
 
 </html>

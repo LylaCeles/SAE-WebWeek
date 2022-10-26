@@ -5,6 +5,10 @@
         <link rel = "stylesheet" type = "text/css" href = "CSS/index.css">
     </head>
     <body>
+        <?php
+        require_once("./Php/header.php")
+        ?>
+        
         <section class="main">
             <!-- <header class="header">
                 <span class="logo"><img src="" alt=""></span>
@@ -68,9 +72,9 @@
                     <img src="images/logo-styorre.png" alt="logo St Yorre" width=150px>
                 </p>
             </section>
-            <footer>
-                <!-- Inclure le footer -->
-            </footer>
+            <?php
+                require_once("./Php/footer.php")
+            ?>
         </section>
     </body>
 </html>

@@ -14,6 +14,9 @@
 
 	</head>
 	<body>
+		<?php
+      		require_once("./Php/header.php")
+    	?>
 
 <!-- ************* Formulaire pour se connecter au compte admin *************** -->
         <fieldset>
@@ -35,7 +38,9 @@
 
 
 
-        
+		<?php
+      		require_once("./Php/footer.php")
+    	?>    
     </body>
 
 </html>
