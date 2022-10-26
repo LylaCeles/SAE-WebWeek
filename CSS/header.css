@@ -6,7 +6,7 @@ header{
     padding: 1em;
 }
 
-header > img{
+header > a > img{
     width: 5em;
 }
 
@@ -51,7 +51,7 @@ header > img{
     color: white;
     cursor: pointer;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     line-height: 2;
     width: 100px;
 }
@@ -64,8 +64,8 @@ header > img{
     border-radius: 3px;
     display: none;
     position: absolute;
-    top: 25px;
-    left: 0;
+    bottom: -8px;
+    left: 15px;
 }
 
 .language:hover ul{
@@ -75,9 +75,11 @@ header > img{
 .language ul li a{
     display: block;
     padding: 5px 10px;
+    font-family: "Josefin Sans";
 }
 
 .language ul li a:hover{
     background-color: #e5cb91;
+    border-radius: 3px;
 }
 
