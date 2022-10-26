@@ -23,7 +23,7 @@
         <?php
             if (!isset($_POST["email"])) {
         ?>
-        <h1>Formulaire de préinscription</h1>
+        <h2>Formulaire de préinscription</h2>
         <p>Vous pouvez vous préinscrire pour participer aux différentes animations. Le réglement se fera sur place </p>
 
         <form action="" method="POST">
