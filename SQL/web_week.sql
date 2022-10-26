@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.0
+-- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : mar. 25 oct. 2022 à 16:51
--- Version du serveur : 10.4.24-MariaDB
--- Version de PHP : 8.1.6
+-- Généré le : mer. 26 oct. 2022 à 11:29
+-- Version du serveur : 10.4.22-MariaDB
+-- Version de PHP : 8.1.0
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de données : `web_week2`
+-- Base de données : `web_week`
 --
 
 -- --------------------------------------------------------
@@ -34,23 +34,24 @@ CREATE TABLE `animation` (
   `type_animation` text NOT NULL,
   `date_animation` date NOT NULL,
   `horaire_début` time NOT NULL,
-  `horaire_fin` time NOT NULL
+  `horaire_fin` time NOT NULL,
+  `places_max` int(4) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Déchargement des données de la table `animation`
 --
 
-INSERT INTO `animation` (`id_animation`, `nom_animation`, `description_animation`, `type_animation`, `date_animation`, `horaire_début`, `horaire_fin`) VALUES
-(1, 'Concours', 'Concours des meilleurs plats, jugés par un jury composé de cuisiniers et de spectateurs. ', 'Concours', '2023-05-21', '14:00:00', '22:00:00'),
-(2, 'Cuisiner une croziflette', 'Cette animation va vous permettre d\'apprendre à cuisiner votre propre croziflette ! En petit groupe, avec les aliments et le matériel fournis, vous serez encadrés d\'un chef spécialiste de ce plat.', 'Apprentissage', '2023-05-19', '14:00:00', '16:00:00'),
-(3, 'Cuisiner une galette bretone', 'Cette animation va vous permettre d\'apprendre à cuisiner votre propre galette bretone ! En petit groupe, avec les aliments et le matériel fournis, vous serez encadrés d\'un chef spécialiste de ce plat.', 'Apprentissage', '2023-05-19', '18:00:00', '20:00:00'),
-(4, 'Cuisiner une flammekueche', 'Cette animation va vous permettre d\'apprendre à cuisiner votre propre flammekueche ! En petit groupe, avec les aliments et le matériel fournis, vous serez encadrés d\'un chef spécialiste de ce plat.', 'Apprentissage', '2023-05-20', '14:00:00', '16:00:00'),
-(5, 'Cuisiner un bœuf bourguignon', 'Cette animation va vous permettre d\'apprendre à cuisiner votre propre bœuf bourguignon ! En petit groupe, avec les aliments et le matériel fournis, vous serez encadrés d\'un chef spécialiste de ce plat.', 'Apprentissage', '2023-05-20', '18:00:00', '20:00:00'),
-(6, 'Histoire du macaron', 'Durant ce spectacle, l\'histoire du macaron vous sera comptée sous forme de pièce de théâtre.', 'Spectacle', '2023-05-19', '16:30:00', '17:30:00'),
-(7, 'Histoire des cannelés', 'Durant ce spectacle, l\'histoire des cannelés vous sera comptée sous forme de pièce de théâtre.', 'Spectacle', '2023-05-20', '11:30:00', '12:30:00'),
-(8, 'Histoire de la tarte au sucre', 'Durant ce spectacle, l\'histoire de la tarte au sucre vous sera comptée sous forme de pièce de théâtre.', 'Spectacle', '2023-05-20', '16:30:00', '17:30:00'),
-(9, 'Histoire du far breton', 'Durant ce spectacle, l\'histoire du far breton vous sera comptée sous forme de pièce de théâtre.', 'Spectacle', '2023-05-21', '11:30:00', '12:30:00');
+INSERT INTO `animation` (`id_animation`, `nom_animation`, `description_animation`, `type_animation`, `date_animation`, `horaire_début`, `horaire_fin`, `places_max`) VALUES
+(1, 'Concours', 'Concours des meilleurs plats, jugés par un jury composé de cuisiniers et de spectateurs. ', 'Concours', '2023-05-21', '14:00:00', '22:00:00', 700),
+(2, 'Cuisiner une croziflette', 'Cette animation va vous permettre d\'apprendre à cuisiner votre propre croziflette ! En petit groupe, avec les aliments et le matériel fournis, vous serez encadrés d\'un chef spécialiste de ce plat.', 'Apprentissage', '2023-05-19', '14:00:00', '16:00:00', 20),
+(3, 'Cuisiner une galette bretone', 'Cette animation va vous permettre d\'apprendre à cuisiner votre propre galette bretone ! En petit groupe, avec les aliments et le matériel fournis, vous serez encadrés d\'un chef spécialiste de ce plat.', 'Apprentissage', '2023-05-19', '18:00:00', '20:00:00', 20),
+(4, 'Cuisiner une flammekueche', 'Cette animation va vous permettre d\'apprendre à cuisiner votre propre flammekueche ! En petit groupe, avec les aliments et le matériel fournis, vous serez encadrés d\'un chef spécialiste de ce plat.', 'Apprentissage', '2023-05-20', '14:00:00', '16:00:00', 20),
+(5, 'Cuisiner un bœuf bourguignon', 'Cette animation va vous permettre d\'apprendre à cuisiner votre propre bœuf bourguignon ! En petit groupe, avec les aliments et le matériel fournis, vous serez encadrés d\'un chef spécialiste de ce plat.', 'Apprentissage', '2023-05-20', '18:00:00', '20:00:00', 20),
+(6, 'Histoire du macaron', 'Durant ce spectacle, l\'histoire du macaron vous sera comptée sous forme de pièce de théâtre.', 'Spectacle', '2023-05-19', '16:30:00', '17:30:00', 300),
+(7, 'Histoire des cannelés', 'Durant ce spectacle, l\'histoire des cannelés vous sera comptée sous forme de pièce de théâtre.', 'Spectacle', '2023-05-20', '11:30:00', '12:30:00', 300),
+(8, 'Histoire de la tarte au sucre', 'Durant ce spectacle, l\'histoire de la tarte au sucre vous sera comptée sous forme de pièce de théâtre.', 'Spectacle', '2023-05-20', '16:30:00', '17:30:00', 300),
+(9, 'Histoire du far breton', 'Durant ce spectacle, l\'histoire du far breton vous sera comptée sous forme de pièce de théâtre.', 'Spectacle', '2023-05-21', '11:30:00', '12:30:00', 300);
 
 -- --------------------------------------------------------
 
