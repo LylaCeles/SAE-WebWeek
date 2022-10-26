@@ -3,11 +3,16 @@
 
 <html>
     <head>
+        <title>The European Meals Tour - Accueil</title>
         <link rel = "stylesheet" href = "./CSS/index.css">
         <link rel="stylesheet" href="./CSS/accordion.css"> 
         <script src="./Script/accordion.js" defer></script>
-        <link rel="stylesheet" href="./CSS/header.css">
-        <link rel="stylesheet" href="./CSS/global.css">
+        <?php
+            require_once("Php/meta.php");
+        ?>
+        <link rel = "stylesheet" href = "./CSS/index.css">
+        <link rel="stylesheet" href="./CSS/accordion.css"> 
+        <script src="./Script/accordion.js" defer></script>
     </head>
     <body>
 
