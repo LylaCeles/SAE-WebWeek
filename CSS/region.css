@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css?family=Advent+Pro|Dancing+Script&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Advent Pro', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+h2 {
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 30px;
+  font-size: 2em;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* **************** TITRE ************* */
+
+#TextePrincipal {
+    padding-top: 60px;
+    background-size: cover;
+    height: 500px;
+}
+
+#imagePrincipale {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  padding-top: 60px;
+  background: url(media/baniere.jpg) no-repeat fixed 50% 50%;
+  background-size: cover;
+  height: 650px;
+}
+h1 {
+  font-family: 'Dancing Script', cursive;
+  text-align: center;
+  color: antiquewhite;
+  font-size: 6em;
+  margin-top: 100px;
+  text-shadow: 1px 3px 2px black;
+}
+#premierTrait {
+  height: 1px;
+  width: 25%;
+  margin: -3px auto;
+  background-color: #FFFAE1;
+  box-shadow: 1px 3px 2px black;
+}
+
+/* ******************* SOUS TITRE  ******************** */
+
+h3 {
+  text-align: center;
+  color:antiquewhite;
+  font-size: 3em;
+  text-shadow: 1px 3px 2px black;
+}
+
+
+/* ******************* CARTES ******************** */
+
+
+.container {
+  width: 300px;
+  height: 350px;
+  perspective: 800px;
+}
+
+.container:hover > .card {
+  cursor: pointer;
+  transform: rotateY(180deg);
+}
+
+.card {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  transition: transform 1500ms;
+  transform-style: preserve-3d;
+}
+
+.front,
+.back {
+  height: 100%;
+  width: 100%;
+  border-radius: 2rem;
+  box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.front {
+  background-image: url(https://source.unsplash.com/random/350x500);
+}
+
+.back {
+  background-color: #3a3a3a;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+
+.back > h1 {
+font-family: Arial, Helvetica, sans-serif;
+font-size: 3em;
+margin-top: 0px;
+}
+
+.lescartes {
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin : 50px 50px 0px 50px;
+  row-gap: 50px; 
+
+
+}
+
+/* ******************* FOOTER ******************** */
+footer {
+  background-color: #524A3A;
+  color: #FFFAE1;
+  padding: 20px 0 10px 0;
+  text-align: center;
+}
+#copyrightEtIcons {
+display: flex;
+margin-bottom: 20px;
+padding: 0 10%;
+}
+#copyright {
+width: 50%;
+text-align: left;
+color: #FFFAE1;
+}
+#icons {
+width: 50%;
+text-align: right;
+}
+#icons a {
+display: inline-block;
+padding: 0 15px;
+font-size: 1.3em;
+color: #FFFAE1;
+}
+#icons a:hover {
+transform: scale(1.5);
+transition: 0.1s;
+}
