@@ -9,14 +9,18 @@
     ?>
   </head>
   <body>
-    <header>
+
+    <?php
+      require_once("./Php/header.php")
+    ?>
+
+    <section>
       <div id="imagePrincipale">
         <h1>Animations</h1>
         <div id="premierTrait"></div>
         <h3>Vous retrouverez l'ensemble des animations de notre évènement ici</h3>
       </div>
-
-    </header>
+    </section>
 
     <section class="main" id="produits">
 
@@ -132,21 +136,10 @@
   </section>
 
 
+    <?php
+      require_once("./Php/footer.php")
+    ?>
 
-    <footer>
-      <div id="copyrightEtIcons">
-        <div id="copyright">
-          <span>The European Meal Tour</span>
-        </div>
-        <div id="icons">
-          <a href="http://www.twitter.fr"><i class="fa fa-twitter"></i></a>
-          <a href="http://www.facebook.fr"><i class="fa fa-facebook"></i></a>
-          <a href="http://www.instagram.com"><i class="fa fa-instagram"></i></a>
-
-        </div>
-      </div>
-
-    </footer>
   </body>
 
 </html>

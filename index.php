@@ -12,10 +12,11 @@
         <script src="./Script/accordion.js" defer></script>
     </head>
     <body>
-        <!-- Appel du header -->
+
         <?php
-            require_once("Php/header.php");
+        require_once("./Php/header.php")
         ?>
+
         <section class="main">
 
             <!-- Introduction -->
@@ -138,12 +139,11 @@
                     <img src="Image/logo-partenaires/logo-styorre.png" alt="logo St Yorre" width=150px>
                 </p>
             </section>
-            <footer>
-                <!-- Appel du footer -->
-                <?php
-                    // require_once("Php/footer.php");
-                ?>
-            </footer>
+
+            <?php
+                require_once("./Php/footer.php")
+            ?>
+
         </section>
     </body>
 </html>

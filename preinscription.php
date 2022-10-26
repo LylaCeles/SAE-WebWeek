@@ -141,7 +141,11 @@
         ?>
 
     </div>
-
+    
+    
+    <?php
+      require_once("./Php/footer.php")
+    ?>
 </body>
 
 </html>
