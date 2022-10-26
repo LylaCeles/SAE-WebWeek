@@ -13,7 +13,7 @@ footer {
     justify-content: center;
     align-items: flex-start;
     font-size: 16px;
-    padding: 50px 0 100px;
+    padding: 50px 0 50px;
 }
 
 .bloc {
@@ -41,6 +41,7 @@ footer {
 .schedule-list,
 .media-list {
     list-style-type: none;
+    padding: 0;
 }
 .services-list li {
     padding: 2px 0;
@@ -51,6 +52,11 @@ footer {
 }
 .services-list a:hover {
     color: rgb(3,3,3);
+}
+
+.media-list > li{
+  display: flex;
+  justify-content: space-around;
 }
 
 

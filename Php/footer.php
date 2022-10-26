@@ -42,9 +42,8 @@
         </div>
       </div>
 
-        <div id="copyright">
- <img src="./Image/logo/Logo_fond_blanc.png" alt="" width="70" height="70">
-        </div>
+<p>The European Meal Tour</p>
+
 
     </footer>
 
