@@ -1,25 +1,19 @@
 /* **************** TITRE ************* */
-
-#TextePrincipal {
-  padding-top: 60px;
-  background-size: cover;
-  height: 500px;
+.flex{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-#imagePrincipale {
-  margin-top: 100px;
-  margin-bottom: 100px;
-  padding-top: 60px;
-  background: url(Image/baniere.jpg) no-repeat fixed 50% 50%;
-  background-size: cover;
-  height: 650px;
-}
 #premierTrait {
   height: 1px;
   width: 25%;
   margin: -3px auto;
   background-color: #e8a670;
 }
+
+
+
 
 /* ******************* CARTES ******************** */
 
