@@ -10,13 +10,18 @@
             <!-- Styles -->
     <link rel="stylesheet" href="./CSS/Global.css">
     <link rel="stylesheet" href="./CSS/preinscription.css">
-    <link rel="stylesheet" href="./CSS/accordion.css">    
+    <link rel="stylesheet" href="./CSS/accordion.css">
+    <link rel="stylesheet" href="./CSS/header.css">
 
             <!-- Scripts -->
     <script src="./Script/accordion.js" defer></script>
 </head>
 
 <body>
+    <?php
+        require_once("./Php/header.php");
+    ?>
+
     <div class="container">
         <!-- class à passer en flex -->
         <h1>Formulaire de préinscription</h1>
@@ -112,9 +117,22 @@
                         </div>
                     </div>
                 </div>
-
             </div>
+
+            <input type="submit">
         </form>
+
+        <?php
+        if(isset($_POST["email"])){
+            ?>
+            <section>
+                <h1>Merci pour votre préinscription</h1>
+                <p>Votre préinscription à bien été prise en compte, le réglement se fera sur le site de l'événement</p>
+            </section>
+            <?php
+        }
+        ?>
+
     </div>
 
 </body>
