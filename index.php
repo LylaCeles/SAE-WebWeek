@@ -4,14 +4,15 @@
 <html>
     <head>
         <title>The European Meals Tour - Accueil</title>
-        <link rel = "stylesheet" href = "./CSS/index.css">
-        <link rel="stylesheet" href="./CSS/accordion.css"> 
-        <script src="./Script/accordion.js" defer></script>
         <?php
             require_once("Php/meta.php");
         ?>
+
+                <!-- Style -->
         <link rel = "stylesheet" href = "./CSS/index.css">
         <link rel="stylesheet" href="./CSS/accordion.css"> 
+
+                <!-- Script -->
         <script src="./Script/accordion.js" defer></script>
     </head>
     <body>
@@ -34,7 +35,7 @@
 
             <!-- Planning -->
             <section class="planning">
-                <h1>Planning</h1>
+                <h2>Planning</h2>
                 <p>Le salon ouvre de 11h à 24h, du 19 au 21 mai 2023.</p>
                 <br>
 
@@ -58,7 +59,7 @@
                 <a href="animation.php"><button>Plus d'informations sur les animations</button></a>
             </section>
             <section class="plat">
-                <h1>Découvrez de nouveaux plats</h1>
+                <h2>Découvrez de nouveaux plats</h2>
                 <p>Trouvez ici trois plats aléatoires gastronomiques français.
                     <br>Pour en voir plus cliquez sur un des plats !
                 </p>
@@ -70,7 +71,7 @@
 
             <!-- FAQ -->
             <section class="question">
-                <h1>Des questions ?</h1>
+                <h2>Des questions ?</h2>
                 <p>Trouvez ici les questions qui nous sont plus posées.</p>
                 
                 <!-- Accordéon -->
@@ -85,9 +86,7 @@
                             </div>  
                         </div>
                     </div>
-                </div>
-
-                <div class="accordion">
+                
                     <div class="accordion-item">
                     <div class="accordion-item-header">
                         <p>Qui participe au concours ?</p>
@@ -98,9 +97,7 @@
                             </div>  
                         </div>
                     </div>
-                </div>
 
-                <div class="accordion">
                     <div class="accordion-item">
                     <div class="accordion-item-header">
                         <p>Qui sont les jury du concours ?</p>
@@ -113,9 +110,7 @@
                             </div>  
                         </div>
                     </div>
-                </div>
 
-                <div class="accordion">
                     <div class="accordion-item">
                     <div class="accordion-item-header">
                         <p>Les animations sont-elles tout public ?</p>
@@ -133,7 +128,7 @@
 
             <!-- Sponsors -->
             <section class="sponsors">
-                <h1>Sponsors</h1>
+                <h2>Sponsors</h2>
                 <p>
                     <img src="Image/logo-partenaires/logo-bonduelle.png" alt="logo bonduelle" width=150px>
                     <img src="Image/logo-partenaires/logo-lustucru.png" alt="logo lustucru" width=150px> 

@@ -30,6 +30,8 @@ a {
 .planning, .plat, .question, .sponsors {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Introduction */
