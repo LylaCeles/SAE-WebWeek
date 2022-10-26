@@ -21,7 +21,7 @@
         <h1>Gastronomie des régions</h1>
         <div id="premierTrait"></div>
         <h3>Découvrez ici la gastronomie Française ! <br>
-            Choisissez un plat : vous aurez son histoire , ses ingrédients et sa recette </h3>
+            Choisissez un plat : vous aurez son histoire , ses ingrédients et sa recette. </h3>
       </div>
       <div id="imagePrincipale">
       </div>
@@ -52,7 +52,6 @@
                       </div>
                     </div>
             
-            
                     <div class="container">
                       <div class="card">
                         <div class="front"></div>
@@ -82,22 +81,12 @@
                         </div>
                       </div>
                     </div>
-
-                </div>
+                  </div>
                 </div>
             </div>
         </div>
-</div>
-
-
-
-
-
-
-  </section>
-
-
-
+      </div>
+    </section>
 
     <?php
       require_once("./Php/footer.php")

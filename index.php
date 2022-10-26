@@ -32,7 +32,7 @@
             <!-- Planning -->
             <section class="planning">
                 <h1>Planning</h1>
-                <p>Le salon ouvre de 11h à 24h, du 19 au 21 mai 2023.</p>
+                <p>Le salon ouvre de 11h à 0h00, du 19 au 21 mai 2023.</p>
                 <br>
 
                 <?php
@@ -47,7 +47,7 @@
                     // Tableau planning
                     echo'<table id="planning">'.'<th id="entete">'."Date".'</th>'.'<th id="entete">'."Nom".'</th>'.'<th id="entete">'."Heure de début".'</th>'.'<th id="entete">'."Heure de fin".'</th>';
                     for($i=0; $i<$nbAnimation; $i++){
-                        echo'<tr id="ligne">'.'<td>'.$tabAnimation[$i]["date_animation"].'</td>'.'<td>'.$tabAnimation[$i]["nom_animation"].'</td>'.'<td>'.$tabAnimation[$i]["horaire_début"].'</td>'.'<td>'.$tabAnimation[$i]["horaire_fin"].'</td>'.'</tr>';
+                        echo'<tr id="ligne">'.'<td>'.$tabAnimation[$i]["date_animation"].'</td>'.'<td>'.$tabAnimation[$i]["nom_animation"].'</td>'.'<td>'.$tabAnimation[$i]["horaire_debut"].'</td>'.'<td>'.$tabAnimation[$i]["horaire_fin"].'</td>'.'</tr>';
                     }
                     echo'</table>';
                 ?>
