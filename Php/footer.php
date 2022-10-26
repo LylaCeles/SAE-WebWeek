@@ -1,9 +1,7 @@
 <html>
 <link rel="stylesheet" href="./CSS/footer.css">
-
     <footer>
       <div class="content-footer">
-
 
         <div class="bloc footer-services">
           <h3>Navigation</h3>
@@ -17,7 +15,6 @@
           </ul>
         </div>
 
-
         <div class="bloc footer-schedule">
           <h3>Horaires</h3>
           <ul class="schedule-list">
@@ -26,9 +23,6 @@
             <li> 21 mai 11h-0h</li>
           </ul>
         </div>
-
-        
-
 
         <div class="bloc footer-medias">
           <h3>Our Networks</h3>
@@ -42,15 +36,6 @@
         </div>
       </div>
 
-<p>The European Meal Tour</p>
-
-
+      <p>The European Meal Tour</p>
     </footer>
-
-
-
-
-
-
-
-    </html>
+</html>

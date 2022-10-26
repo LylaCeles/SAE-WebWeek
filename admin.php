@@ -12,6 +12,13 @@
 		$resultat -> closeCursor();
 
 
+		$requete = 'SELECT * FROM animation';
+		$resultat = $connection ->query($requete);
+		$tabAnimation = $resultat -> fetchAll();
+		$resultat -> closeCursor();
+
+
+
 ?>
 
 
@@ -20,16 +27,15 @@
 <html lang="fr">
 
 	<head>
+	  	<link rel="stylesheet" type="text/css" href="CSS/Global.css">
 	  	<link rel="stylesheet" type="text/css" href="CSS/connexion.css">
+	  	<meta http-equiv="content-type" content="text/html"; charset="UTF-8"/>
+		<link rel="icon" type="image/x-icon" href="">
+
+	  	<meta name="description" content=""/>
 		<title>The european meals tour</title>
-		<?php
-      		require_once("Php/meta.php");
-    	?>
-	</head>
+		</head>
 	<body>
-		<?php
-      		require_once("./Php/header.php")
-    	?>
 		<?php
 
 			// Protection pour que personne ne puisse accèder a la page s'il n'est pas passé par le formulaire de la page connexion.php
@@ -37,7 +43,7 @@
 				$nom_admin = $_POST["id"];
 				$mdp = $_POST["mdp"];
 				// Vérification du mdp et du nom du compte
-				if ($mdp == " " && $nom_admin==" "){
+				if ($mdp == "SAE_W€bW€€k" && $nom_admin=="MageNoirToutPuissant"){
 					?>
 
 					<p>Vous pouvez modifier certaines informations présente sur le site</p>
@@ -70,12 +76,28 @@
 
 
 					?>
+				</fieldset>
 
 
+				<fieldset>
+            		<legend>Animation</legend>
+
+					<?php
+// Même chose pour la table animation
+
+						for ($j=0; $j<count($tabAnimation); $j++){
+								// var_dump($tabPlat);
+								?>
+								
+								<a href='modif_animation.php?id=<?php echo $tabAnimation[$j]["id_animation"]; ?>'><?php echo$tabAnimation[$j]["nom_animation"];?></a>
+								<br>
+								<?php
+							
+						}
+					}
 
 
-
-
+					?>
 				</fieldset>
 
 					<?php
@@ -85,7 +107,7 @@
 					header('Location: connexion.php');
 					exit();
 				}
-			}
+		
 
 
 
@@ -94,9 +116,7 @@
 
 
 
-	<?php
-      require_once("./Php/footer.php")
-    ?>     
+        
     </body>
 
 </html>

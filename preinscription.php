@@ -39,11 +39,15 @@
                 <label for="email">Adresse mail :</label>
                 <input type="email" name="email" required>
             </div>
+            <div class="form_group">
+                <label for="nb_places">Nombre de places :</label>
+                <input type="text" name="nb_places" required>
+            </div>
 
             <div class="accordion">
                 <div class="accordion-item">
                     <div class="accordion-item-header">
-                        <h2>Theatre culinaire</h2>
+                        <h3>Theatre culinaire</h3>
                     </div>
                     <div class="accordion-item-body">
                         <div class="accordion-item-body-content">
@@ -53,24 +57,27 @@
                                 <!-- Utiliser la base de donner pour créer le bon nombre de coches
                                 Select par type d'anim puis afficher chaque horaire en check box -->
                             <input type="checkbox" name="horaire1">
-                            <label for="horaire1">12h00</label>
+                            <label for="horaire1">16h30 vendredi</label>
 
                             <input type="checkbox" name="horaire2">
-                            <label for="horaire2">14h00</label>
+                            <label for="horaire2">11h30 samedi</label>
 
                             <input type="checkbox" name="horaire3">
-                            <label for="horaire3">16h00</label>
+                            <label for="horaire3">16h30 samedi</label>
+
+                            <input type="checkbox" name="horaire4">
+                            <label for="horaire4">11h30 dimanche</label>
 
                             <p>Besoin de plus d'informations sur l'activité  ?</p>
 
-                            <a href="#">En savoir plus</a>
+                            <button><a href="#">En savoir plus</a></button>
 
                         </div>
                     </div>
                 </div>
                 <div class="accordion-item">
                     <div class="accordion-item-header">
-                        <h2>Apprentissage</h2>
+                        <h3>Apprentissage</h3>
                     </div>
                     <div class="accordion-item-body">
                         <div class="accordion-item-body-content">
@@ -80,23 +87,26 @@
                                 <!-- Utiliser la base de donner pour créer le bon nombre de coches
                                 Select par type d'anim puis afficher chaque horaire en check box -->
                             <input type="checkbox" name="horaire1">
-                            <label for="horaire1">12h00</label>
+                            <label for="horaire1">14h00 vendredi</label>
 
                             <input type="checkbox" name="horaire2">
-                            <label for="horaire2">14h00</label>
+                            <label for="horaire2">18h00 vendredi</label>
 
                             <input type="checkbox" name="horaire3">
-                            <label for="horaire3">16h00</label>
+                            <label for="horaire3">14h00 samedi</label>
+
+                            <input type="checkbox" name="horaire4">
+                            <label for="horaire4">18h00 samedi</label>
 
                             <p>Besoin de plus d'informations sur l'activité  ?</p>
 
-                            <a href="#">En savoir plus</a>
+                            <button><a href="#">En savoir plus</a></button>
                         </div>
                     </div>
                 </div>
                 <div class="accordion-item">
                     <div class="accordion-item-header">
-                        <h2>Concours</h2>
+                        <h3>Concours</h3>
                     </div>
                     <div class="accordion-item-body">
                         <div class="accordion-item-body-content">
@@ -106,17 +116,11 @@
                                 <!-- Utiliser la base de donner pour créer le bon nombre de coches
                                 Select par type d'anim puis afficher chaque horaire en check box -->
                             <input type="checkbox" name="horaire1">
-                            <label for="horaire1">12h00</label>
-
-                            <input type="checkbox" name="horaire2">
-                            <label for="horaire2">14h00</label>
-
-                            <input type="checkbox" name="horaire3">
-                            <label for="horaire3">16h00</label>
+                            <label for="horaire1">14h00 dimanche</label>
 
                             <p>Besoin de plus d'informations sur l'activité  ?</p>
 
-                            <a href="#">En savoir plus</a>
+                            <button><a href="#">En savoir plus</a></button>
                         </div>
                     </div>
                 </div>
@@ -133,8 +137,8 @@
         if(isset($_POST["email"])){
             ?>
             <section>
-                <h1>Merci pour votre préinscription</h1>
-                <p>Votre préinscription à bien été prise en compte, le réglement se fera sur le site de l'événement</p>
+                <h1>Merci pour votre préinscription !</h1>
+                <p>Votre préinscription à bien été prise en compte, le réglement se fera sur le site de l'événement.</p>
             </section>
             <?php
         }
