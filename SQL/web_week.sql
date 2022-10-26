@@ -33,7 +33,7 @@ CREATE TABLE `animation` (
   `description_animation` text NOT NULL,
   `type_animation` text NOT NULL,
   `date_animation` date NOT NULL,
-  `horaire_début` time NOT NULL,
+  `horaire_debut` time NOT NULL,
   `horaire_fin` time NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -41,7 +41,7 @@ CREATE TABLE `animation` (
 -- Déchargement des données de la table `animation`
 --
 
-INSERT INTO `animation` (`id_animation`, `nom_animation`, `description_animation`, `type_animation`, `date_animation`, `horaire_début`, `horaire_fin`) VALUES
+INSERT INTO `animation` (`id_animation`, `nom_animation`, `description_animation`, `type_animation`, `date_animation`, `horaire_debut`, `horaire_fin`) VALUES
 (1, 'Concours', 'Concours des meilleurs plats, jugés par un jury composé de cuisiniers et de spectateurs. ', 'Concours', '2023-05-21', '14:00:00', '22:00:00'),
 (2, 'Cuisiner une croziflette', 'Cette animation va vous permettre d\'apprendre à cuisiner votre propre croziflette ! En petit groupe, avec les aliments et le matériel fournis, vous serez encadrés d\'un chef spécialiste de ce plat.', 'Apprentissage', '2023-05-19', '14:00:00', '16:00:00'),
 (3, 'Cuisiner une galette bretone', 'Cette animation va vous permettre d\'apprendre à cuisiner votre propre galette bretone ! En petit groupe, avec les aliments et le matériel fournis, vous serez encadrés d\'un chef spécialiste de ce plat.', 'Apprentissage', '2023-05-19', '18:00:00', '20:00:00'),
