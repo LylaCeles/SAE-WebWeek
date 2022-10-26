@@ -12,8 +12,10 @@
 
   </head>
   <body>
-    <header>
-
+    <?php
+      require_once("./Php/header.php")
+    ?>
+    <section>
       <div id="TextePrincipal">
         <h1>Gastronomie des régions</h1>
         <div id="premierTrait"></div>
@@ -22,9 +24,7 @@
       </div>
       <div id="imagePrincipale">
       </div>
-
-
-    </header>
+    </section>
     <section id="presentation">
       <div id="texteIntro">
         <h2>Les produits par régions</h2>
@@ -98,11 +98,9 @@
 
 
 
-<?php
-
-  include './Php/footer.php';
-
-?>
+    <?php
+      require_once("./Php/footer.php")
+    ?>
 
   </body>
 

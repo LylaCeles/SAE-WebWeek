@@ -11,14 +11,19 @@
   </head>
 
   <body>
-    <header>
+
+    <?php
+      require_once("./Php/header.php")
+    ?>
+
+    <section>
       <div id="imagePrincipale">
         <h1>Contact</h1>
         <div id="premierTrait"></div>
         <h3>Vous n'avez pas trouvé de réponses  à votre problème dans notre  <a href="#">FAQ ?</a> Pas de problème ! <br>
             Vous pouvez nous contacter avec ce formulaire de contact</h3>
       </div>
-    </header>
+    </section>
 
 
     <section id="formulaire">
@@ -51,20 +56,9 @@
   
       </section>
 
-    <footer>
-        <div id="copyrightEtIcons">
-          <div id="copyright">
-            <span>The European Meal Tour</span>
-          </div>
-          <div id="icons">
-            <a href="http://www.twitter.fr"><i class="fa fa-twitter"></i></a>
-            <a href="http://www.facebook.fr"><i class="fa fa-facebook"></i></a>
-            <a href="http://www.instagram.com"><i class="fa fa-instagram"></i></a>
-  
-          </div>
-        </div>
-  
-      </footer>
+    <?php
+      require_once("./Php/footer.php")
+    ?>
 
   </body>
 
