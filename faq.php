@@ -6,6 +6,7 @@
             require_once("./Php/header.php")
         ?>
         <link rel = "stylesheet" href = "./CSS/faq.css">
+        <link rel = "stylesheet" href = "./CSS/bouton.css">
         <link rel="stylesheet" href="./CSS/accordion.css"> 
         <script src="./Script/accordion.js" defer></script>
     </head>
@@ -121,7 +122,7 @@
                 </div>
 
                 <p>Vous n'avez pas trouvé réponse à vos questions ?</p>
-                <a href="contact.php"><button>Nous contacter</button></a>
+                <button class="btn" type="button">Nous contacter</button>
 
 </body>
 
