@@ -5,7 +5,7 @@
     <head>
         <title>The European Meals Tour - Accueil</title>
         <?php
-            require_once("Php/meta.php");
+            require_once("./Php/meta.php");
         ?>
 
                 <!-- Style -->
@@ -29,8 +29,8 @@
             </section>
             <br>
             <p>Bienvenue sur le site du salon "The European Meals Tour" !
-                <br>Vous pourrez retrouver les différentes animations proposées avec leur date et horaires. De plus, chaque plat proposé par les chefs des régions est détaillé.
-                <br>N'hésitez pas à vous pré-inscrire aux nombreuses activités !
+                <br><br>Vous pourrez retrouver les différentes animations proposées avec leur date et horaires. De plus, chaque plat proposé par les chefs des régions est détaillé.
+                <br><br>N'hésitez pas à vous pré-inscrire aux nombreuses activités !
             </p>
 
             <!-- Planning -->
@@ -63,10 +63,11 @@
                 <p>Trouvez ici trois plats aléatoires gastronomiques français.
                     <br>Pour en voir plus cliquez sur un des plats !
                 </p>
-                <!-- Faire les animations des images aléatoires en js -->
+                <!-- Faire les animations des images aléatoires en php -->
                 <img src="" alt="">
                 <img src="" alt=""> 
                 <img src="" alt="">
+                <a href="region.php"><button>Découvrez tout les plats présents</button></a>
             </section>
 
             <!-- FAQ -->
@@ -129,13 +130,13 @@
             <!-- Sponsors -->
             <section class="sponsors">
                 <h2>Sponsors</h2>
-                <p>
+                <div>
                     <img src="Image/logo-partenaires/logo-bonduelle.png" alt="logo bonduelle" width=150px>
                     <img src="Image/logo-partenaires/logo-lustucru.png" alt="logo lustucru" width=150px> 
                     <img src="Image/logo-partenaires/logo-nestle.png" alt="logo nestlé" width=150px>
                     <img src="Image/logo-partenaires/logo-volvic.png" alt="logo volvic" width=150px>
                     <img src="Image/logo-partenaires/logo-styorre.png" alt="logo St Yorre" width=150px>
-                </p>
+                </div>
             </section>
 
             <?php

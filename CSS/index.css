@@ -1,14 +1,12 @@
 .main {
     display: flex;
     flex-direction: column ;
-    font-family: Josefin Sans Thin;
-    font-size : 20px;
 }
-h1 {
-    color : #e8a670;
-    font-family: Bittermilk;
-    font-size : 42px;
+
+.main > p{
+    padding: 0 20%;
 }
+
 h1, p {
     text-align: center;
 }
@@ -34,6 +32,7 @@ a {
     align-items: center;
 }
 
+
 /* Introduction */
 .banniere {
     background-image: url("../Image/images-accueil/marche.jpg");
@@ -53,14 +52,19 @@ a {
     width : 40%;
     z-index: 100;
 }
-.intro > h1 {
-    font-family: Last Dream;
-    font-size : 58px;
-}
+
 
 /* Sponsors images */
-.sponsors > p >img {
-   margin: 0px 5%; 
+.sponsors > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+.sponsors > div >img {
+    margin: 0px 5%; 
 }
 
 /* Tableau planning */
