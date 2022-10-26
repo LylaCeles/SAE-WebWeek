@@ -5,7 +5,7 @@
 
     <title>The European Meal Tour</title>
 
-    <link rel="stylesheet" href="style.css">   
+    <link rel="stylesheet" href="./CSS/Animation.css">   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 
   </head>
@@ -18,65 +18,122 @@
       </div>
 
     </header>
-    <section id="presentation">
-      <div id="TitreAnimation">
-        <h2>Théatre culinaire</h2>
-      </div>
-      <div id="prestations">
-        <div class="imagesPrestations">
-          <h4>Horaire</h4>
-          <p>Samedi à 12h</p> <br> <p>Dimanche à 12h</p>
-        </div>
-        <div class="imagesPrestations">
-          <h4>Lieux</h4>
-          <p>La place de concert</p>
-        </div>
-      </div>
-    </section>
 
-    <section id="presentation">
-      <div id="TitreAnimation">
-        <h2>Atelier d'apprentissage</h2>
-      </div>
-      <div id="prestations">
-        <div class="imagesPrestations">
-          <h4>Horaire</h4>
-          <p>Samedi à 12</p> <br> <p>Dimanche à 12h</p>
-        </div>
-        <div class="imagesPrestations">
-          <h4>Lieux</h4>
-          <p>L'école de cuisine</p>
-        </div>
-      </div>
-    </section>
+    <section class="main" id="produits">
+
+      <div class="content">
+          <div class="card">
+              <div class="left">
+                  <h1>Théâtre culinaire</h1>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus sed deleniti expedita qui earum eius voluptate maiores. Necessitatibus saepe, delectus facilis commodi fugiat, impedit ducimus numquam cumque quibusdam excepturi quae!</p>
+                  <button>Se préinscrire</button>
+              </div>
+              <div class="right">
+                  <img src="./Image/theatre.jpg" alt="">
+              </div>
+          </div>
 
 
-    <section id="presentation">
-      <div id="TitreAnimation">
-        <h2>Tournoi gastronomique</h2>
+          <table class="table-style">
+
+            <thead>
+                <tr>
+                    <th>Horaire</th>
+                    <th>Lieux</th>
+                    <th>Tarif</th>
+                </tr>
+            </thead>
+            
+    
+            <tbody>
+                <tr>
+                    <td>12h</td>
+                    <td>Rue des Potiers</td>
+                    <td>Pas cher wlh</td>
+                </tr>
+            </tbody>
+    
+        </table>
+
+        <div id="premierTrait"></div>
+
+
+          <div class="card">
+              <div class="left">
+                  <h1>Ateliers apprentissages</h1>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem in ipsa suscipit, odit hic voluptates excepturi dignissimos eum fugiat harum et, libero ut molestias magnam deserunt nesciunt. Error, fugiat ut. </p>
+                  <button>Se préinscrire</button>
+              </div>
+              <div class="right">
+                  <img src="./Image/atelier.jpg" alt="">
+              </div>
+          </div>
+
+
+          <table class="table-style">
+
+            <thead>
+                <tr>
+                    <th>Horaire</th>
+                    <th>Lieux</th>
+                    <th>Tarif</th>
+                </tr>
+            </thead>
+            
+    
+            <tbody>
+                <tr>
+                    <td>12h</td>
+                    <td>Rue des Potiers</td>
+                    <td>Pas cher wlh</td>
+                </tr>
+            </tbody>
+    
+        </table>
+
+        <div id="premierTrait"></div>
+
+
+
+        <div class="card">
+          <div class="left">
+              <h1>Concours</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt maiores fuga debitis, eaque nostrum reprehenderit ipsum fugiat fugit modi, temporibus nihil, inventore enim! Quos veniam facere, ut vitae iusto deleniti. </p>
+              <button>Se préinscrire</button>
+          </div>
+          <div class="right">
+              <img src="./Image/tournoi.jpg" alt="">
+          </div>
       </div>
-      <div id="prestations">
-        <div class="imagesPrestations">
-          <h4>Horaire</h4>
-          <p>Samedi à 12h</p> <br> <p>Dimanche à 12h</p>
-        </div>
-        <div class="imagesPrestations">
-          <h4>Lieux</h4>
-          <p>Place Top Chef</p>
-        </div>
+
+
+      <table class="table-style">
+
+        <thead>
+            <tr>
+                <th>Horaire</th>
+                <th>Lieux</th>
+                <th>Tarif</th>
+            </tr>
+        </thead>
+        
+
+        <tbody>
+            <tr>
+                <td>12h</td>
+                <td>Rue des Potiers</td>
+                <td>Pas cher wlh</td>
+            </tr>
+        </tbody>
+
+    </table>
+
+
       </div>
-    </section>
+  </section>
 
 
 
-    <section id="tourisme">
-      <h2>Les animations</h2>
-      <ul>
-        <li id="theatre"><p>Théatre culinaire</p></li>
-        <li id="tournoi"><p>Tournoi gastronomique</p></li>
-        <li id="atelier"><p>Ateliers d'apprentissage</p></li>
-      </ul>
-    </section>
     <footer>
       <div id="copyrightEtIcons">
         <div id="copyright">
