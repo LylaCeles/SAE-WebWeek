@@ -9,16 +9,24 @@ class Personne{
 
     
 
-    public function __construct($id,$nom, $prenom, $adresse_mail, $nb_place){
+    public function __construct($id,$nom, $prenom, $adresse_mail){
 
         $this->nom= $nom;
         $this->prenom= $prenom;
         $this->adresse_mail= $adresse_mail;
         $this->id= $id;
-        $this->nb_place= $nb_place;
+        
         
         
 
+    }
+
+    public function affiche(){
+        echo "Nom: ".$this->nom."<br>";
+        echo "Prenom: ".$this->prenom."<br>";
+        echo "Adresse mail :".$this->adresse_mail."<br>";
+        echo "id :".$this->id."<br>";
+        
     }
 
 
