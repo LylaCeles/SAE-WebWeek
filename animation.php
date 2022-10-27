@@ -38,31 +38,8 @@
               </div>
           </div>
 
-
-          <table class="table-style">
-
-            <thead>
-                <tr>
-                    <th>Horaire</th>
-                    <th>Durée</th>
-                    <th>Lieux</th>
-                    <th>Tarif</th>
-                </tr>
-            </thead>
-            
-    
-            <tbody>
-                <tr>
-                    <td>16h30 vendredi et samedi
-                        <br>11h30 samedi et dimanche
-                    </td>
-                    <td>1h</td>
-                    <td>Place du Breuil</td>
-                    <td>15 euros/personne</td>
-                </tr>
-            </tbody>
-    
-        </table>
+        <?php affichageGlobalAnimation($listeAnim, "Spectacle")?>
+          
 
         <div id="premierTrait"></div>
 
@@ -79,28 +56,7 @@
           </div>
 
 
-          <table class="table-style">
-
-            <thead>
-                <tr>
-                    <th>Horaire</th>
-                    <th>Durée</th>
-                    <th>Lieux</th>
-                    <th>Tarif</th>
-                </tr>
-            </thead>
-            
-    
-            <tbody>
-                <tr>
-                    <td>14h et 18h vendredi et samedi</td>
-                    <td>2h</td>
-                    <td>Place du Breuil</td>
-                    <td>30 euros/personne</td>
-                </tr>
-            </tbody>
-    
-        </table>
+          <?php affichageGlobalAnimation($listeAnim, "Apprentissage")?>
 
         <div id="premierTrait"></div>
         
@@ -115,28 +71,7 @@
           </div>
       </div>
 
-      <table class="table-style">
-
-        <thead>
-            <tr>
-                <th>Horaire</th>
-                <th>Durée</th>
-                <th>Lieux</th>
-                <th>Tarif</th>
-            </tr>
-        </thead>
-        
-
-        <tbody>
-            <tr>
-                <td>14h dimanche</td>
-                <td>Toute la journée jusqu'à 22h</td>
-                <td>Place du Breuil</td>
-                <td>Gratuit</td>
-            </tr>
-        </tbody>
-
-      </table>
+      <?php affichageGlobalAnimation($listeAnim, "Concours")?>
       <br>
     </div>
 </section>
