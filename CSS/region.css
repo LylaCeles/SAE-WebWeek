@@ -40,6 +40,10 @@ section.flex > h3{
   transform: rotateY(180deg);
 }
 
+.container p{
+  font-size: 14px;
+}
+
 .card {
   height: 100%;
   width: 100%;
@@ -59,20 +63,24 @@ section.flex > h3{
 }
 
 .front {
-  background-image: url(https://source.unsplash.com/random/350x500);
-}
+  background-position: center;
+  background-size: cover;
+} 
 
 .back {
-  background-color: #3a3a3a;
+  background-color: #e1e1e1;
   transform: rotateY(180deg);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 5rem;
+  gap: 0.01rem;
+}
+.back > div{
+  width: 100%;
 }
 
-.back > p {
+.back p {
   padding: 0 10px;
 }
 
