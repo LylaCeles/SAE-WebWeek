@@ -8,27 +8,28 @@
       		require_once("Php/meta.php");
     ?>
   </head>
-  <body>
+<body>
 
     <?php
       require_once("./Php/header.php")
     ?>
 
-    <section>
-      <div id="imagePrincipale">
-        <h1>Animations</h1>
+<section>
+    <div id="principale">
+        <h2>Animations</h2>
         <div id="premierTrait"></div>
+        <br>
         <h3>Vous retrouverez l'ensemble des animations de notre évènement ici</h3>
-      </div>
-    </section>
+    </div>
+</section>
 
-    <section class="main" id="produits">
+<section class="main" id="produits">
 
-      <div class="content">
+    <div class="content">
           <div class="card">
               <div class="left">
-                  <h1>Théâtre culinaire</h1>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus sed deleniti expedita qui earum eius voluptate maiores. Necessitatibus saepe, delectus facilis commodi fugiat, impedit ducimus numquam cumque quibusdam excepturi quae!</p>
+                  <h2>Théâtre culinaire</h2>
+                  <p>Découvrez les histoires qui se cachent derrière certaines spécialités grâce à ce spectacle culinaire.</p>
                   <button>Se préinscrire</button>
               </div>
               <div class="right">
@@ -42,6 +43,7 @@
             <thead>
                 <tr>
                     <th>Horaire</th>
+                    <th>Durée</th>
                     <th>Lieux</th>
                     <th>Tarif</th>
                 </tr>
@@ -50,9 +52,12 @@
     
             <tbody>
                 <tr>
-                    <td>12h</td>
-                    <td>Rue des Potiers</td>
-                    <td>Pas cher wlh</td>
+                    <td>16h30 vendredi et samedi
+                        <br>11h30 samedi et dimanche
+                    </td>
+                    <td>1h</td>
+                    <td>Place du Breuil</td>
+                    <td>15 euros/personne</td>
                 </tr>
             </tbody>
     
@@ -63,8 +68,8 @@
 
           <div class="card">
               <div class="left">
-                  <h1>Ateliers apprentissages</h1>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem in ipsa suscipit, odit hic voluptates excepturi dignissimos eum fugiat harum et, libero ut molestias magnam deserunt nesciunt. Error, fugiat ut. </p>
+                  <h2>Ateliers apprentissages</h2>
+                  <p>Venez apprendre à cuisiner des spécialités culinaires. Les aliments et le matériel sont compris. Un chef vous encadrera et vous pourrez repartir avec votre plat !</p>
                   <button>Se préinscrire</button>
               </div>
               <div class="right">
@@ -78,6 +83,7 @@
             <thead>
                 <tr>
                     <th>Horaire</th>
+                    <th>Durée</th>
                     <th>Lieux</th>
                     <th>Tarif</th>
                 </tr>
@@ -86,9 +92,10 @@
     
             <tbody>
                 <tr>
-                    <td>12h</td>
-                    <td>Rue des Potiers</td>
-                    <td>Pas cher wlh</td>
+                    <td>14h et 18h vendredi et samedi</td>
+                    <td>2h</td>
+                    <td>Place du Breuil</td>
+                    <td>30 euros/personne</td>
                 </tr>
             </tbody>
     
@@ -98,8 +105,8 @@
         
         <div class="card">
           <div class="left">
-              <h1>Concours</h1>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt maiores fuga debitis, eaque nostrum reprehenderit ipsum fugiat fugit modi, temporibus nihil, inventore enim! Quos veniam facere, ut vitae iusto deleniti. </p>
+              <h2>Concours</h2>
+              <p>Voici le concours des différents plats proposés par chaque chef des régions volontaires. Un jury composé de cuisiniers ainsi que de vous, leur public, est mis en place.</p>
               <button>Se préinscrire</button>
           </div>
           <div class="right">
@@ -112,6 +119,7 @@
         <thead>
             <tr>
                 <th>Horaire</th>
+                <th>Durée</th>
                 <th>Lieux</th>
                 <th>Tarif</th>
             </tr>
@@ -120,23 +128,22 @@
 
         <tbody>
             <tr>
-                <td>12h</td>
-                <td>Rue des Potiers</td>
-                <td>Pas cher wlh</td>
+                <td>14h dimanche</td>
+                <td>Toute la journée jusqu'à 22h</td>
+                <td>Place du Breuil</td>
+                <td>Gratuit</td>
             </tr>
         </tbody>
 
-    </table>
+      </table>
+      <br>
+    </div>
+</section>
 
+<?php
+    require_once("./Php/footer.php")
+?>
 
-      </div>
-  </section>
-
-
-    <?php
-      require_once("./Php/footer.php")
-    ?>
-
-  </body>
+</body>
 
 </html>

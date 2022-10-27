@@ -40,7 +40,7 @@
             </div>
             <div class="form_group">
                 <label for="nb_places">Nombre de places :</label>
-                <input type="text" name="nb_places" required>
+                <input type="number" name="nb_places" required>
             </div>
 
             <div class="accordion">
