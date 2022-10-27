@@ -36,7 +36,7 @@
     <h3>Découvrez ici la gastronomie Française ! <br>
       Choisissez un plat : vous aurez son histoire , ses ingrédients et sa recette </h3>
 
-    <img src="./Image/baniere.jpg" alt="" class="img">
+    <img src="./Image/fresque.png" alt="" class="img">
     </div>
 
     <h2>Les produits par régions</h2>

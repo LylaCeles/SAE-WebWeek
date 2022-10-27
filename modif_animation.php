@@ -5,16 +5,12 @@
 <html lang="fr">
 
 	<head>
-	  	<link rel="stylesheet" type="text/css" href="CSS/Global.css">
-	  	<link rel="stylesheet" type="text/css" href="CSS/connexion.css">
-	  	<meta http-equiv="content-type" content="text/html"; charset="UTF-8"/>
-		<link rel="icon" type="image/x-icon" href="">
-
-	  	<meta name="description" content=""/>
+	<?php require_once("./Php/meta.php");?>
 		<title>The european meals tour</title>
 		</head>
 	<body>
 		<?php
+        require_once("./Php/header.php");
 
 			// Protection pour que personne ne puisse accèder a la page s'il n'est pas passé par le formulaire de la page connexion.php
 			if (isset($_GET["id"])){
@@ -26,19 +22,26 @@
         ?>
 
 					<fieldset>
-                        <form action="" method="POST">
-            		    <legend></legend>
-                            <?php
-                            
-								
-							
-								affichage($id_anim, $listeAnim,$listePerso);
-
-?>
-                         <form>
-				</fieldset>
 
 					<?php
+							affichage($id_anim, $listeAnim,$listePerso);
+							?>
+							</fieldset>
+
+							<fieldset>
+								<legend>Modifications</legend>
+                        <form action="" method="POST">
+								<select name="selectPerso">
+									<!-- Le select aura la valeur de l'id de la personne -->
+                           		<?php supression($id_anim,$listePerso );?>					
+								
+								<select>
+								<input type='submit' name='envoie' value="Supprimer l'inscription">
+							</form>
+						
+			</fieldset>
+						<?php
+						require_once("./Php/footer.php");
 				}
 
 				else{
@@ -47,7 +50,6 @@
 				}
 			
 
-                require_once("./Php/footer.php")
 
 
 ?>

@@ -6,7 +6,7 @@
         <div class="bloc footer-navigation">
           <h3>Navigation</h3>
           <ul class="navigation-list">
-            <li><a href="./index.php">Acceuil</a></li>
+            <li><a href="./index.php">Accueil</a></li>
             <li><a href="./region.php" >Régions</a></li>
             <li><a href="./animation.php" >Animations</a></li>
             <li><a href="./preinscription.php">Préinscriptions</a></li>
@@ -25,7 +25,7 @@
         </div>
 
         <div class="bloc footer-reseaux">
-          <h3>Suivez nous</h3>
+          <h3>Suivez-nous</h3>
           <ul class="reseaux-list">
             <a href="http://www.instagram.com"><i class="fa fa-instagram"></i></a>
             <a href="http://www.facebook.fr"><i class="fa fa-facebook"></i></a>
@@ -35,6 +35,6 @@
         </div>
       </div>
 
-      <p>The European Meal Tour</p>
+      <p>The European Meals Tour</p>
     </footer>
 </html>
