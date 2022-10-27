@@ -22,10 +22,8 @@ class Personne{
     }
 
     public function affiche(){
-        echo "Nom: ".$this->nom."<br>";
-        echo "Prenom: ".$this->prenom."<br>";
-        echo "Adresse mail :".$this->adresse_mail."<br>";
-        echo "id :".$this->id."<br>";
+        echo ($this->nom." ".$this->prenom." : ");
+        echo $this->adresse_mail."<br>";
         
     }
 
