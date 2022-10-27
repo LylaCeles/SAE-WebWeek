@@ -3,31 +3,30 @@
     <footer>
       <div class="content-footer">
 
-        <div class="bloc footer-services">
+        <div class="bloc footer-navigation">
           <h3>Navigation</h3>
-          <ul class="services-list">
-            <li><a >Acceuil</a></li>
-            <li><a >Régions</a></li>
-            <li><a >Animations</a></li>
-            <li><a >Préinscriptions</a></li>
-            <li><a >FAQ</a></li>
-            <li><a >Contact</a></li>
+          <ul class="navigation-list">
+            <li><a href="./index.php">Acceuil</a></li>
+            <li><a href="./region.php" >Régions</a></li>
+            <li><a href="./animation.php" >Animations</a></li>
+            <li><a href="./preinscription.php">Préinscriptions</a></li>
+            <li><a href="./faq.php">FAQ</a></li>
+            <li><a href="./contact.php" >Contact</a></li>
           </ul>
         </div>
 
-        <div class="bloc footer-schedule">
+        <div class="bloc footer-horaire">
           <h3>Horaires</h3>
-          <ul class="schedule-list">
+          <ul class="horaire-list">
             <li> 19 mai 11h-0h</li>
             <li> 20 mai 11h-0h</li>
             <li> 21 mai 11h-0h</li>
           </ul>
         </div>
 
-        <div class="bloc footer-medias">
-          <h3>Our Networks</h3>
-          <ul class="media-list">
-            <li>
+        <div class="bloc footer-reseaux">
+          <h3>Suivez nous</h3>
+          <ul class="reseaux-list">
             <a href="http://www.instagram.com"><i class="fa fa-instagram"></i></a>
             <a href="http://www.facebook.fr"><i class="fa fa-facebook"></i></a>
             <a href="http://www.twitter.fr"><i class="fa fa-twitter"></i></a>

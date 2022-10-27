@@ -1,6 +1,6 @@
 <?php
 
-$connection = new PDO('mysql:host=localhost;port=3306;dbname=webweek','root','');
+$connection = new PDO('mysql:host=localhost;port=3306;dbname=web_week','root','');
                 require_once("class_animation.php");
                 require_once("class_personne.php");
                 

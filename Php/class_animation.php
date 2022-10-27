@@ -59,38 +59,38 @@ class Animation {
 
     public function afficheInfo($img){
 
-        echo('<div class="card">
-              <div class="left">
-                  <h1>Théâtre culinaire</h1>
-                  <p>'.$this->description.'</p>
-                  <button>Se préinscrire</button>
-              </div>
-              <div class="right">
-                  <img src="'.$img.'" alt="">
-              </div>
-          </div>
+        // echo('<div class="card">
+        //       <div class="left">
+        //           <h1>Théâtre culinaire</h1>
+        //           <p>'.$this->description.'</p>
+        //           <button>Se préinscrire</button>
+        //       </div>
+        //       <div class="right">
+        //           <img src="'.$img.'" alt="">
+        //       </div>
+        //   </div>
 
 
-          <table class="table-style">
+        //   <table class="table-style">
 
-            <thead>
-                <tr>
-                    <th>Horaire</th>
-                    <th>Lieux</th>
-                    <th>Tarif</th>
-                </tr>
-            </thead>
+        //     <thead>
+        //         <tr>
+        //             <th>Horaire</th>
+        //             <th>Lieux</th>
+        //             <th>Tarif</th>
+        //         </tr>
+        //     </thead>
             
     
-            <tbody>
-                <tr>
-                    <td>'.$this->horaire_debut.'</td>
-                    <td>Rue des Potiers</td>
-                    <td>Pas cher wlh</td>
-                </tr>
-            </tbody>
+        //     <tbody>
+        //         <tr>
+        //             <td>'.$this->horaire_debut.'</td>
+        //             <td>Rue des Potiers</td>
+        //             <td>Pas cher wlh</td>
+        //         </tr>
+        //     </tbody>
     
-        </table>
+        // </table>');
 
 
 

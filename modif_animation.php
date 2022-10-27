@@ -19,7 +19,7 @@
 			// Protection pour que personne ne puisse accèder a la page s'il n'est pas passé par le formulaire de la page connexion.php
 			if (isset($_GET["id"])){
 				$id_anim = $_GET["id"];
-                require_once("fonction.php");
+                require_once("Php/fonction.php");
                 
                 
 
@@ -29,13 +29,9 @@
                         <form action="" method="POST">
             		    <legend></legend>
                             <?php
-                            // var_dump($animation);
-                                if (isset($animation)){
-                                    
-                                    foreach($animation as $tab){
-                                        $tab->affiche();
-                                    }
-                                }
+                            
+
+								affichage($id_anim, $listeAnim,$listePerso);
 
 
 ?>

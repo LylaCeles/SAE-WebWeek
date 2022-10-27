@@ -10,9 +10,14 @@
 
 /* **************** Intro ************* */
 
-.container > h2{
+#intro > h2{
   text-align: center;
   margin-top: 70px;
+}
+
+#intro{
+  margin-bottom: 100px;
+  margin-top: 100px;
 }
 
 #premierTrait {
@@ -47,11 +52,7 @@
   width: 100%;
 }
 
-#formulaire > form > button{
-  margin: 40px 0;
-}
-
-input, textarea, button {
+input, textarea {
   border: none;
   width: 55%;
   padding: 15px 10px;
@@ -64,19 +65,6 @@ textarea {
   height: 120px;
 }
 
-button {
-  font-size: 1.5em;
-  background-color: #FFFAE1;
-}
-
-button:hover {
-  background-color: #e55039;
-  color: #FFFAE1;
-  cursor: pointer;
-  transition: 0.3s ease-in-out;
-}
-
-
   /* **************** MAP ************* */
 
 #localisation {
@@ -84,7 +72,7 @@ button:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #FFFAE1;
+  background-color: #fff9eb;
   padding: 0px 0px 100px 0;
 }
 
@@ -95,7 +83,7 @@ button:hover {
 #map {
   display: flex;
   justify-content: space-between;
-  column-gap: 40px;
+  column-gap: 100px;
 }
 
 .texte-map, .inté-map{
