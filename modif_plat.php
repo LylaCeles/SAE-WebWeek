@@ -5,16 +5,15 @@
 <html lang="fr">
 
 	<head>
+	  	<link rel="stylesheet" type="text/css" href="CSS/Global.css">
 	  	<link rel="stylesheet" type="text/css" href="CSS/connexion.css">
-		<title>The European Meals Tour - Modification de plats</title>
-		<?php
-      		require_once("Php/meta.php");
-    	?>
-	</head>
+	  	<meta http-equiv="content-type" content="text/html"; charset="UTF-8"/>
+		<link rel="icon" type="image/x-icon" href="">
+
+	  	<meta name="description" content=""/>
+		<title>The european meals tour</title>
+		</head>
 	<body>
-		<?php
-			require_once("./Php/header.php")
-		?>
 		<?php
 
 			// Protection pour que personne ne puisse accèder a la page s'il n'est pas passé par le formulaire de la page connexion.php
@@ -37,7 +36,7 @@
         ?>
 
 					<fieldset>
-                        <from action="" method="POST">
+                        <form action="" method="POST">
             		    <legend><?php echo $tabPlat[0]["nom_plat"] ?></legend>
 
                             <p>
@@ -50,7 +49,10 @@
                                 <textarea type="text"  name ="ingredient"><?php echo($tabPlat[0]["ingredients_plat"]); ?></textarea>
                             </p>
 
-                            
+                            <input type="file" accept="image/png, image/jpg" name="img_plat">
+
+				            <input type="submit" name="envoie" id="envoie_co">
+
                         <form>
 				</fieldset>
 
@@ -61,6 +63,18 @@
 					header('Location: connexion.php');
 					exit();
 				}
+
+
+                if (isset($_POST["description"])){
+                    if(file_get_content($chemin)!=false){
+                    $img = $_FILES["img_plat"]["name"];
+                    // $url = 'https://waytolearnx.com/wp-content/uploads/2018/09/cropped-logoWeb.png';
+                    $chemin = 'CSS/logo.png';
+                    // Enregistrer l'image
+                    file_put_contents($chemin, file_get_contents($chemin));
+                    echo("couocu");
+                    }
+                }
 			
 
 
@@ -70,9 +84,7 @@
 
 
 
-		<?php
-      		require_once("./Php/footer.php")
-   		?>				
+        
     </body>
 
 </html>

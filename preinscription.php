@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="./CSS/preinscription.css">
     <link rel="stylesheet" href="./CSS/accordion.css">
     <script src="./Script/accordion.js" defer></script>
-    <script src="./Script/preinscription.js" defer></script>
     <?php
       require_once("Php/meta.php");
     ?>

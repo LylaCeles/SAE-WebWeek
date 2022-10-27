@@ -1,14 +1,18 @@
+<!DOCTYPE html>
+<html lang="fr">
+
 <html>
     <head>
         <title>The European Meals Tour - Accueil</title>
-        <link rel = "stylesheet" href = "./CSS/index.css">
-        <link rel="stylesheet" href="./CSS/accordion.css"> 
-        <script src="./Script/accordion.js" defer></script>
         <?php
-            require_once("Php/meta.php");
+            require_once("./Php/meta.php");
         ?>
+
+                <!-- Style -->
         <link rel = "stylesheet" href = "./CSS/index.css">
         <link rel="stylesheet" href="./CSS/accordion.css"> 
+
+                <!-- Script -->
         <script src="./Script/accordion.js" defer></script>
     </head>
     <body>
@@ -25,14 +29,14 @@
             </section>
             <br>
             <p>Bienvenue sur le site du salon "The European Meals Tour" !
-                <br>Vous pourrez retrouver les différentes animations proposées avec leur date et horaires. De plus, chaque plat proposé par les chefs des régions est détaillé.
-                <br>N'hésitez pas à vous pré-inscrire aux nombreuses activités !
+                <br><br>Vous pourrez retrouver les différentes animations proposées avec leur date et horaires. De plus, chaque plat proposé par les chefs des régions est détaillé.
+                <br><br>N'hésitez pas à vous pré-inscrire aux nombreuses activités !
             </p>
 
             <!-- Planning -->
             <section class="planning">
-                <h1>Planning</h1>
-                <p>Le salon ouvre de 11h à 0h00, du 19 au 21 mai 2023.</p>
+                <h2>Planning</h2>
+                <p>Le salon ouvre de 11h à 24h, du 19 au 21 mai 2023.</p>
                 <br>
 
                 <?php
@@ -55,19 +59,20 @@
                 <a href="animation.php"><button>Plus d'informations sur les animations</button></a>
             </section>
             <section class="plat">
-                <h1>Découvrez de nouveaux plats</h1>
+                <h2>Découvrez de nouveaux plats</h2>
                 <p>Trouvez ici trois plats aléatoires gastronomiques français.
                     <br>Pour en voir plus cliquez sur un des plats !
                 </p>
-                <!-- Faire les animations des images aléatoires en js -->
+                <!-- Faire les animations des images aléatoires en php -->
                 <img src="" alt="">
                 <img src="" alt=""> 
                 <img src="" alt="">
+                <a href="region.php"><button>Découvrez tout les plats présents</button></a>
             </section>
 
             <!-- FAQ -->
             <section class="question">
-                <h1>Des questions ?</h1>
+                <h2>Des questions ?</h2>
                 <p>Trouvez ici les questions qui nous sont plus posées.</p>
                 
                 <!-- Accordéon -->
@@ -82,9 +87,7 @@
                             </div>  
                         </div>
                     </div>
-                </div>
-
-                <div class="accordion">
+                
                     <div class="accordion-item">
                     <div class="accordion-item-header">
                         <p>Qui participe au concours ?</p>
@@ -95,9 +98,7 @@
                             </div>  
                         </div>
                     </div>
-                </div>
 
-                <div class="accordion">
                     <div class="accordion-item">
                     <div class="accordion-item-header">
                         <p>Qui sont les jury du concours ?</p>
@@ -110,9 +111,7 @@
                             </div>  
                         </div>
                     </div>
-                </div>
 
-                <div class="accordion">
                     <div class="accordion-item">
                     <div class="accordion-item-header">
                         <p>Les animations sont-elles tout public ?</p>
@@ -130,14 +129,14 @@
 
             <!-- Sponsors -->
             <section class="sponsors">
-                <h1>Sponsors</h1>
-                <p>
+                <h2>Sponsors</h2>
+                <div>
                     <img src="Image/logo-partenaires/logo-bonduelle.png" alt="logo bonduelle" width=150px>
                     <img src="Image/logo-partenaires/logo-lustucru.png" alt="logo lustucru" width=150px> 
                     <img src="Image/logo-partenaires/logo-nestle.png" alt="logo nestlé" width=150px>
                     <img src="Image/logo-partenaires/logo-volvic.png" alt="logo volvic" width=150px>
                     <img src="Image/logo-partenaires/logo-styorre.png" alt="logo St Yorre" width=150px>
-                </p>
+                </div>
             </section>
 
             <?php
