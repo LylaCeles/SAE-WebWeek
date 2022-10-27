@@ -27,16 +27,14 @@
 <html lang="fr">
 
 	<head>
-	  	<link rel="stylesheet" type="text/css" href="CSS/global.css">
-		<link rel="stylesheet" type="text/css" href="CSS/admin.css">
-	  	<meta http-equiv="content-type" content="text/html"; charset="UTF-8"/>
-		<link rel="icon" type="image/x-icon" href="">
+	<?php require_once("./Php/meta.php");?>
 
 	  	<meta name="description" content=""/>
-		<title>The European Meals Tour</title>
+		<title>The european meals tour</title>
 		</head>
 	<body>
 		<?php
+        require_once("./Php/header.php");
 
 			// Protection pour que personne ne puisse accèder a la page s'il n'est pas passé par le formulaire de la page connexion.php
 			if (isset($_POST["id"])){
@@ -46,11 +44,10 @@
 				if ($mdp == "SAE_W€bW€€k" && $nom_admin=="MageNoirToutPuissant"){
 					?>
 
-					<h2>Vous pouvez modifier certaines informations présente sur le site.</h2>
-					<h3>Cliquez sur les éléments que vous souhaiter changer.</h3>
+					<p>Vous pouvez modifier certaines informations présente sur le site</p>
 
 					<fieldset>
-            		<legend><h3>Plats</h3></legend>
+            		<legend>Plat</legend>
 
 					<?php
 // Création d'une boucle qui va afficher automatiquement tous les plats en fonctions des régions
@@ -59,7 +56,7 @@
 					// print_r($tabPlat);
 					for ($i = 0; $i<count($tabRegion); $i++){
 						?>
-							<h4><?php echo $tabRegion[$i]["nom_region"]; ?></h4>
+							<h4><?php echo $tabRegion[$i]["nom_region"]; ?> </h4>
 
 
 						<?php
@@ -78,10 +75,10 @@
 
 					?>
 				</fieldset>
-				<br>
-				<br>
+
+
 				<fieldset>
-            		<legend><h3>Animations</h3></legend>
+            		<legend>Animation</legend>
 
 					<?php
 // Même chose pour la table animation
@@ -90,7 +87,7 @@
 								// var_dump($tabPlat);
 								?>
 								
-								<a href='modif_animation.php?id=<?php echo $tabAnimation[$j]["id_animation"]; ?>'><?php echo$tabAnimation[$j]["nom_animation"].'<br>';?></a>
+								<a href='modif_animation.php?id=<?php echo $tabAnimation[$j]["id_animation"]; ?>'><?php echo$tabAnimation[$j]["nom_animation"];?></a>
 								<br>
 								<?php
 							
@@ -111,7 +108,9 @@
 		
 
 
-
+			
+                require_once("./Php/footer.php")
+            
 ?>
 
 

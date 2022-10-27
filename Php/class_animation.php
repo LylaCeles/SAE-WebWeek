@@ -9,21 +9,24 @@ class Animation {
     public $date;
     public $inscrit = array();
     public $nb_place;
+    public $tarif;
+   
     public $id;
     public $horaire_debut;
     public $horaire_fin;
 
 
-    public function __construct($id, $nom, $type, $description, $horaire, $date, $horaire_debut, $horaire_fin, $nb_place, $inscrit){
+    public function __construct($id, $nom, $type, $description, $date, $horaire_debut, $horaire_fin, $nb_place,$tarif, $inscrit){
         $this->nom = $nom;
         $this->id = $id;
         $this->type = $type;
         $this->description = $description;
-        $this->horaire = $horaire;
+
         $this->date = $date;
         $this->nb_place = $nb_place;
         $this->horaire_debut = $horaire_debut;
         $this->horaire_fin = $horaire_fin;
+        $this->tarif = $tarif;
         // echo($this->nom);
         // echo($this->id);
         $i=0;
@@ -43,54 +46,57 @@ class Animation {
     
     public function affichePerso($personne){
         //permet d'afficher toute les info sur les personnes inscrites
-        echo("<h1>".$this->nom."</h1>");
-     
-    
+       
+        
+        echo("<fieldset><legend>Liste des inscrits</legend>");
+        echo("<li>");
         foreach($this->inscrit as $tab){
             
             for ($i=0; $i <count($personne) ; $i++) { 
                 if ($tab["id"]== $personne[$i]->id){
-                    
+                    echo("<ul>");
                     $personne[$i]->affiche();
+                    echo("</ul>");
                 }
             }
         }
+        if ($this->inscrit == null) {
+            echo("personne ne s'est inscrit a cette animation");
+        }
+        echo("</li>");
+        echo("</fieldset>");
+
     }
 
-    public function afficheInfo($img){
+    public function afficheInfo(){
+//Affiche un tableau avec les info de l'animation
+        echo("<h2>".$this->nom."</h2>");
+        echo("<p>".$this->description."</p>");
+        echo('
+            <table class="table-style">
 
-        // echo('<div class="card">
-        //       <div class="left">
-        //           <h1>Théâtre culinaire</h1>
-        //           <p>'.$this->description.'</p>
-        //           <button>Se préinscrire</button>
-        //       </div>
-        //       <div class="right">
-        //           <img src="'.$img.'" alt="">
-        //       </div>
-        //   </div>
-
-
-        //   <table class="table-style">
-
-        //     <thead>
-        //         <tr>
-        //             <th>Horaire</th>
-        //             <th>Lieux</th>
-        //             <th>Tarif</th>
-        //         </tr>
-        //     </thead>
+            <thead>
+                <tr>
+                    <th>Horaire de début</th>
+                    <th>Horaire de fin</th>
+                    <th>Nombre de place</th>
+                    <th>Tarif</th>
+                </tr>
+            </thead>
             
     
-        //     <tbody>
-        //         <tr>
-        //             <td>'.$this->horaire_debut.'</td>
-        //             <td>Rue des Potiers</td>
-        //             <td>Pas cher wlh</td>
-        //         </tr>
-        //     </tbody>
+            <tbody>
+                <tr>
+                    <td>'.$this->horaire_debut.'</td>
+                    <td>'.$this->horaire_fin.'</td>
+                    <td>'.$this->date.'</td>
+                    <td>'.$this->nb_place.'</td>
+                    <td>'.$this->tarif.'</td>
+                  
+                </tr>
+            </tbody>
     
-        // </table>');
+        </table>');
 
 
 

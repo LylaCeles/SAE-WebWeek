@@ -23,6 +23,7 @@ $connection = new PDO('mysql:host=localhost;port=3306;dbname=web_week','root',''
             $tabAnimation = $resultat -> fetchAll();
             $resultat -> closeCursor();
 
+
             $requete = 'SELECT * FROM preinscrit';
             $resultat = $connection ->query($requete);
             $tabInscri = $resultat -> fetchAll();
@@ -61,9 +62,9 @@ $connection = new PDO('mysql:host=localhost;port=3306;dbname=web_week','root',''
                     $listeInscri=[];
                 }
                 // print_r($listeInscri);
-               
+
                 //création des animations, avec listeInscrit qui est composer des id des personnes
-                $listeAnim[$i]= new Animation($tabAnimation[$i]["id_animation"],$tabAnimation[$i]["nom_animation"] , $tabAnimation[$i]["type_animation"], $tabAnimation[$i]["description_animation"], $tabAnimation[$i]["id_animation"],$tabAnimation[$i]["date_animation"], $tabAnimation[$i]["horaire_debut"], $tabAnimation[$i]["horaire_fin"], $tabAnimation[$i]["nb_places"], $listeInscri);
+                $listeAnim[$i]= new Animation($tabAnimation[$i]["id_animation"],$tabAnimation[$i]["nom_animation"] , $tabAnimation[$i]["type_animation"], $tabAnimation[$i]["description_animation"], $tabAnimation[$i]["date_animation"], $tabAnimation[$i]["horaire_debut"], $tabAnimation[$i]["horaire_fin"], $tabAnimation[$i]["nb_places"],$tabAnimation[$i]["tarif"], $listeInscri);
                 // print_r($listeInscri);
                 
             }
@@ -78,10 +79,51 @@ $connection = new PDO('mysql:host=localhost;port=3306;dbname=web_week','root',''
 
             for($i=0;$i<count($listeAnim); $i++){
                 if ($listeAnim[$i]->id == $idAnim){
-                    
+                    $listeAnim[$i]->afficheInfo();
                     $listeAnim[$i]->affichePerso($listePerso);
                 }
             }
+            
+        }
+
+
+        function affichageGlobalAnimation($listeAnim, $typeAnimation){
+            // Affiche toute les informations des animations contenu dans listeAnim en fonction de leur type
+
+            echo('<table class="table-style">
+
+            <thead>
+                <tr>
+                    <th> </th>
+                    <th>Horaire</th>
+                  
+                    <th>Date</th>
+                    <th>Nombre de place</th>
+                    <th>Tarif</th>
+                </tr>
+            </thead>
+            
+    
+            <tbody>');
+            for ($i=0; $i <count($listeAnim) ; $i++) { 
+                if ($listeAnim[$i]->type== $typeAnimation){
+                    $date = new DateTime($listeAnim[$i]->date);
+                    $heureD = new DateTime($listeAnim[$i]->horaire_debut);
+                    $heureF = new DateTime($listeAnim[$i]->horaire_fin);
+
+
+                    echo("<tr>");
+                    echo('<td>'.$listeAnim[$i]->nom.'</td>
+                        <td>'.$heureD->format('G:i').' - '.$heureF->format('G:i').'</td>
+                    
+                    <td>'.$date->format('j/n/Y').'</td>
+                    <td>'.$listeAnim[$i]->nb_place.'</td>
+                    <td>'.$listeAnim[$i]->tarif.'€</td></tr>');
+                }
+            }
+            echo("</tbody>
+    
+            </table");
         }
             
             
