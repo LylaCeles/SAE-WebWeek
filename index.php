@@ -4,6 +4,7 @@
 <html>
     <head>
         <title>The European Meals Tour - Accueil</title>
+
         <?php
             require_once("./Php/meta.php");
         ?>
@@ -124,7 +125,9 @@
                     </div>
                 </div>
 
-                <a href="faq.php"><button>Plus de questions ici</button></a>
+                <a href="faq.php">
+                <button class="btn" type="button"  >Plus de questions ici</button>
+                </a> 
             </section>
 
             <!-- Sponsors -->
