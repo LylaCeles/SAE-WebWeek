@@ -21,6 +21,14 @@
   background-color: #e8a670;
 }
 
+
+
+.region {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 /* ******************* CARTES ******************** */
 
 .container {
