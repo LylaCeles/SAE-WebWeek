@@ -89,9 +89,8 @@ $connection = new PDO('mysql:host=localhost;port=3306;dbname=web_week','root',''
 
         function affichageGlobalAnimation($listeAnim, $typeAnimation){
             // Affiche toute les informations des animations contenu dans listeAnim en fonction de leur type
-
             echo('<table class="table-style">
-
+            
             <thead>
                 <tr>
                     <th> </th>
@@ -121,9 +120,17 @@ $connection = new PDO('mysql:host=localhost;port=3306;dbname=web_week','root',''
                     <td>'.$listeAnim[$i]->tarif.'€</td></tr>');
                 }
             }
-            echo("</tbody>
-    
-            </table");
+            echo("</tbody></table>");
+
+            
+        }
+
+        function supression($idAnim, $listePerso){
+            for($i=0;$i<count($listeAnim); $i++){
+                if ($listeAnim[$i]->id == $idAnim){
+                    $listeAnim[$i]->listeCheck();
+                }
+            }
         }
             
             

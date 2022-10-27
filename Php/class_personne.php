@@ -22,11 +22,14 @@ class Personne{
     }
 
     public function affiche(){
-        echo ($this->nom." ".$this->prenom." : ");
-        echo $this->adresse_mail."<br>";
+        echo ($this->nom." ".$this->prenom." : ".$this->adresse_mail."<br>");
         
     }
 
+
+    public function listeCheck(){
+        echo ("<option value='".$this->id."'>".$this->nom." ".$this->prenom."</option><br>");
+    }
 
 }
 
