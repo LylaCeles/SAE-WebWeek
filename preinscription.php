@@ -69,7 +69,7 @@
 
                             <p>Besoin de plus d'informations sur l'activité  ?</p>
 
-                            <button><a href="#">En savoir plus</a></button>
+                            <a href="#"><button class="btn" type="button"  >En savoir plus</button></a>
 
                         </div>
                     </div>
@@ -98,8 +98,7 @@
                             <label for="horaire4">18h00 samedi</label>
 
                             <p>Besoin de plus d'informations sur l'activité  ?</p>
-
-                            <button><a href="#">En savoir plus</a></button>
+                            <a href="#"><button class="btn" type="button"  >En savoir plus</button></a>
                         </div>
                     </div>
                 </div>
@@ -119,7 +118,7 @@
 
                             <p>Besoin de plus d'informations sur l'activité  ?</p>
 
-                            <button><a href="#">En savoir plus</a></button>
+                            <a href="#"><button class="btn" type="button"  >En savoir plus</button></a>
                         </div>
                     </div>
                 </div>

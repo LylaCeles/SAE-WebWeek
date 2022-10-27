@@ -15,10 +15,12 @@
     ?>
 
     <section class="container">
+      <section id="intro">     
         <h2>Contact</h2>
         <div id="premierTrait"></div>
         <h3>Vous n'avez pas trouvé de réponses  à votre problème dans notre  <a href="#">FAQ ?</a> Pas de problème ! <br>
             Vous pouvez nous contacter avec ce formulaire de contact</h3>
+      </section>
   
 
       <section id="formulaire">
@@ -27,7 +29,7 @@
             <input placeholder="Nom">
             <input placeholder="E-mail">
             <textarea placeholder="Votre message ici..."></textarea>
-            <button>Envoyer</button>
+            <a href="#"><button class="btn" type="button"  >Envoyer</button></a>
           </form>
           </div>
     
