@@ -45,7 +45,7 @@
 
               <div class="container">
                 <div class="card">
-                  <div class="front"></div>
+                  <div class="front" style="background-image: url(./Image/plat/31f170c8-c7b6-4678-aa82-595e83be6c6d.jpg);"></div>
                   <div class="back">
                     <h3>Back of Card</h3>
                     <p>Additional info on the back of the card</p>
