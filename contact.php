@@ -27,7 +27,7 @@
             <input placeholder="Nom">
             <input placeholder="E-mail">
             <textarea placeholder="Votre message ici..."></textarea>
-            <button>Envoyer</button>
+            <button class="btn">Envoyer</button>
           </form>
           </div>
     
