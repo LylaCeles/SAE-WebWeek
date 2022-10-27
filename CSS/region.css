@@ -1,19 +1,18 @@
 /* **************** TITRE ************* */
-
-#TextePrincipal {
-  padding-top: 60px;
-  background-size: cover;
-  height: 500px;
+section.flex{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
-#imagePrincipale {
-  margin-top: 100px;
-  margin-bottom: 100px;
-  padding-top: 60px;
-  background: url(Image/baniere.jpg) no-repeat fixed 50% 50%;
-  background-size: cover;
-  height: 650px;
+section.flex > h2{
+  margin-top: 70px;
 }
+section.flex > h3{
+  margin-top: 70px;
+}
+
 #premierTrait {
   height: 1px;
   width: 25%;
@@ -22,12 +21,14 @@
 }
 
 
+/* **************** IMAGE ************* */
 
-.region {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.img{
+  width: 50%;
 }
+
+
+
 
 /* ******************* CARTES ******************** */
 
@@ -74,15 +75,14 @@
   gap: 5rem;
 }
 
-.back > h1 {
-font-size: 3em;
-margin-top: 0px;
+.back > p {
+  padding: 0 10px;
 }
 
 .lescartes {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin : 50px 50px 0px 50px;
+  margin : 50px 50px 30px 50px;
   row-gap: 50px; 
 }
