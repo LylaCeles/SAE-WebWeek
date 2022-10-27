@@ -6,7 +6,9 @@
   justify-content: center;
   align-content: center;
 }
-
+a{
+  color:#e8a670;
+}
 
 /* **************** Intro ************* */
 
@@ -33,7 +35,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #524A3A;
+  background-color: #e7e7e7;
+  border: 1px solid #000;
   color: #FFF;
 }
 
@@ -55,6 +58,8 @@ input, textarea {
   margin: 1px 0;
   font-size: 1.2em;
   border-radius: 8px;
+  font-family: "Josefin Sans" ;
+  font-size : 20px;
 }
 
 textarea {
@@ -68,7 +73,6 @@ textarea {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #fff9eb;
   padding: 0px 0px 100px 0;
 }
 
