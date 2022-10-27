@@ -61,9 +61,9 @@ $connection = new PDO('mysql:host=localhost;port=3306;dbname=web_week','root',''
                     $listeInscri=[];
                 }
                 // print_r($listeInscri);
-               
+
                 //création des animations, avec listeInscrit qui est composer des id des personnes
-                $listeAnim[$i]= new Animation($tabAnimation[$i]["id_animation"],$tabAnimation[$i]["nom_animation"] , $tabAnimation[$i]["type_animation"], $tabAnimation[$i]["description_animation"], $tabAnimation[$i]["id_animation"],$tabAnimation[$i]["date_animation"], $tabAnimation[$i]["horaire_debut"], $tabAnimation[$i]["horaire_fin"], $tabAnimation[$i]["nb_places"], $listeInscri);
+                $listeAnim[$i]= new Animation($tabAnimation[$i]["id_animation"],$tabAnimation[$i]["nom_animation"] , $tabAnimation[$i]["type_animation"], $tabAnimation[$i]["description_animation"], $tabAnimation[$i]["date_animation"], $tabAnimation[$i]["horaire_debut"], $tabAnimation[$i]["horaire_fin"], $tabAnimation[$i]["nb_places"],$tabAnimation[$i]["tarif"], $listeInscri);
                 // print_r($listeInscri);
                 
             }
@@ -78,10 +78,11 @@ $connection = new PDO('mysql:host=localhost;port=3306;dbname=web_week','root',''
 
             for($i=0;$i<count($listeAnim); $i++){
                 if ($listeAnim[$i]->id == $idAnim){
-                    
+                    $listeAnim[$i]->afficheInfo();
                     $listeAnim[$i]->affichePerso($listePerso);
                 }
             }
+            
         }
             
             

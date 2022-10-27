@@ -5,16 +5,15 @@
 <html lang="fr">
 
 	<head>
-	  	<link rel="stylesheet" type="text/css" href="CSS/Global.css">
-	  	<link rel="stylesheet" type="text/css" href="CSS/connexion.css">
-	  	<meta http-equiv="content-type" content="text/html"; charset="UTF-8"/>
-		<link rel="icon" type="image/x-icon" href="">
+    <?php require_once("./Php/meta.php");?>
+
 
 	  	<meta name="description" content=""/>
 		<title>The european meals tour</title>
 		</head>
 	<body>
 		<?php
+            require_once("./Php/header.php");
 
 			// Protection pour que personne ne puisse accèder a la page s'il n'est pas passé par le formulaire de la page connexion.php
 			if (isset($_GET["id"])){
@@ -76,6 +75,7 @@
                     }
                 }
 			
+                require_once("./Php/footer.php")
 
 
 

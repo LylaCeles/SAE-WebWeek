@@ -30,9 +30,9 @@
             		    <legend></legend>
                             <?php
                             
-
+								
+							
 								affichage($id_anim, $listeAnim,$listePerso);
-
 
 ?>
                          <form>
@@ -47,6 +47,7 @@
 				}
 			
 
+                require_once("./Php/footer.php")
 
 
 ?>
