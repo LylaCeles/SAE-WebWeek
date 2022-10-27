@@ -37,6 +37,7 @@ a{
 }
 
 h1{
+    text-align: center;
     color : #e8a670;
     font-family: Last Dream;
     font-size: 70px;
@@ -46,6 +47,7 @@ h1{
 }
 
 h2{
+    text-align: center;
     color : #e8a670;
     font-family: Bittermilk;
     font-size : 42px;
