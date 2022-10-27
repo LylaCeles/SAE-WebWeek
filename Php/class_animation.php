@@ -72,35 +72,42 @@ class Animation {
 //Affiche un tableau avec les info de l'animation
         echo("<h2>".$this->nom."</h2>");
         echo("<p>".$this->description."</p>");
-        echo('
-            <table class="table-style">
+        echo('<table class="table-style">
 
-            <thead>
-                <tr>
-                    <th>Horaire de début</th>
-                    <th>Horaire de fin</th>
-                    <th>Nombre de place</th>
-                    <th>Tarif</th>
-                </tr>
-            </thead>
-            
+        <thead>
+            <tr>
+                <th> </th>
+                <th>Horaire</th>
+              
+                <th>Date</th>
+                <th>Nombre de place</th>
+                <th>Tarif</th>
+            </tr>
+        </thead>
+        
+
+        <tbody>');
+       
+                $date = new DateTime($this->date);
+                $heureD = new DateTime($this->horaire_debut);
+                $heureF = new DateTime($this->horaire_fin);
+
+
+                echo("<tr>");
+                echo('<td>'.$this->nom.'</td>
+                    <td>'.$heureD->format('G:i').' - '.$heureF->format('G:i').'</td>
+                
+                <td>'.$date->format('j/n/Y').'</td>
+                <td>'.$this->nb_place.'</td>
+                <td>'.$this->tarif.'€</td></tr>');
+                echo("</tbody></table>");
+            }
+        
     
-            <tbody>
-                <tr>
-                    <td>'.$this->horaire_debut.'</td>
-                    <td>'.$this->horaire_fin.'</td>
-                    <td>'.$this->date.'</td>
-                    <td>'.$this->nb_place.'</td>
-                    <td>'.$this->tarif.'</td>
-                  
-                </tr>
-            </tbody>
+
+
+
     
-        </table>');
-
-
-
-    }
 
 
 }
