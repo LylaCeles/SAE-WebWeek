@@ -24,8 +24,10 @@
         <section class="main">
 
             <!-- Introduction -->
-            <section class="banniere filtre">
-                <h1 id="titre">The European Meals Tour</h1>
+            <section class="banniere">
+                <div class="filtre">
+                    <h1 id="titre">The European Meals Tour</h1>
+                </div>
             </section>
             <br>
             <p>Bienvenue sur le site du salon "The European Meals Tour" !
