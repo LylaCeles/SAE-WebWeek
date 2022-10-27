@@ -43,9 +43,8 @@
 
                 <?php
                     //connexion bdd et requete
-                    $bdd = new PDO('mysql:host=localhost;port=3306;dbname=web_week','root', '');
                     $requete='SELECT * FROM animation';
-                    $resultats = $bdd->query($requete);
+                    $resultats = $connection->query($requete);
                     $tabAnimation=$resultats->fetchAll();
                     $resultats->closeCursor();
                     $nbAnimation=count($tabAnimation);
@@ -65,10 +64,39 @@
                 <p>Trouvez ici trois plats aléatoires gastronomiques français.
                     <br>Pour en voir plus cliquez sur un des plats !
                 </p>
+
+
                 <!-- Faire les animations des images aléatoires en php -->
-                <img src="" alt="">
-                <img src="" alt=""> 
-                <img src="" alt="">
+                <div class="lescartes">
+
+                <?php 
+                    $requete = 'SELECT * FROM `plat` ';
+                    $resultat = $connection ->query($requete);
+                    $tabPlat = $resultat -> fetchAll();
+                    $resultat -> closeCursor();
+
+                    for ($i=0; $i < 3 ; $i++) { 
+                    
+                    $rand_id = rand(0,count($tabPlat) - 1);
+                ?>
+
+                    <div class="container">
+                    <div class="card">
+                        <div class="front" style="background-image: url(<?php echo $tabPlat[$rand_id]["image_plat"] ?>);"></div> 
+                        <div class="back">
+                        <h4><?php echo $tabPlat[$rand_id]["nom_plat"] ?></h4>
+                        <p><?php echo $tabPlat[$rand_id]["description_plat"] ?></p>
+                        <div>
+                            <p><b>Ingrédients :</b><br><?php echo $tabPlat[$rand_id]["ingredients_plat"] ?></p>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+              
+                <?php 
+                    }   
+                ?>
+                </div>
                 <a href="region.php"><button class="btn">Découvrez tout les plats présents</button></a>
             </section>
 
