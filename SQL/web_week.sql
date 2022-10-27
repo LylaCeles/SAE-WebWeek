@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : jeu. 27 oct. 2022 à 10:23
+-- Généré le : jeu. 27 oct. 2022 à 12:03
 -- Version du serveur : 10.4.25-MariaDB
 -- Version de PHP : 7.4.30
 
@@ -38,23 +38,24 @@ CREATE TABLE `animation` (
   `date_animation` date NOT NULL,
   `horaire_debut` time NOT NULL,
   `horaire_fin` time NOT NULL,
-  `nb_places` int(11) NOT NULL
+  `nb_places` int(11) NOT NULL,
+  `tarif` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Déchargement des données de la table `animation`
 --
 
-INSERT INTO `animation` (`id_animation`, `nom_animation`, `nom_animation_anglais`, `description_animation`, `description_animation_anglais`, `type_animation`, `type_animation_anglais`, `date_animation`, `horaire_debut`, `horaire_fin`, `nb_places`) VALUES
-(1, 'Concours', 'Competition', 'Concours des meilleurs plats, jugés par un jury composé de cuisiniers et de spectateurs. ', 'Competition for the best dishes, judged by a jury made up of cooks and spectators.', 'Concours', 'Competition', '2023-05-21', '14:00:00', '22:00:00', 700),
-(2, 'Cuisiner une croziflette', 'Cook a croziflette', 'Cette animation va vous permettre d\'apprendre à cuisiner votre propre croziflette ! En petit groupe, avec les aliments et le matériel fournis, vous serez encadrés d\'un chef spécialiste de ce plat.', 'This animation will allow you to learn how to cook your own croziflette! In a small group, with the food and equipment provided, you will be supervised by a chef who specializes in this dish.', 'Apprentissage', 'Learning', '2023-05-19', '14:00:00', '16:00:00', 300),
-(3, 'Cuisiner une galette bretone', 'Cook a Breton buckwheat pancake', 'Cette animation va vous permettre d\'apprendre à cuisiner votre propre galette bretone ! En petit groupe, avec les aliments et le matériel fournis, vous serez encadrés d\'un chef spécialiste de ce plat.', 'This animation will allow you to learn how to cook your own buckwheat pancake! In a small group, with the food and equipment provided, you will be supervised by a chef who specializes in this dish.', 'Apprentissage', 'Learning', '2023-05-19', '18:00:00', '20:00:00', 300),
-(4, 'Cuisiner une flammekueche', 'Cook a flammekueche', 'Cette animation va vous permettre d\'apprendre à cuisiner votre propre flammekueche ! En petit groupe, avec les aliments et le matériel fournis, vous serez encadrés d\'un chef spécialiste de ce plat.', 'This animation will allow you to learn how to cook your own flammekueche! In a small group, with the food and equipment provided, you will be supervised by a chef who specializes in this dish.', 'Apprentissage', 'Learning', '2023-05-20', '14:00:00', '16:00:00', 300),
-(5, 'Cuisiner un bœuf bourguignon', 'Cook beef bourguignon', 'Cette animation va vous permettre d\'apprendre à cuisiner votre propre bœuf bourguignon ! En petit groupe, avec les aliments et le matériel fournis, vous serez encadrés d\'un chef spécialiste de ce plat.', 'This animation will allow you to learn how to cook your own beef bourguignon! In a small group, with the food and equipment provided, you will be supervised by a chef who specializes in this dish.', 'Apprentissage', 'Learning', '2023-05-20', '18:00:00', '20:00:00', 300),
-(6, 'Histoire du macaron', 'History of the macaron', 'Durant ce spectacle, l\'histoire du macaron vous sera comptée sous forme de pièce de théâtre.', 'During this show, the story of the macaron will be told to you in the form of a play.', 'Spectacle', 'Show', '2023-05-19', '16:30:00', '17:30:00', 20),
-(7, 'Histoire des cannelés', 'History of canelés', 'Durant ce spectacle, l\'histoire des cannelés vous sera comptée sous forme de pièce de théâtre.', 'During this show, the story of the canelés will be told to you in the form of a play.', 'Spectacle', 'Show', '2023-05-20', '11:30:00', '12:30:00', 20),
-(8, 'Histoire de la tarte au sucre', 'History of sugar pie', 'Durant ce spectacle, l\'histoire de la tarte au sucre vous sera comptée sous forme de pièce de théâtre.', 'During this show, the story of the sugar pie will be told to you in the form of a play.', 'Spectacle', 'Show', '2023-05-20', '16:30:00', '17:30:00', 20),
-(9, 'Histoire du far breton', 'History of far Breton', 'Durant ce spectacle, l\'histoire du far breton vous sera comptée sous forme de pièce de théâtre.', 'During this show, the story of the far Breton will be told to you in the form of a play.', 'Spectacle', 'Show', '2023-05-21', '11:30:00', '12:30:00', 20);
+INSERT INTO `animation` (`id_animation`, `nom_animation`, `nom_animation_anglais`, `description_animation`, `description_animation_anglais`, `type_animation`, `type_animation_anglais`, `date_animation`, `horaire_debut`, `horaire_fin`, `nb_places`, `tarif`) VALUES
+(1, 'Concours', 'Competition', 'Concours des meilleurs plats, jugés par un jury composé de cuisiniers et de spectateurs. ', 'Competition for the best dishes, judged by a jury made up of cooks and spectators.', 'Concours', 'Competition', '2023-05-21', '14:00:00', '22:00:00', 700, 0),
+(2, 'Cuisiner une croziflette', 'Cook a croziflette', 'Cette animation va vous permettre d\'apprendre à cuisiner votre propre croziflette ! En petit groupe, avec les aliments et le matériel fournis, vous serez encadrés d\'un chef spécialiste de ce plat.', 'This animation will allow you to learn how to cook your own croziflette! In a small group, with the food and equipment provided, you will be supervised by a chef who specializes in this dish.', 'Apprentissage', 'Learning', '2023-05-19', '14:00:00', '16:00:00', 300, 30),
+(3, 'Cuisiner une galette bretone', 'Cook a Breton buckwheat pancake', 'Cette animation va vous permettre d\'apprendre à cuisiner votre propre galette bretone ! En petit groupe, avec les aliments et le matériel fournis, vous serez encadrés d\'un chef spécialiste de ce plat.', 'This animation will allow you to learn how to cook your own buckwheat pancake! In a small group, with the food and equipment provided, you will be supervised by a chef who specializes in this dish.', 'Apprentissage', 'Learning', '2023-05-19', '18:00:00', '20:00:00', 300, 30),
+(4, 'Cuisiner une flammekueche', 'Cook a flammekueche', 'Cette animation va vous permettre d\'apprendre à cuisiner votre propre flammekueche ! En petit groupe, avec les aliments et le matériel fournis, vous serez encadrés d\'un chef spécialiste de ce plat.', 'This animation will allow you to learn how to cook your own flammekueche! In a small group, with the food and equipment provided, you will be supervised by a chef who specializes in this dish.', 'Apprentissage', 'Learning', '2023-05-20', '14:00:00', '16:00:00', 300, 30),
+(5, 'Cuisiner un bœuf bourguignon', 'Cook beef bourguignon', 'Cette animation va vous permettre d\'apprendre à cuisiner votre propre bœuf bourguignon ! En petit groupe, avec les aliments et le matériel fournis, vous serez encadrés d\'un chef spécialiste de ce plat.', 'This animation will allow you to learn how to cook your own beef bourguignon! In a small group, with the food and equipment provided, you will be supervised by a chef who specializes in this dish.', 'Apprentissage', 'Learning', '2023-05-20', '18:00:00', '20:00:00', 300, 30),
+(6, 'Histoire du macaron', 'History of the macaron', 'Durant ce spectacle, l\'histoire du macaron vous sera comptée sous forme de pièce de théâtre.', 'During this show, the story of the macaron will be told to you in the form of a play.', 'Spectacle', 'Show', '2023-05-19', '16:30:00', '17:30:00', 20, 15),
+(7, 'Histoire des cannelés', 'History of canelés', 'Durant ce spectacle, l\'histoire des cannelés vous sera comptée sous forme de pièce de théâtre.', 'During this show, the story of the canelés will be told to you in the form of a play.', 'Spectacle', 'Show', '2023-05-20', '11:30:00', '12:30:00', 20, 15),
+(8, 'Histoire de la tarte au sucre', 'History of sugar pie', 'Durant ce spectacle, l\'histoire de la tarte au sucre vous sera comptée sous forme de pièce de théâtre.', 'During this show, the story of the sugar pie will be told to you in the form of a play.', 'Spectacle', 'Show', '2023-05-20', '16:30:00', '17:30:00', 20, 15),
+(9, 'Histoire du far breton', 'History of far Breton', 'Durant ce spectacle, l\'histoire du far breton vous sera comptée sous forme de pièce de théâtre.', 'During this show, the story of the far Breton will be told to you in the form of a play.', 'Spectacle', 'Show', '2023-05-21', '11:30:00', '12:30:00', 20, 15);
 
 -- --------------------------------------------------------
 
