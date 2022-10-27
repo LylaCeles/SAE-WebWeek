@@ -90,3 +90,8 @@ h3 {
     box-shadow: 0 0 #efa424;
     top: 6px;
 }
+
+ul {
+    margin: 0;
+    padding: 0;
+}
