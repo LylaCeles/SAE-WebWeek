@@ -19,7 +19,7 @@
 			// Protection pour que personne ne puisse accèder a la page s'il n'est pas passé par le formulaire de la page connexion.php
 			if (isset($_GET["id"])){
 				$id_anim = $_GET["id"];
-                require_once("fonction.php");
+                require_once("Php/fonction.php");
                 
                 
 

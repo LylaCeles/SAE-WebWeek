@@ -56,9 +56,7 @@
                     echo'</table>';
                 ?>
 
-                <a href="animation.php">
-                    <button class="btn" type="button"  >Plus d'informations sur les animations</button>
-                </a> 
+                <a href="animation.php"><button>Plus d'informations sur les animations</button></a>
             </section>
             <section class="plat">
                 <h2>Découvrez de nouveaux plats</h2>
@@ -69,9 +67,7 @@
                 <img src="" alt="">
                 <img src="" alt=""> 
                 <img src="" alt="">
-                <a href="region.php">
-                    <button class="btn" type="button"  >Découvrez les plats présents</button>
-                </a> 
+                <a href="region.php"><button>Découvrez tout les plats présents</button></a>
             </section>
 
             <!-- FAQ -->
@@ -127,9 +123,8 @@
                         </div>
                     </div>
                 </div>
-                <a href="faq.php">
-                    <button class="btn" type="button"  >Plus de questions ici</button>
-                </a>
+
+                <a href="faq.php"><button>Plus de questions ici</button></a>
             </section>
 
             <!-- Sponsors -->
