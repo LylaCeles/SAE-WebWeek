@@ -11,7 +11,8 @@
   <body>
 
     <?php
-      require_once("./Php/header.php")
+      require_once("./Php/header.php");
+      require_once('Php/fonction.php');
     ?>
 
     <section>
