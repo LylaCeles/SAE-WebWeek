@@ -18,7 +18,14 @@
 
 <body>
   <?php
-    require_once("./Php/header.php")
+    require_once("./Php/header.php");
+
+    $requete = 'SELECT * FROM `region`';
+		$resultat = $connection ->query($requete);
+		$tabRegion = $resultat -> fetchAll();
+		$resultat -> closeCursor();
+
+
   ?>
   <section class="flex">
 
@@ -34,67 +41,61 @@
 
     <h2>Les produits par régions</h2>
   
+    
+
     <div class="accordion">
-      <div class="accordion-item">
-        <div class="accordion-item-header">
-          <h3>Intitulé de l'accordéon</h3>
-        </div>
-        <div class="accordion-item-body">
-          <div class="accordion-item-body-content">
-            <div class="lescartes">
+      <?php
+        for ($i=0; $i < count($tabRegion); $i++) { 
+      ?>
+        <div class="accordion-item">
+          <div class="accordion-item-header">
+            <h3><?php echo $tabRegion[$i]["nom_region"] ?></h3>
+          </div>
+          <div class="accordion-item-body">
+            <div class="accordion-item-body-content">
+              <div class="lescartes">
 
-              <div class="container">
-                <div class="card">
-                  <div class="front" style="background-image: url(./Image/plat/31f170c8-c7b6-4678-aa82-595e83be6c6d.jpg);"></div>
-                  <div class="back">
-                    <h3>Back of Card</h3>
-                    <p>Additional info on the back of the card</p>
+              <?php 
+
+              $requete = 'SELECT * FROM `plat` WHERE id_region ='.$tabRegion[$i]["id_region"];
+              $resultat = $connection ->query($requete);
+              $tabPlat = $resultat -> fetchAll();
+              $resultat -> closeCursor();
+
+              for ($j=0; $j < count($tabPlat) ; $j++) { 
+                
+              ?>
+                <div class="container">
+                  <div class="card">
+                    <div class="front" style="background-image: url(<?php echo $tabPlat[$j]["image_plat"] ?>);"></div> 
+                    <div class="back">
+                      <h4><?php echo $tabPlat[$j]["nom_plat"] ?></h4>
+                      <p><?php echo $tabPlat[$j]["description_plat"] ?></p>
+                      <div>
+                        <p><b>Ingrédients :</b><br><?php echo $tabPlat[$j]["ingredients_plat"] ?></p>
+                      </div>
+                    </div>
                   </div>
                 </div>
+              
+              <?php 
+                }   
+              ?>
+
               </div>
-
-
-              <div class="container">
-                <div class="card">
-                  <div class="front"></div>
-                  <div class="back">
-                    <h3>Back of Card</h3>
-                    <p>Additional info on the back of the card</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="container">
-                <div class="card">
-                  <div class="front"></div>
-                  <div class="back">
-                    <h3>Back of Card</h3>
-                    <p>Additional info on the back of the card</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="container">
-                <div class="card">
-                  <div class="front"></div>
-                  <div class="back">
-                    <h3>Back of Card</h3>
-                    <p>Additional info on the back of the card</p>
-                  </div>
-                </div>
-              </div>
-
             </div>
           </div>
         </div>
-      </div>
+      <?php
+      }
+      ?>
     </div>
-
+  
   </section>
 
 
   <?php
-  require_once("./Php/footer.php")
+  require_once("./Php/footer.php");
   ?>
 
 </body>
