@@ -23,6 +23,7 @@ $connection = new PDO('mysql:host=localhost;port=3306;dbname=web_week','root',''
             $tabAnimation = $resultat -> fetchAll();
             $resultat -> closeCursor();
 
+
             $requete = 'SELECT * FROM preinscrit';
             $resultat = $connection ->query($requete);
             $tabInscri = $resultat -> fetchAll();
@@ -83,6 +84,46 @@ $connection = new PDO('mysql:host=localhost;port=3306;dbname=web_week','root',''
                 }
             }
             
+        }
+
+
+        function affichageGlobalAnimation($listeAnim, $typeAnimation){
+            // Affiche toute les informations des animations contenu dans listeAnim en fonction de leur type
+
+            echo('<table class="table-style">
+
+            <thead>
+                <tr>
+                    <th> </th>
+                    <th>Horaire</th>
+                  
+                    <th>Date</th>
+                    <th>Nombre de place</th>
+                    <th>Tarif</th>
+                </tr>
+            </thead>
+            
+    
+            <tbody>');
+            for ($i=0; $i <count($listeAnim) ; $i++) { 
+                if ($listeAnim[$i]->type== $typeAnimation){
+                    $date = new DateTime($listeAnim[$i]->date);
+                    $heureD = new DateTime($listeAnim[$i]->horaire_debut);
+                    $heureF = new DateTime($listeAnim[$i]->horaire_fin);
+
+
+                    echo("<tr>");
+                    echo('<td>'.$listeAnim[$i]->nom.'</td>
+                        <td>'.$heureD->format('G:i').' - '.$heureF->format('G:i').'</td>
+                    
+                    <td>'.$date->format('j/n/Y').'</td>
+                    <td>'.$listeAnim[$i]->nb_place.'</td>
+                    <td>'.$listeAnim[$i]->tarif.'€</td></tr>');
+                }
+            }
+            echo("</tbody>
+    
+            </table");
         }
             
             
