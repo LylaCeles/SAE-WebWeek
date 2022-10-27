@@ -29,9 +29,13 @@
                         <form action="" method="POST">
             		    <legend></legend>
                             <?php
-                            
-
-								affichage($id_anim, $listeAnim,$listePerso);
+                            // var_dump($animation);
+                                if (isset($animation)){
+                                    
+                                    foreach($animation as $tab){
+                                        $tab->affiche();
+                                    }
+                                }
 
 
 ?>
