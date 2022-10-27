@@ -30,14 +30,13 @@ footer {
 .footer-reseaux h3 {
     font-size: 22px;
     padding-bottom: 20px;
-    padding-left: 25px;
     color: rgb(255, 255, 255);
 }
 
 
 footer li {
 
-    padding: 10px 10px 0px 0px;
+    padding: 10px 0px 0px 0px;
 }
 
 
@@ -52,7 +51,7 @@ footer li {
     flex-direction: column;
 }
 .navigation-list li {
-    padding: 5px 25px 0px 0px;
+    padding: 5px 0px 0px 0px;
 }
 
 .navigation-list a {
@@ -131,4 +130,9 @@ footer li {
 footer p{
     display: flex;
     color: white;
+}
+
+footer ul {
+    margin: 0;
+    padding: 0;
 }
