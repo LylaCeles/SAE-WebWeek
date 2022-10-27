@@ -85,16 +85,16 @@
                             <p>Choisissez votre horaire</p>
                                 <!-- Utiliser la base de donner pour créer le bon nombre de coches
                                 Select par type d'anim puis afficher chaque horaire en check box -->
-                            <input type="checkbox" name="horaire1">
+                            <input type="checkbox" name="horaire5">
                             <label for="horaire1">14h00 vendredi</label>
 
-                            <input type="checkbox" name="horaire2">
+                            <input type="checkbox" name="horaire6">
                             <label for="horaire2">18h00 vendredi</label>
 
-                            <input type="checkbox" name="horaire3">
+                            <input type="checkbox" name="horaire7">
                             <label for="horaire3">14h00 samedi</label>
 
-                            <input type="checkbox" name="horaire4">
+                            <input type="checkbox" name="horaire8">
                             <label for="horaire4">18h00 samedi</label>
 
                             <p>Besoin de plus d'informations sur l'activité  ?</p>
@@ -114,7 +114,7 @@
                             <p>Choisissez votre horaire</p>
                                 <!-- Utiliser la base de donner pour créer le bon nombre de coches
                                 Select par type d'anim puis afficher chaque horaire en check box -->
-                            <input type="checkbox" name="horaire1">
+                            <input type="checkbox" name="horaire9">
                             <label for="horaire1">14h00 dimanche</label>
 
                             <p>Besoin de plus d'informations sur l'activité  ?</p>
