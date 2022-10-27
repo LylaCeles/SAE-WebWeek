@@ -60,13 +60,33 @@ h3 {
     font-size : 26px;
 }
 
-button {
-    width : 300px;
+
+.btn {
     display: block;
-    margin: 50px auto 50px auto;
-    padding: 10px;
-    background-color: #e5cb91;
-    font-family: "Josefin Sans" ;
-    font-size : 20px;
-    border-radius: 30px;
+    font-family: Josefin Sans Thin;
+    margin: 50px 0px;
+    font-size: 20px;
+    font-weight: lighter;
+    color: #333;
+    padding: 15px 55px;
+    background: #e5cb91;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+    box-shadow: 0 6px #efa424;
+}
+
+.btn:hover {
+    background-color:  #d39221;
+    box-shadow: 0 6px  #9d6c18;
+    color: #FFFAE1;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+  }
+
+.btn:active {
+    box-shadow: 0 0 #efa424;
+    top: 6px;
 }

@@ -3,9 +3,7 @@ footer {
     border-top: 1px dashed #000;
     width: 100%;
     background: #524a3a;
-    color: rgb(255, 255, 255);
-    padding: 20px 0 10px 0;
-    text-align: center;
+    color: rgb(225, 225, 225);
 }
 .content-footer {
     max-width: 1000px;
@@ -14,7 +12,7 @@ footer {
     justify-content: center;
     align-items: flex-start;
     font-size: 16px;
-    padding: 50px 0 50px;
+    padding: 50px 0 100px;
 }
 
 .bloc {
@@ -22,66 +20,71 @@ footer {
     margin: 0 30px;
 }
 
-footer li, footer p{
-    font-family: "Josefin Sans";
-}
-
-/* contact */
-.footer-contact h3,
-.footer-services h3,
-.footer-schedule h3,
-.footer-medias h3 {
+.footer-navigation h3,
+.footer-horaire h3,
+.footer-reseaux h3 {
     font-size: 22px;
     padding-bottom: 20px;
-}
-
-.footer-contact p {
-    padding: 5px 0;
-}
-
-/* Services */
-
-
-.services-list,
-.schedule-list,
-.media-list {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-.services-list li {
-    padding: 2px 0;
-}
-.services-list a {
-    text-decoration: none;
+    padding-left: 25px;
     color: rgb(255, 255, 255);
 }
-.services-list a:hover {
+
+
+footer li {
+
+    padding: 10px 10px 0px 0px;
+}
+
+
+/* Navigation */
+
+
+.navigation-list,
+.horaire-list {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.navigation-list li {
+    padding: 5px 25px 0px 0px;
+}
+
+.navigation-list a {
+    text-decoration: none;
+    color: rgb(225, 225, 225);
+}
+.navigation-list a:hover {
     color: rgb(3,3,3);
 }
 
-.media-list > li{
-  display: flex;
-  justify-content: space-around;
+
+
+.horaire > ul {
+ padding-bottom: 15px;
 }
 
 
-/* Medias */
+/* reseaux */
 
-.media-list {
+.reseaux-list {
+    display: flex;
+    justify-content: space-between;
     position: relative;
     right: 10px;
 }
-.media-list svg {
-    width: 30px;
-    margin: 10px 10px;
-}
-.media-list a {
+
+.reseaux-list a {
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: rgb(225, 225, 225);
     display: flex;
     align-items: center;
-    font-size: 30px;
+    font-size: 20px;
+}
+.reseaux-list a:hover {
+    transform: scale(1.5);
+    transition: 0.1s;
+
 }
 
 
@@ -111,13 +114,16 @@ footer li, footer p{
         flex-basis: 70%;
         /* margin: 10px; */
     }
-    .footer-contact h3,
-    .footer-services h3,
-    .footer-schedule h3,
-    .footer-medias h3 {
+    .footer-navigation h3,
+    .footer-horaire h3,
+    .footer-reseaux h3 {
         padding-bottom: 5px;
     }
 
 }
 
 
+footer p{
+
+    color: white;
+}
