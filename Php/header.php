@@ -3,11 +3,11 @@
     <nav>
         <ul class="menu">
             <li><a href="./index.php">Accueil</a></li>
-            <li><a href="./Region.php">Régions</a></li>
-            <li><a href="./Animation.php">Animations</a></li>
+            <li><a href="./region.php">Régions</a></li>
+            <li><a href="./animation.php">Animations</a></li>
             <li><a href="./preinscription.php">Préinscription</a></li>
             <li><a href="./faq.php">FAQ</a></li>
-            <li><a href="./Contact.php">Contact</a></li>
+            <li><a href="./contact.php">Contact</a></li>
         </ul>
     </nav>
     <section class="language">
