@@ -53,19 +53,12 @@ ul {
   margin-top: 10px;
 }
 
-
-button{
-  padding: 10px 20px;
-  background-color: #fff;
-  color:#000;
-  border:none;
-  margin-bottom: 30px;
-  outline:none;
-  font-size: 20px;
-  font-family: 'Playfair Display', serif;
-  cursor: pointer;
+.left {
+  display: flex;
+  flex-direction: column ;
+  align-items: center;
+  justify-content: center;
 }
-
 
 .table-style  {
     border-collapse: collapse;

@@ -24,16 +24,6 @@ form{
     display: block;
 }
 
-.btn{
-    width : 300px;
-    display: block;
-    margin: 50px auto 50px auto;
-    padding: 10px;
-    background-color: #e5cb91;
-    font-family: Josefin Sans Thin;
-    font-size : 20px;
-    border-radius: 30px;
-}
 
 .flex{
     display: flex;

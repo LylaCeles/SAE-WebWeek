@@ -10,13 +10,8 @@
 
 /* **************** Intro ************* */
 
-#intro > h2{
-  text-align: center;
-  margin-top: 70px;
-}
 
-#intro{
-  margin-bottom: 100px;
+.container > h2{
   margin-top: 100px;
 }
 
@@ -29,6 +24,7 @@
 
 .container > h3{
   margin-top: 70px;
+  margin-bottom: 100px;
 }
 
   /* **************** formulaire ************* */

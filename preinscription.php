@@ -69,7 +69,7 @@
 
                             <p>Besoin de plus d'informations sur l'activité  ?</p>
 
-                            <button><a href="#">En savoir plus</a></button>
+                            <button class="btn"><a href="#">En savoir plus</a></button>
 
                         </div>
                     </div>
@@ -99,7 +99,7 @@
 
                             <p>Besoin de plus d'informations sur l'activité  ?</p>
 
-                            <button><a href="#">En savoir plus</a></button>
+                            <button class="btn"><a href="#">En savoir plus</a></button>
                         </div>
                     </div>
                 </div>
@@ -119,7 +119,7 @@
 
                             <p>Besoin de plus d'informations sur l'activité  ?</p>
 
-                            <button><a href="#">En savoir plus</a></button>
+                            <button class="btn"><a href="#">En savoir plus</a></button>
                         </div>
                     </div>
                 </div>

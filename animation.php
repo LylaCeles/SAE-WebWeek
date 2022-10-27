@@ -31,7 +31,7 @@
               <div class="left">
                   <h2>Théâtre culinaire</h2>
                   <p>Découvrez les histoires qui se cachent derrière certaines spécialités grâce à ce spectacle culinaire.</p>
-                  <button>Se préinscrire</button>
+                  <button class="btn">Se préinscrire</button>
               </div>
               <div class="right">
                   <img src="./Image/theatre.jpg" alt="">
@@ -71,7 +71,7 @@
               <div class="left">
                   <h2>Ateliers apprentissages</h2>
                   <p>Venez apprendre à cuisiner des spécialités culinaires. Les aliments et le matériel sont compris. Un chef vous encadrera et vous pourrez repartir avec votre plat !</p>
-                  <button>Se préinscrire</button>
+                  <button class="btn">Se préinscrire</button>
               </div>
               <div class="right">
                   <img src="./Image/atelier.jpg" alt="">
@@ -108,7 +108,7 @@
           <div class="left">
               <h2>Concours</h2>
               <p>Voici le concours des différents plats proposés par chaque chef des régions volontaires. Un jury composé de cuisiniers ainsi que de vous, leur public, est mis en place.</p>
-              <button>Se préinscrire</button>
+              <button class="btn">Se préinscrire</button>
           </div>
           <div class="right">
               <img src="./Image/tournoi.jpg" alt="">
