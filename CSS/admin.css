@@ -1,0 +1,8 @@
+body {
+    display: flex;
+    flex-direction: column ;
+    margin: 50px;
+}
+fieldset {
+    background-color: #e7e7e7;
+}
