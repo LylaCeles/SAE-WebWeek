@@ -4,20 +4,20 @@
       <div class="content-footer">
 
         <div class="bloc footer-navigation">
-          <h3>Navigation</h3>
+          <h3><?php echo NAVIGATION;?></h3>
           <ul class="navigation-list">
-            <li><a href="./index.php">Accueil</a></li>
-            <li><a href="./region.php" >Régions</a></li>
-            <li><a href="./animation.php" >Animations</a></li>
-            <li><a href="./preinscription.php">Préinscriptions</a></li>
-            <li><a href="./faq.php">FAQ</a></li>
-            <li><a href="./contact.php" >Contact</a></li>
-            <li><a href="./connexion.php" >Administration</a></li>
+            <li><a href="./index.php"><?php echo ACCUEIL;?></a></li>
+            <li><a href="./region.php" ><?php echo REGIONS;?></a></li>
+            <li><a href="./animation.php" ><?php echo ANIMATION;?></a></li>
+            <li><a href="./preinscription.php"><?php echo PREINSCRIPTION;?></a></li>
+            <li><a href="./faq.php"><?php echo FAQ;?></a></li>
+            <li><a href="./contact.php" ><?php echo CONTACT;?></a></li>
+            <li><a href="./connexion.php" ><?php echo ADMINISTRATION;?></a></li>
           </ul>
         </div>
 
         <div class="bloc footer-horaire">
-          <h3>Horaires</h3>
+          <h3><?php echo HORAIRES;?></h3>
           <ul class="horaire-list">
             <li> 19 mai 11h-0h</li>
             <li> 20 mai 11h-0h</li>

@@ -94,7 +94,7 @@ define('TITRE_ACCORDEON_REGIONS','Les produits par régions');
 /* ********************** ANIMATION ********************** */
 
 define('ANIMATIONS','Animations');
-define('SOUS_TITRE',"Vous retrouverez l'ensemble des animations de notre évènement ici");
+define('SOUS_TITRE','Vous retrouverez l\'ensemble des animations de notre évènement ici');
 define('THEATRE','Théâtre culinaire');
 define('THEATRE_DESCR','Découvrez les histoires qui se cachent derrière certaines spécialités grâce à ce spectacle culinaire.');
 define('PREINSCRIRE','Se préinscrire');
@@ -147,5 +147,19 @@ define('R_ACCORDEON_8','L\'ensemble des régions française sera représenté ga
 /* pas trouver de réponse */
 define('REPONSE_TEXT','Vous n\'avez pas trouvé réponse à vos questions ?');
 define('REPONSE_TEXT_BUTTON','Nous contacter');
+
+
+
+/* ********************** FOOTER ********************** */
+
+define('NAVIGATION','Navigation');
+define('ADMINISTRATION','Administration');
+define('HORAIRES','Horaires');
+define('HORAIRES1','19 mai 11h-0h');
+define('HORAIRES2','20 mai 11h-0h');
+define('HORAIRES3','21 mai 11h-0h');
+define('FOLLOW','Suivez-nous');
+
 ?>
+
 
