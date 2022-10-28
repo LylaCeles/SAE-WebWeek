@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="<?php echo $lang;?>">
 
 <head>
   <title>The European Meals Tour - Régions</title>
@@ -29,17 +29,16 @@
   ?>
   <section class="flex">
 
-    <h2>Gastronomie des régions</h2>
+    <h2><?php echo TITRE_REGIONS;?></h2>
 
     <div id="premierTrait"></div>
 
-    <h3>Découvrez ici la gastronomie Française ! <br>
-      Choisissez un plat : vous aurez son histoire , ses ingrédients et sa recette </h3>
+    <h3><?php echo DESCR_REGIONS;?></h3>
 
     <img src="./Image/fresque.png" alt="" class="img">
     </div>
 
-    <h2>Les produits par régions</h2>
+    <h2><?php echo TITRE_ACCORDEON_REGIONS;?></h2>
   
     
 
@@ -69,10 +68,10 @@
                   <div class="card">
                     <div class="front" style="background-image: url(<?php echo $tabPlat[$j]["image_plat"] ?>);"></div> 
                     <div class="back">
-                      <h4><?php echo $tabPlat[$j]["nom_plat"] ?></h4>
-                      <p><?php echo $tabPlat[$j]["description_plat"] ?></p>
+                      <h4><?php echo $tabPlat[$j][NOM_PLAT] ?></h4>
+                      <p><?php echo $tabPlat[$j][DESCR_PLAT] ?></p>
                       <div>
-                        <p><b>Ingrédients :</b><br><?php echo $tabPlat[$j]["ingredients_plat"] ?></p>
+                        <p><b><?php echo TITRE_INGREDIENTS_PLAT;?></b><br><?php echo $tabPlat[$j][INGREDIENTS_PLAT] ?></p>
                       </div>
                     </div>
                   </div>
