@@ -27,16 +27,15 @@
 <html lang="fr">
 
 	<head>
-	  	<link rel="stylesheet" type="text/css" href="CSS/global.css">
-		<link rel="stylesheet" type="text/css" href="CSS/admin.css">
-	  	<meta http-equiv="content-type" content="text/html"; charset="UTF-8"/>
-		<link rel="icon" type="image/x-icon" href="">
+	<?php require_once("Php/meta.php");?>
 
 	  	<meta name="description" content=""/>
 		<title>The European Meals Tour</title>
 		</head>
 	<body>
 		<?php
+        require_once("./Php/header.php");
+
 
 			// Protection pour que personne ne puisse accèder a la page s'il n'est pas passé par le formulaire de la page connexion.php
 			if (isset($_POST["id"])){
@@ -100,16 +99,28 @@
 
 					?>
 				</fieldset>
+				<fieldset>
+            		<legend><h3>Création</h3></legend>
 
+				
+					<a href="ajouter.php?type=animation">Ajouter une animation</a><br>
+					<a href="ajouter.php?type=plat">Ajouter un plat</a>
+						
+
+
+				</fieldset>
 					<?php
+				
 				}
-
 				else{
 					header('Location: connexion.php');
 					exit();
 				}
+			
+		
 		
 
+			require_once("./Php/footer.php");
 
 
 ?>

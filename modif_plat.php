@@ -14,6 +14,7 @@
 	<body>
 		<?php
             require_once("./Php/header.php");
+            require_once("./Php/fonction.php");
 
 			// Protection pour que personne ne puisse accèder a la page s'il n'est pas passé par le formulaire de la page connexion.php
 			if (isset($_GET["id"])){
@@ -51,6 +52,8 @@
                             <input type="file" accept="image/png, image/jpg" name="img_plat">
 
 				            <input type="submit" name="envoie" id="envoie_co">
+                            <input type='submit' name='supression' value="Supprimer le plat">
+
 
                         <form>
 				</fieldset>
@@ -65,14 +68,17 @@
 
 
                 if (isset($_POST["description"])){
-                    if(file_get_content($chemin)!=false){
-                    $img = $_FILES["img_plat"]["name"];
-                    // $url = 'https://waytolearnx.com/wp-content/uploads/2018/09/cropped-logoWeb.png';
-                    $chemin = 'CSS/logo.png';
-                    // Enregistrer l'image
-                    file_put_contents($chemin, file_get_contents($chemin));
-                    echo("couocu");
-                    }
+                    // if(file_get_content($chemin)!=false){
+                    // $img = $_FILES["img_plat"]["name"];
+                    // // $url = 'https://waytolearnx.com/wp-content/uploads/2018/09/cropped-logoWeb.png';
+                    // $chemin = 'CSS/logo.png';
+                    // // Enregistrer l'image
+                    // file_put_contents($chemin, file_get_contents($chemin));
+                    // echo("couocu");
+                    // }
+                }
+                if(isset($_POST["supression"])){
+                    supprPlat($id_plat);
                 }
 			
                 require_once("./Php/footer.php")
