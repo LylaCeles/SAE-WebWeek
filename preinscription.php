@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./CSS/accordion.css">
     <script src="./Script/accordion.js" defer></script>
     <?php
-      require_once("Php/meta.php");
+      require_once("./Php/meta.php");
     ?>
 </head>
 
@@ -37,44 +37,44 @@
 
         <form action="" method="POST">
             <div class="form_group">
-                <label for="nom">Nom :</label>
+                <label for="nom"><?php echo FORM_NOM;?></label>
                 <input type="text" name="nom" required>
             </div>
             <div class="form_group">
-                <label for="prenom">Prenom :</label>
+                <label for="prenom"><?php echo FORM_PRENOM;?></label>
                 <input type="text" name="prenom" required>
             </div>
             <div class="form_group">
-                <label for="email">Adresse mail :</label>
+                <label for="email"><?php echo FORM_MAIL;?></label>
                 <input type="email" name="email" required>
             </div>
             <div class="form_group">
-                <label for="nb_places">Nombre de places :</label>
+                <label for="nb_places"><?php echo FORM_PALCES;?></label>
                 <input type="number" name="nb_places" required>
             </div>
 
             <div class="accordion">
                 <div class="accordion-item">
                     <div class="accordion-item-header">
-                        <h3>Theatre culinaire</h3>
+                        <h3><?php echo ACCORDEON_1_TITRE;?></h3>
                     </div>
                     <div class="accordion-item-body">
                         <div class="accordion-item-body-content">
                             <img src="./Image/theatre.jpg" alt="">
                             
-                            <p>Choisissez votre horaire</p>
+                            <p><?php echo ACCORDEON_1_HORAIRE;?></p>
                                 <!-- Utiliser la base de donner pour créer le bon nombre de coches
                                 Select par type d'anim puis afficher chaque horaire en check box -->
                                 <select name="animationS">>
-                                    <option selected="selected" value="null">Selectionez un spectacle</option>
+                                    <option selected="selected" value="null"><?php echo ACCORDEON_1_SELECT;?></option>
                                 <?php selectAnim($listeAnim, "Spectacle");?>
                                 </select>
 
-                            <p>Besoin de plus d'informations sur l'activité  ?</p>
+                            <p><?php echo ACCORDEON_1_INFOS;?></p>
 
                             
                             <div class="flex">
-                            <button class="btn"><a href="#">En savoir plus</a></button>
+                            <button class="btn"><a href="#"><?php echo ACCORDEON_1_INFOS_BUTTON;?></a></button>
                             <input class="btn" value ="S'inscrire"type="submit" name="btn">
                             </div>
                             
@@ -157,8 +157,7 @@
                 if ($_POST["animationC"]!='null') {
                     $id_animation= $_POST["animationC"];
                 }
-                
-                    if (isset($id_animation)){
+                if (isset($id_animation)){
                 
                     for ($i=0; $i < count($tabPersonne) ; $i++) { 
         
