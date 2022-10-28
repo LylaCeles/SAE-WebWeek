@@ -5,9 +5,10 @@
 <html lang="fr">
 
 	<head>
-	<?php require_once("./Php/meta.php");?>
+	    <?php require_once("./Php/meta.php");?>
 		<title>The european meals tour</title>
-		</head>
+        <link rel="stylesheet" href="./CSS/ajouter.css">
+	</head>
 	<body>
 		<?php
         require_once("./Php/header.php");
@@ -33,47 +34,54 @@
                 
 
         ?>
-
-					<fieldset>
-
 					<?php
-
-                    if ($typeAjout=="animation") {
-                        
-                        
-                        ?>
-							</fieldset>
+                        if ($typeAjout=="animation") {
+                    ?>
+							
                             
 							<fieldset>
-                                <legend>Ajouter une animation</legend>
+                                <legend><h3>Ajouter une animation</h3></legend>
                                 <form action="" method="POST">
                                     
                                 <p>
                                 <label for ="nom">Nom :</label>
+                                <br>
+                                <br>
                                 <input type="text" name ="nom" placeholder="Nom de l'animation" required="required">
                                 </p>
                                 <p>
                                 <label for ="description">Description :</label>
+                                <br>
                                 <textarea type="text" name ="description" placeholder="Dans cette animation..."required="required"></textarea>
                                 </p>
                                 <p>
                                 <label for ="date">date :</label>
+                                <br>
+                                <br>
                                 <input type="date" name ="date" value="2023-8-12"required="required">
                                 </p>
                                 <p>
                                 <label for ="HoraireD">heure de début :</label>
+                                <br>
+                                <br>
                                 <input type="time" name ="HoraireD" value="2023-8-12"required="required">
                                 </p>
                                 <p>
                                 <label for ="HoraireF">heure de fin :</label>
+                                <br>
+                                <br>
                                 <input type="time" name ="HoraireF" value="2023-8-12"required="required">
                                 </p>
                                 <p>
                                 <label for ="nb_place">Nombre de place maximum :</label>
+                                <br>
+                                <br>
                                 <input type="number" name ="nb_place"required="required">
                                 </p>
                                 <p>
                                 <label for ="tarif">Tarif:</label>
+                                <br>
+                                <br>
                                 <input type="number" name ="tarif"required="required">
                                 </p>
                                 <select name="animation">
@@ -83,8 +91,8 @@
                                 </select><br>
                             
 
-
-				            <input type="submit" name="envoie" id="envoie_co">
+                                <br>
+				            <input type="submit" name="envoie" id="envoie_co" class="btn">
                                         
                                     </fieldset>
                                     <?php
@@ -129,19 +137,23 @@
                         </fieldset>
                         
                         <fieldset>
-                            <legend>Ajouter une animation</legend>
+                            <legend><h3>Ajouter un plat</h3></legend>
                             <form action="" method="POST">
                                 
                             <p>
                             <label for ="nom">Nom :</label>
+                            <br>
+                            <br>
                             <input type="text" name ="nom" placeholder="Nom du plat">
                             </p>
                             <p>
                             <label for ="description">Description :</label>
+                            <br>
                             <textarea type="text" name ="description" placeholder="Ce plat..."></textarea>
                             </p>
                             <p>
                             <label for ="ingredient">Ingredients :</label>
+                            <br>
                             <textarea type="text" name ="ingredient" placeholder="Veuillez les séparer d'une virgule !!"></textarea>
                             </p>
                             
@@ -156,8 +168,8 @@
                             </select><br>
                         
 
-
-                        <input type="submit" name="envoie" id="envoie_co">
+                            <br>
+                        <input type="submit" name="envoie" id="envoie_co" class="btn">
                                     
                                 </fieldset>
                                 <?php
