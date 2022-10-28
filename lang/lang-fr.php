@@ -174,13 +174,18 @@ define('REPONSE_TEXT_BUTTON','Nous contacter');
 
 /* descripation page */
 define('TITRE_CONTACT','Contact');
-define('DESCR_CONTACT','Vous n\'avez pas trouvé de réponses  à votre problème dans notre  <a href="#">FAQ ?</a> Pas de problème ! <br>
+define('DESCR_CONTACT','Vous n\'avez pas trouvé de réponses  à votre problème dans notre  <a href="./faq.php">FAQ ?</a> Pas de problème ! <br>
 Vous pouvez nous contacter avec ce formulaire de contact');
 
 
         /* ***FORMULAIRE*** */
 define('FORM_TITRE','Contactez-nous');
+
+
+define('FORM_NOM','Nom');
+define('FORM_MESSAGE','Votre message ici...');
 define('FORM_BUTTON','Prenom :');
+
 
 
         /* ***LOCALISATION*** */

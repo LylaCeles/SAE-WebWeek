@@ -57,7 +57,7 @@ define('DESCR_FAQ','Find here the questions we are most asked.');
 
 /* Accordéons */
 define('Q_ACCORDEON_1','What do you do with unsold dishes?');
-define('R_ACCORDEON_1','We donate them to charities like <i>La Croisée Des Saveurs</i> ou encore la <i>Banque Alimentaire d\'Auvergne</i>.');
+define('R_ACCORDEON_1','We donate them to charities like <i>La Croisée Des Saveurs</i> or even the <i>Banque Alimentaire d\'Auvergne</i>.');
 define('Q_ACCORDEON_2','Who participates in the competition ?');
 define('R_ACCORDEON_2','The volunteer stand cooking teams.');
 define('Q_ACCORDEON_3','Who are the competition judges?');
@@ -124,9 +124,27 @@ define('FORM_PALCES','Number of places :');
 /* accordéon */
 define('ACCORDEON_1_TITRE','Culinary theater');
 define('ACCORDEON_1_HORAIRE','Choose your hours');
-define('ACCORDEON_1_SELECT','Selectionez un spectacle');
+define('ACCORDEON_1_SELECT','Select a spectacle');
 define('ACCORDEON_1_INFOS','Need more information about the activity?');
 define('ACCORDEON_1_INFOS_BUTTON','Learn more');
+
+define('ACCORDEON_2_TITRE','Learning');
+define('ACCORDEON_2_HORAIRE','Choose your hours');
+define('ACCORDEON_2_SELECT','Select a learning');
+define('ACCORDEON_2_INFOS','Need more information about the activity ?');
+define('ACCORDEON_2_INFOS_BUTTON','Learn more');
+
+define('ACCORDEON_3_TITRE','Competition');
+define('ACCORDEON_3_HORAIRE','Choose your hours');
+define('ACCORDEON_3_SELECT','Select a competition');
+define('ACCORDEON_3_INFOS','Need more information about the activity ?');
+define('ACCORDEON_3_INFOS_BUTTON','Learn more');
+
+
+/* Reponse formulaire */
+define('REP_FORMULAIRE_TITRE','Thank you for your pre-registration!');
+define('REP_FORMULAIRE_TEXTE_1','Your pre-registration has been taken into account, payment will be made on the event site.');
+define('REP_FORMULAIRE_TEXTE_2','To unsubscribe, please let us know by email.');
 
 
 
@@ -150,6 +168,30 @@ define('R_ACCORDEON_8','All French regions will be represented gastronomically a
 /* pas trouver de réponse */
 define('REPONSE_TEXT','You have not found an answer to your questions ?');
 define('REPONSE_TEXT_BUTTON','Contact us');
+
+
+/* ********************** CONTACT ********************** */
+
+/* descripation page */
+define('TITRE_CONTACT','Contact');
+define('DESCR_CONTACT','You have not found answers to your problem in our <a href="./faq.php">FAQ ?</a> No problem !<br>
+You can contact us with this contact form.');
+
+
+        /* ***FORMULAIRE*** */
+define('FORM_TITRE','Contact us');
+define('FORM_NOM','Name');
+define('FORM_MESSAGE','Your message here...');
+define('FORM_BUTTON','Send');
+
+
+        /* ***LOCALISATION*** */
+define('LOCALISATION_TITRE','Contact us');
+define('LOCALISATION_TROUVER','Find us on site');
+define('LOCALISATION_TROUVER_TEXTE','You can meet us :<br> From May 19 to 21 from 11h to 0h');
+define('LOCALISATION_EMPLACEMENT','Location');
+
+
 
 /* ********************** FOOTER ********************** */
 
