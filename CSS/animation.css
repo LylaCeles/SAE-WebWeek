@@ -50,7 +50,6 @@ ul {
 .main .content .card .right img{
   height:400px;
   width: auto;
-  margin-top: 10px;
 }
 
 .left {
@@ -59,6 +58,27 @@ ul {
   align-items: center;
   justify-content: center;
 }
+
+.right img {
+  border: solid;
+}
+
+@media (max-width: 1110px) {
+
+  .right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+  }
+  .card {
+    flex-direction: column;
+  }
+
+}
+
+
+/* **************** TABLEAUX INFORMATIONS ********************** */
 
 .table-style  {
     border-collapse: collapse;

@@ -92,3 +92,18 @@ textarea {
   justify-content: start;
   align-items: center;
 }
+
+
+@media (max-width: 970px) {
+  #map {
+      flex-direction: column;
+  }
+
+}
+
+@media (max-width: 604px) {
+  .inté-map iframe {
+      width: 400px;
+  }
+
+}

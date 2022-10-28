@@ -30,3 +30,16 @@ form{
     justify-content: center;
     align-items: center;
 }
+
+
+
+@media (max-width: 690px) {
+  
+    .form_group{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    } 
+
+}
