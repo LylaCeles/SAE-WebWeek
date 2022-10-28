@@ -180,9 +180,12 @@ Vous pouvez nous contacter avec ce formulaire de contact');
 
         /* ***FORMULAIRE*** */
 define('FORM_TITRE','Contactez-nous');
+
+
 define('FORM_NOM','Nom');
 define('FORM_MESSAGE','Votre message ici...');
 define('FORM_BUTTON','Prenom :');
+
 
 
         /* ***LOCALISATION*** */

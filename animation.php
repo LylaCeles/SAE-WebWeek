@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="<?php echo $lang;?>">
   <head>
     <title>The European Meal Tour - Animation</title>
     <link rel="stylesheet" href="./CSS/Animation.css">   
@@ -30,7 +30,7 @@
           <div class="card">
               <div class="left">
                   <h2><?php echo THEATRE;?></h2>
-                  <p>Découvrez les histoires qui se cachent derrière certaines spécialités grâce à ce spectacle culinaire.</p>
+                  <p><?php echo THEATRE_DESCR;?></p>
                   <a href="preinscription.php"> <button  class="btn"><?php echo PREINSCRIRE;?></button></a>              </div>
               <div class="right">
                   <img src="./Image/theatre.jpg" alt="">

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="<?php echo $lang;?>">
   <head>
     <title>The European Meal Tour - Contact</title>
     <?php
