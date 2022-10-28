@@ -42,6 +42,7 @@ $connection = new PDO('mysql:host=localhost;port=3306;dbname=web_week','root',''
             }
 
             if ($tabInscri!= null){
+                //Si aucun inscrit
                 for($i=0; $i<count($tabAnimation); $i++){
                     $listeInscri=[];
                     for($j=0; $j<count($tabInscri); $j++){
@@ -58,11 +59,11 @@ $connection = new PDO('mysql:host=localhost;port=3306;dbname=web_week','root',''
                         }
                         
                 }
+                
                 if (isset($listeInscri)== false){
                     $listeInscri=[];
                 }
                 // print_r($listeInscri);
-
                 //création des animations, avec listeInscrit qui est composer des id des personnes
                 $listeAnim[$i]= new Animation($tabAnimation[$i]["id_animation"],$tabAnimation[$i]["nom_animation"] , $tabAnimation[$i]["type_animation"], $tabAnimation[$i]["description_animation"], $tabAnimation[$i]["date_animation"], $tabAnimation[$i]["horaire_debut"], $tabAnimation[$i]["horaire_fin"], $tabAnimation[$i]["nb_places"],$tabAnimation[$i]["tarif"], $listeInscri);
                 // print_r($listeInscri);
@@ -71,7 +72,13 @@ $connection = new PDO('mysql:host=localhost;port=3306;dbname=web_week','root',''
                 
             }
             }
-
+            if ($tabInscri==null){
+                if (isset($listeInscri)== false){
+                    $listeInscri=[];
+                }
+                for($i=0; $i<count($tabAnimation); $i++){
+                $listeAnim[$i]= new Animation($tabAnimation[$i]["id_animation"],$tabAnimation[$i]["nom_animation"] , $tabAnimation[$i]["type_animation"], $tabAnimation[$i]["description_animation"], $tabAnimation[$i]["date_animation"], $tabAnimation[$i]["horaire_debut"], $tabAnimation[$i]["horaire_fin"], $tabAnimation[$i]["nb_places"],$tabAnimation[$i]["tarif"], $listeInscri);}
+            }
 // ***********************************    Création de la fonction d'affichage  *********************************************
 
         function affichage($idAnim, $listeAnim, $listePerso){
@@ -106,11 +113,12 @@ $connection = new PDO('mysql:host=localhost;port=3306;dbname=web_week','root',''
             
     
             <tbody>');
+           
             for ($i=0; $i <count($listeAnim) ; $i++) { 
                 if ($listeAnim[$i]->type== $typeAnimation){
                     $date = new DateTime($listeAnim[$i]->date);
-                    $heureD = new DateTime($listeAnim[$i]->horaire_debut);
-                    $heureF = new DateTime($listeAnim[$i]->horaire_fin);
+                    $heureD =$listeAnim[$i]->horaire_debut;
+                    $heureF = $listeAnim[$i]->horaire_fin;
 
 
                     echo("<tr>");
@@ -143,7 +151,6 @@ $connection = new PDO('mysql:host=localhost;port=3306;dbname=web_week','root',''
             
         function selectAnim($listeAnim, $typeAnimation){
             //Affiche sous forme de select les animations en fonction de leur type
-            echo("couocu");
             
             for ($i=0; $i <count($listeAnim) ; $i++) { 
                 if ($listeAnim[$i]->type== $typeAnimation){
