@@ -23,9 +23,9 @@
       <section id="formulaire">
           <h2 id="contact"><?php echo FORM_TITRE;?></h2>
           <form action="" method="POST">
-            <input placeholder="<?php echo FORM_NOM;?>">
-            <input placeholder="E-mail">
-            <textarea placeholder="<?php echo FORM_MESSAGE;?>"></textarea>
+            <input type="text" placeholder="<?php echo FORM_NOM;?>" required="required">
+            <input type="email" placeholder="E-mail" required="required">
+            <textarea placeholder="<?php echo FORM_MESSAGE;?>" required="required"></textarea>
             <button class="btn"><?php echo FORM_BUTTON;?></button>
           </form>
           </div>
