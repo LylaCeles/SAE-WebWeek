@@ -2,13 +2,14 @@
 <html lang="fr">
 
 	<head>
-	<?php require_once("./Php/meta.php");?>
+		<?php require_once("./Php/meta.php");?>
 		<title>The european meals tour</title>
-		
-
-
+		<link rel="stylesheet" href="./CSS/connexion.css">
 	</head>
 	<body>
+		<?php
+		require_once("./Php/header.php");
+		?>
 		<h2>Vous pouvez vous connecter au compte administrateur.</h2>
 
 <!-- ************* Formulaire pour se connecter au compte admin *************** -->
@@ -29,7 +30,7 @@
 
 			</form>
         </fieldset>
-
+		<br>
 
 		<?php require_once("./Php/footer.php")?>
 
