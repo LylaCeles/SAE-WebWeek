@@ -32,8 +32,8 @@
         <?php
             if (!isset($_POST["email"])) {
         ?>
-        <h2>Formulaire de préinscription</h2>
-        <p>Vous pouvez vous préinscrire pour participer aux différentes animations. Le réglement se fera sur place </p>
+        <h2><?php echo TITRE_PREINSCRIPTION;?></h2>
+        <p><?php echo DESCR_PREINSCRIPTION;?></p>
 
         <form action="" method="POST">
             <div class="form_group">

@@ -1,21 +1,25 @@
 <header>
+    <?php
+        require_once("./lang.php");
+    ?>
+
     <a href="./index.php"><img src="./Image/logo/Logo_fond_blanc.png" alt=""></a>
     <nav>
         <ul class="menu">
-            <li><a href="./index.php">Accueil</a></li>
-            <li><a href="./region.php">Régions</a></li>
-            <li><a href="./animation.php">Animations</a></li>
-            <li><a href="./preinscription.php">Préinscription</a></li>
-            <li><a href="./faq.php">FAQ</a></li>
-            <li><a href="./contact.php">Contact</a></li>
+            <li><a href="./index.php"><?php echo ACCUEIL;?></a></li>
+            <li><a href="./region.php"><?php echo REGIONS;?></a></li>
+            <li><a href="./animation.php"><?php echo ANIMATION;?></a></li>
+            <li><a href="./preinscription.php"><?php echo PREINSCRIPTION;?></a></li>
+            <li><a href="./faq.php"><?php echo FAQ;?></a></li>
+            <li><a href="./contact.php"><?php echo CONTACT;?></a></li>
         </ul>
     </nav>
     <section class="language">
         <div class="selected_lang">
-            <p>Français</p>
+            <p><?php echo FR;?></p>
         </div>
         <ul>
-            <li><a href="#">English</a></li>
+            <li><a href="?lang=en"><?php echo EN;?></a></li>
         </ul>
     </section>
     
