@@ -1,15 +1,10 @@
-
-
-
 <!DOCTYPE html> 
 <html lang="fr">
 
 	<head>
-    <?php require_once("./Php/meta.php");?>
-
-
-	  	<meta name="description" content=""/>
+        <?php require_once("./Php/meta.php");?>
 		<title>The european meals tour</title>
+        <link rel="stylesheet" href="./CSS/modif_plat.css">
 		</head>
 	<body>
 		<?php
@@ -37,22 +32,24 @@
 
 					<fieldset>
                         <form action="" method="POST">
-            		    <legend><?php echo $tabPlat[0]["nom_plat"] ?></legend>
+            		    <legend><h3><?php echo $tabPlat[0]["nom_plat"] ?></h3></legend>
 
                             <p>
                                 <label for ="description">Description :</label>
+                                <br>
                                 <textarea type="text" name ="description"><?php echo($tabPlat[0]["description_plat"]); ?></textarea>
                             </p>
 
                             <p>
                                 <label for ="ingredient">Ingredients :</label>
+                                <br>
                                 <textarea type="text"  name ="ingredient"><?php echo($tabPlat[0]["ingredients_plat"]); ?></textarea>
                             </p>
 
                             <input type="file" accept="image/png, image/jpg" name="img_plat">
 
-				            <input type="submit" name="envoie" id="envoie_co">
-                            <input type='submit' name='supression' value="Supprimer le plat">
+				            <input type="submit" name="envoie" id="envoie_co" class="btn">
+                            <input type='submit' name='supression' value="Supprimer le plat" class="btn">
 
 
                         <form>

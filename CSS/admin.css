@@ -1,8 +1,10 @@
-body {
-    display: flex;
-    flex-direction: column ;
-    margin: 50px;
-}
 fieldset {
     background-color: #e7e7e7;
+    margin: 50px;
+}
+a {
+    color: #000;
+}
+a:hover {
+    color: #e8a670;
 }
