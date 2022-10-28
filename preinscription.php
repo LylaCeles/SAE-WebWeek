@@ -84,25 +84,25 @@
                 </div>
                 <div class="accordion-item">
                     <div class="accordion-item-header">
-                        <h3>Apprentissage</h3>
+                        <h3><?php echo ACCORDEON_2_TITRE;?></h3>
                     </div>
                     <div class="accordion-item-body">
                         <div class="accordion-item-body-content">
                         <img src="./Image/theatre.jpg" alt="">
                             
-                            <p>Choisissez votre horaire</p>
+                            <p><?php echo ACCORDEON_2_HORAIRE;?></p>
                                 <!-- Utiliser la base de donner pour créer le bon nombre de coches
                                 Select par type d'anim puis afficher chaque horaire en check box -->
                                 <select  name="animationA">>
-                                    <option selected="selected" value="null">Selectionez un apprentissage</option>
+                                    <option selected="selected" value="null"><?php echo ACCORDEON_2_SELECT;?></option>
                                 <?php selectAnim($listeAnim, "Apprentissage");?>
                                 </select>
 
-                            <p>Besoin de plus d'informations sur l'activité  ?</p>
+                            <p><?php echo ACCORDEON_2_INFOS;?></p>
 
                             
                             <div class="flex">
-                            <button class="btn"><a href="#">En savoir plus</a></button>
+                            <button class="btn"><a href="#"><?php echo ACCORDEON_2_INFOS_BUTTON;?></a></button>
                             <input class="btn" value ="S'inscrire"type="submit" name="btn">
                             </div>
                         </div>
@@ -110,25 +110,25 @@
                 </div>
                 <div class="accordion-item">
                     <div class="accordion-item-header">
-                        <h3>Concours</h3>
+                        <h3><?php echo ACCORDEON_3_TITRE;?></h3>
                     </div>
                     <div class="accordion-item-body">
                         <div class="accordion-item-body-content">
                         <img src="./Image/theatre.jpg" alt="">
                             
-                            <p>Choisissez votre horaire</p>
+                            <p><?php echo ACCORDEON_3_HORAIRE;?></p>
                                 <!-- Utiliser la base de donner pour créer le bon nombre de coches
                                 Select par type d'anim puis afficher chaque horaire en check box -->
                                 <select name="animationC">
-                                    <option selected="selected" value="null">Selectionez un concours</option>
+                                    <option selected="selected" value="null"><?php echo ACCORDEON_3_SELECT;?></option>
                                 <?php selectAnim($listeAnim, "Concours");?>
                                 </select>
 
-                            <p>Besoin de plus d'informations sur l'activité  ?</p>
+                            <p><?php echo ACCORDEON_3_INFOS;?></p>
 
                             
                             <div class="flex">
-                            <button class="btn"><a href="#">En savoir plus</a></button>
+                            <button class="btn"><a href="#"><?php echo ACCORDEON_3_INFOS_BUTTON;?></a></button>
                             <input class="btn" value ="S'inscrire"type="submit" name="btn">
                             </div>
                         </div>
@@ -191,9 +191,9 @@
                         
             ?>
             <section>
-                <h2>Merci pour votre préinscription !</h2>
-                <p>Votre préinscription à bien été prise en compte, le réglement se fera sur le site de l'événement.</p>
-                <p><b>Pour toute désinscription, veuillez nous le communiquer par mail</b></p>
+                <h2><?php echo REP_FORMULAIRE_TITRE;?></h2>
+                <p><?php echo REP_FORMULAIRE_TEXTE_1;?></p>
+                <p><b><?php echo REP_FORMULAIRE_TEXTE_2;?></b></p>
             </section>
             <?php
             }
