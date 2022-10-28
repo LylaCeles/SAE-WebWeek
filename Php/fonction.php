@@ -196,22 +196,19 @@ $resultat -> closeCursor();
 
 
     if ($tabInscrit==null){
-       echo("couocu");
+
         // On vérifie qu'il n'y a aucun lien entre la personne et l'animation, si le tableau est vide, cela veut dire que la personne n'est pas choisi cette animation, donc on peut crée le lien, il n'y aura pas de doublon
             $reqpreparee = $connection->prepare("INSERT INTO preinscrit(id_animation,id_personne, nb_personne) VALUES(:id_animation, :id_personne, :nb_personne)");
             $reqpreparee->bindParam(':id_animation', $idAnim, PDO::PARAM_STR); 
             $reqpreparee->bindParam(':id_personne', $idPerso, PDO::PARAM_STR); 
             $reqpreparee->bindParam(':nb_personne', $nb_places, PDO::PARAM_STR); 
-            echo("couocu");
+           
             $succes=$reqpreparee->execute();}
-            echo("gaaaaaaaaaaaaaaaah");
-            if($succes==true){
-       
-                   echo("aaaaah");                  
+           
+            if($succes!=true){
+                   echo"<p> Un problème est survenu lors de la préinscription !</p>";   
             }
-            else{
-                echo"<p> Un problème est survenu lors de la préinscription !</p>";
-            }
+            
     // for ($i=0; $i <count($tabRelation) ; $i++) { 
     //     //protection contre les doublons
     //     if ($tabRelation[$i]["id_personne"]==$idPerso && $tabRelation[$i]["id_animation"]==$idAnim) {
