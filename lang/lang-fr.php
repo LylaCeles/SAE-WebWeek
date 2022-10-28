@@ -94,7 +94,7 @@ define('TITRE_ACCORDEON_REGIONS','Les produits par régions');
 /* ********************** ANIMATION ********************** */
 
 define('ANIMATIONS','Animations');
-define('SOUS_TITRE',"Vous retrouverez l'ensemble des animations de notre évènement ici");
+define('SOUS_TITRE','Vous retrouverez l\'ensemble des animations de notre évènement ici');
 define('THEATRE','Théâtre culinaire');
 define('THEATRE_DESCR','Découvrez les histoires qui se cachent derrière certaines spécialités grâce à ce spectacle culinaire.');
 define('PREINSCRIRE','Se préinscrire');
@@ -192,15 +192,13 @@ define('LOCALISATION_EMPLACEMENT','Emplacement');
 
 
 
-
-
-
-
-
-
 /* ********************** FOOTER ********************** */
-
+define('NAVIGATION','Navigation');
+define('ADMINISTRATION','Administration');
+define('HORAIRES','Horaires');
+define('HORAIRES1','19 mai 11h-0h');
+define('HORAIRES2','20 mai 11h-0h');
+define('HORAIRES3','21 mai 11h-0h');
+define('FOLLOW','Suivez-nous');
 ?>
-
-<?php echo Q_ACCORDEON_1;?>
 
