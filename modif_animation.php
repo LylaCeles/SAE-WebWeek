@@ -5,9 +5,10 @@
 <html lang="fr">
 
 	<head>
-	<?php require_once("./Php/meta.php");?>
+		<?php require_once("./Php/meta.php");?>
 		<title>The european meals tour</title>
-		</head>
+		<link rel="stylesheet" href="./CSS/modif_animation.css">
+	</head>
 	<body>
 		<?php
         require_once("./Php/header.php");

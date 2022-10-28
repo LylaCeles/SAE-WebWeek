@@ -27,11 +27,10 @@
 <html lang="fr">
 
 	<head>
-	<?php require_once("Php/meta.php");?>
-
-	  	<meta name="description" content=""/>
+		<?php require_once("Php/meta.php");?>
+		<link rel="stylesheet" href="./CSS/admin.css">
 		<title>The European Meals Tour</title>
-		</head>
+	</head>
 	<body>
 		<?php
         require_once("./Php/header.php");
@@ -109,6 +108,7 @@
 
 
 				</fieldset>
+				<br>
 					<?php
 				
 				}
