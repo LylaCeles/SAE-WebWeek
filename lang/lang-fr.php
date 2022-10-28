@@ -182,7 +182,7 @@ Vous pouvez nous contacter avec ce formulaire de contact');
 define('FORM_TITRE','Contactez-nous');
 
 
-define('FORM_NOM','Nom');
+define('FORM_NOM_PH','Nom');
 define('FORM_MESSAGE','Votre message ici...');
 define('FORM_BUTTON','Prenom :');
 
