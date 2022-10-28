@@ -201,7 +201,7 @@
                 header('Location: preinscription.php');
 				exit();
             }
-        }
+    }
         ?>
 
     </div>

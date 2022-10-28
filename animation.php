@@ -13,6 +13,9 @@
     <?php
       require_once("./Php/header.php");
       require_once('Php/fonction.php');
+      require_once('Php/class_animation.php');
+      
+
     ?>
 
 <section>
@@ -38,7 +41,9 @@
               </div>
           </div>
 
-        <?php affichageGlobalAnimation($listeAnim, "Spectacle")?>
+        <?php 
+        // print_r($listeAnim);
+        affichageGlobalAnimation($listeAnim, "Spectacle");?>
           
 
         <div id="premierTrait"></div>
@@ -55,8 +60,9 @@
               </div>
           </div>
 
-
-          <?php affichageGlobalAnimation($listeAnim, "Apprentissage")?>
+          <?php //print_r($listeAnim);
+                    affichageGlobalAnimation($listeAnim, "Apprentissage");
+          ?>
 
         <div id="premierTrait"></div>
         
