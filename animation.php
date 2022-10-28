@@ -13,17 +13,14 @@
     <?php
       require_once("./Php/header.php");
       require_once('Php/fonction.php');
-      require_once('Php/class_animation.php');
-      
-
     ?>
 
 <section>
     <div id="principale">
-        <h2>Animations</h2>
+        <h2><?php echo ANIMATIONS;?></h2>
         <div id="premierTrait"></div>
         <br>
-        <h3>Vous retrouverez l'ensemble des animations de notre évènement ici</h3>
+        <h3><?php echo SOUS_TITRE;?></h3>
     </div>
 </section>
 
@@ -32,18 +29,16 @@
     <div class="content">
           <div class="card">
               <div class="left">
-                  <h2>Théâtre culinaire</h2>
+                  <h2><?php echo THEATRE;?></h2>
                   <p>Découvrez les histoires qui se cachent derrière certaines spécialités grâce à ce spectacle culinaire.</p>
-                  <button class="btn">Se préinscrire</button>
+                  <button class="btn"><?php echo PREINSCRIRE;?></button>
               </div>
               <div class="right">
                   <img src="./Image/theatre.jpg" alt="">
               </div>
           </div>
 
-        <?php 
-        // print_r($listeAnim);
-        affichageGlobalAnimation($listeAnim, "Spectacle");?>
+        <?php affichageGlobalAnimation($listeAnim, "Spectacle")?>
           
 
         <div id="premierTrait"></div>
@@ -51,26 +46,25 @@
 
           <div class="card">
               <div class="left">
-                  <h2>Ateliers apprentissages</h2>
-                  <p>Venez apprendre à cuisiner des spécialités culinaires. Les aliments et le matériel sont compris. Un chef vous encadrera et vous pourrez repartir avec votre plat !</p>
-                  <button class="btn">Se préinscrire</button>
+                  <h2><?php echo ATELIER;?></h2>
+                  <p><?php echo ATELIER_DESCR;?></p>
+                  <button class="btn"><?php echo PREINSCRIRE;?></button>
               </div>
               <div class="right">
                   <img src="./Image/atelier.jpg" alt="">
               </div>
           </div>
 
-          <?php //print_r($listeAnim);
-                    affichageGlobalAnimation($listeAnim, "Apprentissage");
-          ?>
+
+          <?php affichageGlobalAnimation($listeAnim, "Apprentissage")?>
 
         <div id="premierTrait"></div>
         
         <div class="card">
           <div class="left">
-              <h2>Concours</h2>
-              <p>Voici le concours des différents plats proposés par chaque chef des régions volontaires. Un jury composé de cuisiniers ainsi que de vous, leur public, est mis en place.</p>
-              <button class="btn">Se préinscrire</button>
+              <h2><?php echo CONCOURS;?></h2>
+              <p><?php echo CONCOURS_DESCR;?></p>
+              <button class="btn"><?php echo PREINSCRIRE;?></button>
           </div>
           <div class="right">
               <img src="./Image/tournoi.jpg" alt="">

@@ -93,9 +93,15 @@ define('TITRE_ACCORDEON_REGIONS','Les produits par régions');
 
 /* ********************** ANIMATION ********************** */
 
-
-
-
+define('ANIMATIONS','Animations');
+define('SOUS_TITRE',"Vous retrouverez l'ensemble des animations de notre évènement ici");
+define('THEATRE','Théâtre culinaire');
+define('THEATRE_DESCR','Découvrez les histoires qui se cachent derrière certaines spécialités grâce à ce spectacle culinaire.');
+define('PREINSCRIRE','Se préinscrire');
+define('ATELIER','Ateliers apprentissages');
+define('ATELIER_DESCR','Venez apprendre à cuisiner des spécialités culinaires. Les aliments et le matériel sont compris. Un chef vous encadrera et vous pourrez repartir avec votre plat !');
+define('CONCOURS','Concours');
+define('CONCOURS_DESCR','Voici le concours des différents plats proposés par chaque chef des régions volontaires. Un jury composé de cuisiniers ainsi que de vous, leur public, est mis en place.');
 
 
 /* ********************** PREINSCRIPTION ********************** */
