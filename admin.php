@@ -41,7 +41,7 @@
 				$nom_admin = $_POST["id"];
 				$mdp = $_POST["mdp"];
 				// Vérification du mdp et du nom du compte
-				if ($mdp == "SAE_W€bW€€k" && $nom_admin=="MageNoirToutPuissant"){
+				if ($mdp == "" && $nom_admin==""){
 					?>
 
 					<h2>Vous pouvez modifier certaines informations présente sur le site.</h2>
