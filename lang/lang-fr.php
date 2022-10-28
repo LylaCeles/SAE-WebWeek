@@ -101,7 +101,45 @@ define('TITRE_ACCORDEON_REGIONS','Les produits par régions');
 /* ********************** PREINSCRIPTION ********************** */
 
         /* ***INTRO PREINSCRIPTION*** */
+
+/* descripation page */
 define('TITRE_PREINSCRIPTION','Formulaire de préinscription');
 define('DESCR_PREINSCRIPTION','Vous pouvez vous préinscrire pour participer aux différentes animations. Le réglement se fera sur place ');
+
+        /* ***FORMULAIRE*** */
+define('FORM_NOM','Nom :');
+define('FORM_PRENOM','Prenom :');
+define('FORM_MAIL','Adresse mail :');
+define('FORM_PALCES','Nombre de places :');
+
+/* accordéon */
+define('ACCORDEON_1_TITRE','Theatre culinaire');
+define('ACCORDEON_1_HORAIRE','Choisissez votre horaire');
+define('ACCORDEON_1_SELECT','Selectionez un spectacle');
+define('ACCORDEON_1_INFOS','Besoin de plus d\'informations sur l\'activité  ?');
+define('ACCORDEON_1_INFOS_BUTTON','En savoir plus');
+
+
+
+
+/* ********************** FAQ ********************** */
+
+/* descripation page */
+define('TITRE_PFAQ','FAQ');
+define('DESCR_PFAQ','Trouvez l\'ensemble de nos questions les plus posées.');
+
+/* accordéon (4 premier dans Index) */
+define('Q_ACCORDEON_5','Puis-je gouter les plats présents ?');
+define('R_ACCORDEON_5','Les différents stands vous proposent des dégustations pour pouvoir vivre une vraie expérience gastronomique et vous décider sur les plats que vous souhaiter achete');
+define('Q_ACCORDEON_6','Que faire si je ne peux pas venir, alors que je me suis préinscrit à une animation ? ');
+define('R_ACCORDEON_6','Si vous ne pouvez pas venir, pas de problème. Essayez de nous prévenir le plus tôt possible pour permettre de libérer votre place.');
+define('Q_ACCORDEON_7','Il y a-t-il des espaces sanitaires ?');
+define('R_ACCORDEON_7','Nous avons installé des sanitaires au milieu du parcours pour rendre l\'expérience meilleure pour tous.');
+define('Q_ACCORDEON_8','Toutes les régions seront t-elles présentes ?');
+define('R_ACCORDEON_8','L\'ensemble des régions française sera représenté gastronomiquement à notre événement.');
+
+/* pas trouver de réponse */
+define('REPONSE_TEXT','Vous n\'avez pas trouvé réponse à vos questions ?');
+define('REPONSE_TEXT_BUTTON','Nous contacter');
 ?>
 
