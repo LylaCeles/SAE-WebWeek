@@ -27,8 +27,8 @@ class Personne{
     }
 
 
-    public function listeCheck(){
-        echo ("<option value='".$this->id."'>".$this->nom." ".$this->prenom."</option><br>");
+    public function check(){
+        echo ("<option value='".$this->id."'>".$this->nom." ".$this->prenom."</option>");
     }
 
 }

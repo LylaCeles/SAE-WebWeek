@@ -66,11 +66,12 @@ $connection = new PDO('mysql:host=localhost;port=3306;dbname=web_week','root',''
                 //création des animations, avec listeInscrit qui est composer des id des personnes
                 $listeAnim[$i]= new Animation($tabAnimation[$i]["id_animation"],$tabAnimation[$i]["nom_animation"] , $tabAnimation[$i]["type_animation"], $tabAnimation[$i]["description_animation"], $tabAnimation[$i]["date_animation"], $tabAnimation[$i]["horaire_debut"], $tabAnimation[$i]["horaire_fin"], $tabAnimation[$i]["nb_places"],$tabAnimation[$i]["tarif"], $listeInscri);
                 // print_r($listeInscri);
+              
+                
                 
             }
             }
 
-           
 // ***********************************    Création de la fonction d'affichage  *********************************************
 
         function affichage($idAnim, $listeAnim, $listePerso){
@@ -86,6 +87,7 @@ $connection = new PDO('mysql:host=localhost;port=3306;dbname=web_week','root',''
             
         }
 
+// ***********************************    Création de la fonction d'affichage de toute les animation *********************************************
 
         function affichageGlobalAnimation($listeAnim, $typeAnimation){
             // Affiche toute les informations des animations contenu dans listeAnim en fonction de leur type
@@ -124,17 +126,185 @@ $connection = new PDO('mysql:host=localhost;port=3306;dbname=web_week','root',''
 
             
         }
+// ***********************************    Création de la fonction pour les select  *********************************************
 
-        function supression($idAnim, $listePerso){
+        function selectPerso($idAnim, $listePerso, $listeAnim){
+            //Select pour les personnes inscrit a une certaine animation
+            
+            
             for($i=0;$i<count($listeAnim); $i++){
+                
                 if ($listeAnim[$i]->id == $idAnim){
-                    $listeAnim[$i]->listeCheck();
+                    //Création de l'option pour toute les personnes
+                    $listeAnim[$i]->creaListeCheck($listePerso);// Méthode qui crée des select avec les info de l'objet
                 }
             }
         }
             
+        function selectAnim($listeAnim, $typeAnimation){
+            //Affiche sous forme de select les animations en fonction de leur type
+            echo("couocu");
             
+            for ($i=0; $i <count($listeAnim) ; $i++) { 
+                if ($listeAnim[$i]->type== $typeAnimation){
+                   
+                    $listeAnim[$i]->check();
+
+        }
+    }
+}   
             
-           
+// ***********************************    Création des fonction pour crée dans la BDD *********************************************
+
+function insertion($nom,$prenom,$email){
+    //Création de la personne dans la BDD
+    $connection = new PDO('mysql:host=localhost;port=3306;dbname=web_week','root','');
+
+    $reqpreparee = $connection->prepare("INSERT INTO personne(nom_personne, prenom_personne, email_personne) VALUES(:nom, :prenom, :email)");
+    $reqpreparee->bindParam(':nom', $nom, PDO::PARAM_STR); 
+    $reqpreparee->bindParam(':prenom', $prenom, PDO::PARAM_STR);
+    $reqpreparee->bindParam(':email', $email, PDO::PARAM_STR);
+
+    
+    $succes=$reqpreparee->execute();
+
+    if($succes!=true){
+        echo"<p> Un problème est survenu lors de la préinscription !</p>";
+       
+                                    
+    }
+
+
+    
+    // $requete = 'SELECT * FROM preinscrit WHERE personne.id_personne = preinscrit.id_personne';
+    // $resultat = $connection ->query($requete);
+    // $tabRelation = $resultat -> fetchAll();
+    // $resultat -> closeCursor();
+}
+
+
+function preInscription ($idAnim, $idPerso, $nb_places){
+    // Création du lien personne - animation
+$connection = new PDO('mysql:host=localhost;port=3306;dbname=web_week','root','');
+$requete = 'SELECT * FROM preinscrit WHERE id_personne='.$idPerso.' AND id_animation = '.$idAnim; // relation correspond a la table intermediaire
+//  $requete= 'SELECT * FROM preinscrit';
+
+$resultat = $connection ->query($requete);
+$tabInscrit = $resultat -> fetchAll();
+$resultat -> closeCursor();
+
+
+
+    if ($tabInscrit==null){
+       echo("couocu");
+        // On vérifie qu'il n'y a aucun lien entre la personne et l'animation, si le tableau est vide, cela veut dire que la personne n'est pas choisi cette animation, donc on peut crée le lien, il n'y aura pas de doublon
+            $reqpreparee = $connection->prepare("INSERT INTO preinscrit(id_animation,id_personne, nb_personne) VALUES(:id_animation, :id_personne, :nb_personne)");
+            $reqpreparee->bindParam(':id_animation', $idAnim, PDO::PARAM_STR); 
+            $reqpreparee->bindParam(':id_personne', $idPerso, PDO::PARAM_STR); 
+            $reqpreparee->bindParam(':nb_personne', $nb_places, PDO::PARAM_STR); 
+            echo("couocu");
+            $succes=$reqpreparee->execute();}
+            echo("gaaaaaaaaaaaaaaaah");
+            if($succes==true){
+       
+                   echo("aaaaah");                  
+            }
+            else{
+                echo"<p> Un problème est survenu lors de la préinscription !</p>";
+            }
+    // for ($i=0; $i <count($tabRelation) ; $i++) { 
+    //     //protection contre les doublons
+    //     if ($tabRelation[$i]["id_personne"]==$idPerso && $tabRelation[$i]["id_animation"]==$idAnim) {
+    //         $protection = 1;
+    //     }
+    // }
+    // if (isset($protection)==false){
+    //     $reqpreparee = $connection->prepare("INSERT INTO preinscrit(id_personne, id_animation, nb_places) VALUES (:id_personne, :id_animation, :nb_places)");
+    //         $reqpreparee->bindParam(':id_personne', $idPerso); 
+    //         $reqpreparee->bindParam(':id_animation', $idAnim); 
+    //         $reqpreparee->bindParam(':nb_places', $nb_places); 
+    //         $succes=$reqpreparee->execute();
+    // }
+}
+
+        
+function creationAnim($nom, $description, $date, $horaireD, $horaireF, $type, $nb_place, $tarif){
+    // Création de l'animation dans la bdd
+    
+    $connection = new PDO('mysql:host=localhost;port=3306;dbname=web_week','root','');
+    $reqpreparee = $connection->prepare("INSERT INTO animation(nom_animation, description_animation, type_animation, date_animation, horaire_debut, horaire_fin, nb_places, tarif) VALUES(:nom_animation, :description_animation, :type_animation, :date_animation, :horaire_debut, :horaire_fin, :nb_places, :tarif)");
+    $reqpreparee->bindParam(':nom_animation', $nom, PDO::PARAM_STR); 
+    $reqpreparee->bindParam(':description_animation', $description, PDO::PARAM_STR);
+    $reqpreparee->bindParam(':type_animation', $type, PDO::PARAM_STR);
+    $reqpreparee->bindParam(':date_animation', $date, PDO::PARAM_STR);
+    $reqpreparee->bindParam(':horaire_debut', $horaireD, PDO::PARAM_STR);
+    $reqpreparee->bindParam(':horaire_fin', $horaireF, PDO::PARAM_STR);
+    $reqpreparee->bindParam(':nb_places', $nb_place, PDO::PARAM_STR);
+    $reqpreparee->bindParam(':tarif', $tarif, PDO::PARAM_STR);
+    // print_r($reqpreparee);
+
+    
+    $succes=$reqpreparee->execute();
+    if($succes==true){
+            
+                                        
+    }
+    else{
+        echo"<p> Un problème est survenu lors de la création de l'oeuvre !</p>";
+    }
+}
+
+
+
+function creationPlat($nom, $description,$ingredient, $region){
+    //Création de plat dans la bdd
+    $connection = new PDO('mysql:host=localhost;port=3306;dbname=web_week','root','');
+    $reqpreparee = $connection->prepare("INSERT INTO plat(nom_plat, description_plat, ingredient_plat, id_region) VALUES(:nom_plat, :description_plat, :ingredient_plat, :id_region)");
+    $reqpreparee->bindParam(':nom_plat', $nom, PDO::PARAM_STR); 
+    $reqpreparee->bindParam(':description_plat', $description, PDO::PARAM_STR);
+    $reqpreparee->bindParam(':ingredient_plat', $ingredient, PDO::PARAM_STR);
+    $reqpreparee->bindParam(':id_region', $region, PDO::PARAM_STR);
+    $succes=$reqpreparee->execute();
+    if($succes==true){
+            
+        header('Location: admin.php');
+        exit();                            
+    }
+
+
+
+}
+
+
+// ***********************************    Création des fonction pour supprimer des elements dans la BDD *********************************************
+
+function supprPerso($idPerso, $idAnim){
+    $connection = new PDO('mysql:host=localhost;port=3306;dbname=web_week','root','');
+
+                $requete='DELETE FROM `preinscrit` WHERE `preinscrit`.`id_personne` ='.$idPerso.' AND `preinscrit`.`id_animation`='.$idAnim;
+                $resultat = $connection ->query($requete);
+                header('Location: modif_animation.php?id='.$idAnim);
+					exit();
+		        // $tabRegion = $resultat -> fetchAll();
+		        // $resultat -> closeCursor();
+            
+        }
+function supprAnimation($id){
+   
+    $connection = new PDO('mysql:host=localhost;port=3306;dbname=web_week','root','');
+    $requete='DELETE FROM `animation` WHERE `animation`.`id_animation` ='.$id;
+                $resultat = $connection ->query($requete);
+                header('Location: admin.php');
+					exit();
+}
+
+function supprPlat($id){
+    
+    $connection = new PDO('mysql:host=localhost;port=3306;dbname=web_week','root','');
+    $requete='DELETE FROM `plat` WHERE `plat`.`id_plat` ='.$id;
+                $resultat = $connection ->query($requete);
+                header('Location: admin.php');
+					exit();
+}
                     
 ?>           

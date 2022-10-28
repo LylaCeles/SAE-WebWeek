@@ -24,8 +24,12 @@ class Animation {
 
         $this->date = $date;
         $this->nb_place = $nb_place;
-        $this->horaire_debut = $horaire_debut;
-        $this->horaire_fin = $horaire_fin;
+
+        $this->horaire_debut = new DateTime($horaire_debut);;
+        $this->horaire_fin = new DateTime($horaire_fin);
+        
+               
+
         $this->tarif = $tarif;
         // echo($this->nom);
         // echo($this->id);
@@ -89,14 +93,13 @@ class Animation {
         <tbody>');
        
                 $date = new DateTime($this->date);
-                $heureD = new DateTime($this->horaire_debut);
-                $heureF = new DateTime($this->horaire_fin);
+               
 
 
                 echo("<tr>");
                 echo('<td>'.$this->nom.'</td>
-                    <td>'.$heureD->format('G:i').' - '.$heureF->format('G:i').'</td>
-                
+                    <td>'.$this->horaire_debut->format('G:i').' - '.$this->horaire_fin->format('G:i').'</td>
+                oraire
                 <td>'.$date->format('j/n/Y').'</td>
                 <td>'.$this->nb_place.'</td>
                 <td>'.$this->tarif.'€</td></tr>');
@@ -104,7 +107,25 @@ class Animation {
             }
         
     
+        public function creaListeCheck($personne){
+            foreach($this->inscrit as $tab){
+            
+                for ($i=0; $i <count($personne) ; $i++) { 
+                    if ($tab["id"]== $personne[$i]->id){
+                        echo("<ul>");
+                        $personne[$i]->check();
+                        echo("</ul>");
+                    }
+                }
+            }
+            if ($this->inscrit == null) {
+                echo("personne ne s'est inscrit a cette animation");
+            }
+            }
 
+        public function check(){
+            echo ("<option value='".$this->id."'>".$this->nom." : ".$this->horaire_debut->format('G:i')."</option>");
+        }
 
 
     

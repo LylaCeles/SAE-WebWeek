@@ -15,7 +15,7 @@
 			// Protection pour que personne ne puisse accèder a la page s'il n'est pas passé par le formulaire de la page connexion.php
 			if (isset($_GET["id"])){
 				$id_anim = $_GET["id"];
-                require_once("Php/fonction.php");
+                require_once("./Php/fonction.php");
                 
                 
 
@@ -24,6 +24,7 @@
 					<fieldset>
 
 					<?php
+			
 							affichage($id_anim, $listeAnim,$listePerso);
 							?>
 							</fieldset>
@@ -31,16 +32,32 @@
 							<fieldset>
 								<legend>Modifications</legend>
                         <form action="" method="POST">
+								
 								<select name="selectPerso">
+									<option value="null">Selectionez une personne</option>
 									<!-- Le select aura la valeur de l'id de la personne -->
-                           		<?php supression($id_anim,$listePerso );?>					
+                           		<?php selectPerso($id_anim,$listePerso, $listeAnim); ?>					
 								
 								<select>
 								<input type='submit' name='envoie' value="Supprimer l'inscription">
+								<input type='submit' name='supression' value="Supprimer l'animation">
 							</form>
 						
 			</fieldset>
 						<?php
+
+						if (isset($_POST["envoie"])) {
+							$gens = $_POST["selectPerso"];
+							supprPerso($gens, $id_anim);
+						}
+						if(isset($_POST["supression"])){
+							supprAnimation($id_anim);
+						}
+
+
+
+
+
 						require_once("./Php/footer.php");
 				}
 
