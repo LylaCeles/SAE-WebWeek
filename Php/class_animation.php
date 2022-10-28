@@ -82,7 +82,6 @@ class Animation {
             <tr>
                 <th> </th>
                 <th>Horaire</th>
-              
                 <th>Date</th>
                 <th>Nombre de place</th>
                 <th>Tarif</th>
@@ -99,7 +98,6 @@ class Animation {
                 echo("<tr>");
                 echo('<td>'.$this->nom.'</td>
                     <td>'.$this->horaire_debut->format('G:i').' - '.$this->horaire_fin->format('G:i').'</td>
-                oraire
                 <td>'.$date->format('j/n/Y').'</td>
                 <td>'.$this->nb_place.'</td>
                 <td>'.$this->tarif.'€</td></tr>');
