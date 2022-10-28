@@ -1,0 +1,9 @@
+fieldset {
+    background-color: #e7e7e7;
+    margin: 50px;
+}
+textarea {
+    width : 50%;
+    font-family: "Josefin Sans" ;
+    margin: 2% 0% 2% 0%;
+}

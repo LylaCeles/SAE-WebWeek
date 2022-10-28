@@ -1,12 +1,8 @@
-body {
-    display: flex;
-    flex-direction: column ;
-    margin: 50px;
-}
 .btn {
     display: block;
     margin: auto;
 }
 fieldset {
     background-color: #e7e7e7;
+    margin : 50px;
 }
