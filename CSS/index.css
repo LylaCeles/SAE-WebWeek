@@ -141,6 +141,14 @@ a {
     margin: 0px 5%;
 }
 
+@media (max-width: 1030px) {
+    .imgsponso {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+}
+
 /* Tableau planning */
 #planning {
     margin: 50px;

@@ -83,3 +83,12 @@ header > a > img{
     border-radius: 3px;
 }
 
+
+@media (max-width: 860px) {
+    .menu {
+        flex-direction: column;
+    }
+
+}
+
+

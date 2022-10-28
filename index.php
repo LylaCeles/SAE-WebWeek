@@ -153,7 +153,7 @@
             <!-- Sponsors -->
             <section class="sponsors">
                 <h2><?php echo SPONSORS;?></h2>
-                <div>
+                <div class="imgsponso">
                     <img src="Image/logo-partenaires/logo-bonduelle.png" alt="logo bonduelle" width=150px>
                     <img src="Image/logo-partenaires/logo-lustucru.png" alt="logo lustucru" width=150px> 
                     <img src="Image/logo-partenaires/logo-nestle.png" alt="logo nestlé" width=150px>
