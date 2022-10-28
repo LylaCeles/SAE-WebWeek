@@ -94,7 +94,7 @@ define('TITRE_ACCORDEON_REGIONS','Products by region');
 /* ********************** ANIMATION ********************** */
 
 define('ANIMATIONS','Activities');
-define('SOUS_TITRE',"You will find all the animations of our event here.");
+define('SOUS_TITRE','You will find all the animations of our event here.');
 define('THEATRE','Culinary theater');
 define('THEATRE_DESCR','Discover the stories behind certain specialties with this culinary show.');
 define('PREINSCRIRE','Pre-register');
@@ -106,7 +106,59 @@ define('CONCOURS_DESCR','Here is the competition of the different dishes propose
 /* ********************** PREINSCRIPTION ********************** */
 
         /* ***INTRO PREINSCRIPTION*** */
+
+/* descripation page */
 define('TITRE_PREINSCRIPTION','Pre-registration form');
 define('DESCR_PREINSCRIPTION','You can pre-register to participate in the various activities. Payment will be made on site.');
+
+        /* ***FORMULAIRE*** */
+define('FORM_NOM','Name :');
+define('FORM_PRENOM','First name :');
+define('FORM_MAIL','Email :');
+define('FORM_PALCES','Number of places :');
+
+/* accordéon */
+define('ACCORDEON_1_TITRE','Culinary theater');
+define('ACCORDEON_1_HORAIRE','Choose your hours');
+define('ACCORDEON_1_SELECT','Selectionez un spectacle');
+define('ACCORDEON_1_INFOS','Need more information about the activity?');
+define('ACCORDEON_1_INFOS_BUTTON','Learn more');
+
+
+
+
+/* ********************** FAQ ********************** */
+
+/* descripation page */
+define('TITRE_PFAQ','FAQ');
+define('DESCR_PFAQ','Find all of our most asked questions.');
+
+/* accordéon (4 premier dans Index) */
+define('Q_ACCORDEON_5','Can I taste the dishes present ?');
+define('R_ACCORDEON_5','The different stands offer tastings so you can live a real gastronomic experience and decide on the dishes you want to buy.');
+define('Q_ACCORDEON_6','What if I can\'t come, even though I pre-registered for an event ?');
+define('R_ACCORDEON_6','If you can\'t come, no problem. Try to let us know as soon as possible to free up your place.');
+define('Q_ACCORDEON_7','Are there sanitary facilities ?');
+define('R_ACCORDEON_7','We have installed sanitary facilities in the middle of the course to make the experience better for everyone.');
+define('Q_ACCORDEON_8','Will all regions be present ?');
+define('R_ACCORDEON_8','All French regions will be represented gastronomically at our event.');
+
+/* pas trouver de réponse */
+define('REPONSE_TEXT','You have not found an answer to your questions ?');
+define('REPONSE_TEXT_BUTTON','Contact us');
+
+/* ********************** FOOTER ********************** */
+
+define('NAVIGATION','Navigation');
+define('ADMINISTRATION','Administration');
+define('HORAIRES','Schedule');
+define('HORAIRES1','may 19 11h-0h');
+define('HORAIRES2','may 20  11h-0h');
+define('HORAIRES3','may 21 11h-0h');
+define('FOLLOW','Follow us');
+
+
 ?>
+
+
 
