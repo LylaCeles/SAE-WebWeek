@@ -12,6 +12,7 @@
             <li><a href="./preinscription.php">Préinscriptions</a></li>
             <li><a href="./faq.php">FAQ</a></li>
             <li><a href="./contact.php" >Contact</a></li>
+            <li><a href="./connexion.php" >Administration</a></li>
           </ul>
         </div>
 

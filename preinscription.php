@@ -157,8 +157,8 @@
                 if ($_POST["animationC"]!='null') {
                     $id_animation= $_POST["animationC"];
                 }
-                if (isset($id_animation)){
-
+                
+                    if (isset($id_animation)){
                 
                     for ($i=0; $i < count($tabPersonne) ; $i++) { 
         
@@ -202,7 +202,7 @@
                 header('Location: preinscription.php');
 				exit();
             }
-        }
+    }
         ?>
 
     </div>
