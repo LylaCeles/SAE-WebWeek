@@ -20,7 +20,7 @@
   <section class="question">
 
                 <h2><?php echo TITRE_PFAQ;?></h2>
-                <p><?php echo DESCR_PFAQ;?></p>
+                <h3><?php echo DESCR_PFAQ;?></h3>
 
                 <!-- Accordéon -->
                 <div class="accordion">

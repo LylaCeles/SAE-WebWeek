@@ -33,7 +33,7 @@
             if (!isset($_POST["email"])) {
         ?>
         <h2><?php echo TITRE_PREINSCRIPTION;?></h2>
-        <p><?php echo DESCR_PREINSCRIPTION;?></p>
+        <h3><?php echo DESCR_PREINSCRIPTION;?></h3>
 
         <form action="" method="POST">
             <div class="form_group">
