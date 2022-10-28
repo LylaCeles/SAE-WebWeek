@@ -24,9 +24,9 @@
       <section id="formulaire">
           <h2 id="contact">Contactez-nous</h2>
           <form action="" method="POST">
-            <input placeholder="Nom">
-            <input placeholder="E-mail">
-            <textarea placeholder="Votre message ici..."></textarea>
+            <input type="text" placeholder="Nom" required="required">
+            <input type="email" placeholder="E-mail"required="required">
+            <textarea placeholder="Votre message ici..."required="required"></textarea>
             <button class="btn">Envoyer</button>
           </form>
           </div>
