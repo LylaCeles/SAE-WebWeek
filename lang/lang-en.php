@@ -103,6 +103,10 @@ define('ATELIER_DESCR','Come and learn how to cook culinary specialties. Food an
 define('CONCOURS','Competition');
 define('CONCOURS_DESCR','Here is the competition of the different dishes proposed by each chef of the voluntary regions. A jury composed of cooks as well as you, their public, is put in place.');
 
+
+
+
+
 /* ********************** PREINSCRIPTION ********************** */
 
         /* ***INTRO PREINSCRIPTION*** */

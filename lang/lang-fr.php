@@ -125,6 +125,25 @@ define('ACCORDEON_1_SELECT','Selectionez un spectacle');
 define('ACCORDEON_1_INFOS','Besoin de plus d\'informations sur l\'activité  ?');
 define('ACCORDEON_1_INFOS_BUTTON','En savoir plus');
 
+define('ACCORDEON_2_TITRE','Apprentissage');
+define('ACCORDEON_2_HORAIRE','Choisissez votre horaire');
+define('ACCORDEON_2_SELECT','Selectionez un apprentissage');
+define('ACCORDEON_2_INFOS','Besoin de plus d\'informations sur l\'activité  ?');
+define('ACCORDEON_2_INFOS_BUTTON','En savoir plus');
+
+define('ACCORDEON_3_TITRE','Concours');
+define('ACCORDEON_3_HORAIRE','Choisissez votre horaire');
+define('ACCORDEON_3_SELECT','Selectionez un coucour');
+define('ACCORDEON_3_INFOS','Besoin de plus d\'informations sur l\'activité  ?');
+define('ACCORDEON_3_INFOS_BUTTON','En savoir plus');
+
+
+/* Reponse formulaire */
+define('REP_FORMULAIRE_TITRE','Merci pour votre préinscription !');
+define('REP_FORMULAIRE_TEXTE_1','Votre préinscription à bien été prise en compte, le réglement se fera sur le site de l\'événement.');
+define('REP_FORMULAIRE_TEXTE_2','Pour toute désinscription, veuillez nous le communiquer par mail');
+
+
 
 
 
@@ -147,5 +166,41 @@ define('R_ACCORDEON_8','L\'ensemble des régions française sera représenté ga
 /* pas trouver de réponse */
 define('REPONSE_TEXT','Vous n\'avez pas trouvé réponse à vos questions ?');
 define('REPONSE_TEXT_BUTTON','Nous contacter');
+
+
+
+
+/* ********************** CONTACT ********************** */
+
+/* descripation page */
+define('TITRE_CONTACT','Contact');
+define('DESCR_CONTACT','Vous n\'avez pas trouvé de réponses  à votre problème dans notre  <a href="#">FAQ ?</a> Pas de problème ! <br>
+Vous pouvez nous contacter avec ce formulaire de contact');
+
+
+        /* ***FORMULAIRE*** */
+define('FORM_TITRE','Contactez-nous');
+define('FORM_BUTTON','Prenom :');
+
+
+        /* ***LOCALISATION*** */
+define('LOCALISATION_TITRE','Contactez-nous');
+define('LOCALISATION_TROUVER','Nous trouver');
+define('LOCALISATION_TROUVER_TEXTE','Vous pouvez nous rencontrer :<br> Du 19 au 21 mai de 11h à 0h');
+define('LOCALISATION_EMPLACEMENT','Emplacement');
+
+
+
+
+
+
+
+
+
+
+/* ********************** FOOTER ********************** */
+
 ?>
+
+<?php echo Q_ACCORDEON_1;?>
 
