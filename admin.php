@@ -93,10 +93,7 @@
 								<?php
 							
 						}
-					}
-
-
-					?>
+						?>
 				</fieldset>
 				<fieldset>
             		<legend><h3>Création</h3></legend>
@@ -110,6 +107,14 @@
 				</fieldset>
 				<br>
 					<?php
+					
+					require_once("./Php/footer.php");
+					}
+
+
+					else{
+						header('Location: connexion.php');
+						exit();}
 				
 				}
 				else{
@@ -120,7 +125,6 @@
 		
 		
 
-			require_once("./Php/footer.php");
 
 
 ?>

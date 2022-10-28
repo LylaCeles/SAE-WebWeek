@@ -31,8 +31,7 @@
               <div class="left">
                   <h2><?php echo THEATRE;?></h2>
                   <p>Découvrez les histoires qui se cachent derrière certaines spécialités grâce à ce spectacle culinaire.</p>
-                  <button class="btn"><?php echo PREINSCRIRE;?></button>
-              </div>
+                  <a href="preinscription.php"> <button  class="btn"><?php echo PREINSCRIRE;?></button></a>              </div>
               <div class="right">
                   <img src="./Image/theatre.jpg" alt="">
               </div>
@@ -48,7 +47,7 @@
               <div class="left">
                   <h2><?php echo ATELIER;?></h2>
                   <p><?php echo ATELIER_DESCR;?></p>
-                  <button class="btn"><?php echo PREINSCRIRE;?></button>
+                  <a href="preinscription.php"> <button  class="btn"><?php echo PREINSCRIRE;?></button></a>
               </div>
               <div class="right">
                   <img src="./Image/atelier.jpg" alt="">
@@ -64,8 +63,7 @@
           <div class="left">
               <h2><?php echo CONCOURS;?></h2>
               <p><?php echo CONCOURS_DESCR;?></p>
-              <button class="btn"><?php echo PREINSCRIRE;?></button>
-          </div>
+              <a href="preinscription.php"> <button  class="btn"><?php echo PREINSCRIRE;?></button></a>          </div>
           <div class="right">
               <img src="./Image/tournoi.jpg" alt="">
           </div>
