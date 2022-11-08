@@ -2,7 +2,7 @@
 <html lang="<?php echo $lang;?>">
   <head>
     <title>The European Meal Tour - Animation</title>
-    <link rel="stylesheet" href="./CSS/Animation.css">   
+    <link rel="stylesheet" href="./CSS/animation.css">   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     <?php
       		require_once("Php/meta.php");
@@ -12,7 +12,7 @@
 
     <?php
       require_once("./Php/header.php");
-      require_once('Php/fonction.php');
+      require_once("./Php/fonction.php");
     ?>
 
 <section>

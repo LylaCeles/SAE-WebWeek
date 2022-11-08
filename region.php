@@ -35,7 +35,7 @@
 
     <h3><?php echo DESCR_REGIONS;?></h3>
 
-    <img src="./Image/fresque.png" alt="" class="img">
+    <img src="./Image/Fresque.png" alt="" class="img">
     </div>
 
     <h2><?php echo TITRE_ACCORDEON_REGIONS;?></h2>
