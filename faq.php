@@ -6,9 +6,9 @@
             require_once("./Php/meta.php")
         ?>
         <link rel = "stylesheet" href = "./CSS/faq.css">
-        <link rel = "stylesheet" href = "./CSS/bouton.css">
         <link rel="stylesheet" href="./CSS/accordion.css">
         <script src="./Script/accordion.js" defer></script>
+        <title>FAQ</title>
     </head>
 
     <?php
