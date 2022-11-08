@@ -116,7 +116,7 @@ define('TITRE_PREINSCRIPTION','Pre-registration form');
 define('DESCR_PREINSCRIPTION','You can pre-register to participate in the various activities. Payment will be made on site.');
 
         /* ***FORMULAIRE*** */
-define('FORM_NOM','Name :');
+define('FORM_NOM_PH','Nom');
 define('FORM_PRENOM','First name :');
 define('FORM_MAIL','Email :');
 define('FORM_PALCES','Number of places :');

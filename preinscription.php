@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="<?php echo $lang;?>">
 
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">

@@ -15,12 +15,22 @@
         </ul>
     </nav>
     <section class="language">
+        <?php if ($lang == "fr" ) { ?>
         <div class="selected_lang">
             <p><?php echo FR;?></p>
         </div>
         <ul>
             <li><a href="?lang=en"><?php echo EN;?></a></li>
         </ul>
+        <?php } 
+        else { ?>
+        <div class="selected_lang">
+            <p><?php echo EN;?></p>
+        </div>
+        <ul>
+            <li><a href="?lang=fr"><?php echo FR;?></a></li>
+        </ul>
+        <?php } ?>
     </section>
     
 </header>

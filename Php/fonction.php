@@ -1,8 +1,8 @@
 <?php
 
 $connection = new PDO('mysql:host=localhost;port=3306;dbname=web_week','root','');
-                require_once("class_animation.php");
-                require_once("class_personne.php");
+                require_once("./Php/class_animation.php");
+                require_once("./Php/class_personne.php");
                 
 // ***********************************    Création POO pour l'affichage des animations  *********************************************
 
@@ -263,17 +263,17 @@ function creationAnim($nom, $description, $date, $horaireD, $horaireF, $type, $n
 function creationPlat($nom, $description,$ingredient, $region){
     //Création de plat dans la bdd
     $connection = new PDO('mysql:host=localhost;port=3306;dbname=web_week','root','');
-    $reqpreparee = $connection->prepare("INSERT INTO plat(nom_plat, description_plat, ingredient_plat, id_region) VALUES(:nom_plat, :description_plat, :ingredient_plat, :id_region)");
+    $reqpreparee = $connection->prepare("INSERT INTO plat(nom_plat, description_plat, ingredients_plat, id_region) VALUES(:nom_plat, :description_plat, :ingredient_plat, :id_region)");
     $reqpreparee->bindParam(':nom_plat', $nom, PDO::PARAM_STR); 
     $reqpreparee->bindParam(':description_plat', $description, PDO::PARAM_STR);
     $reqpreparee->bindParam(':ingredient_plat', $ingredient, PDO::PARAM_STR);
     $reqpreparee->bindParam(':id_region', $region, PDO::PARAM_STR);
     $succes=$reqpreparee->execute();
-    if($succes==true){
+/*     if($succes==true){
             
         header('Location: admin.php');
         exit();                            
-    }
+    } */
 
 
 
