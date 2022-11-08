@@ -17,7 +17,11 @@ form{
 }
 
 .form_group{
-    margin-bottom: 20px;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
 }
 
 .form_group > label{
@@ -40,12 +44,6 @@ img {
 
 @media (max-width: 690px) {
   
-    .form_group{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
     
     form ,img {
         width: 75%;
