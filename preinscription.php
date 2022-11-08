@@ -1,3 +1,7 @@
+<?php
+    require_once("./lang.php");
+?>
+
 <!DOCTYPE html>
 <html lang="<?php echo $lang;?>">
 
@@ -52,6 +56,7 @@
                 <label for="nb_places"><?php echo FORM_PALCES;?></label>
                 <input type="number" name="nb_places" required>
             </div>
+        
 
             <div class="accordion">
                 <div class="accordion-item">
@@ -60,7 +65,8 @@
                     </div>
                     <div class="accordion-item-body">
                         <div class="accordion-item-body-content">
-                            <img src="./Image/theatre.jpg" alt="">
+                         <div>
+                            <img src="./Image/theatre.jpg" alt="image théatre">
                             
                             <p><?php echo ACCORDEON_1_HORAIRE;?></p>
                                 <!-- Utiliser la base de donner pour créer le bon nombre de coches
@@ -71,6 +77,8 @@
                                 </select>
 
                             <p><?php echo ACCORDEON_1_INFOS;?></p>
+
+                         </div>
 
                             
                             <div class="flex">
@@ -88,7 +96,7 @@
                     </div>
                     <div class="accordion-item-body">
                         <div class="accordion-item-body-content">
-                        <img src="./Image/theatre.jpg" alt="">
+                        <img src="./Image/atelier.jpg" alt="image apprentissage">
                             
                             <p><?php echo ACCORDEON_2_HORAIRE;?></p>
                                 <!-- Utiliser la base de donner pour créer le bon nombre de coches
@@ -114,7 +122,7 @@
                     </div>
                     <div class="accordion-item-body">
                         <div class="accordion-item-body-content">
-                        <img src="./Image/theatre.jpg" alt="">
+                        <img src="./Image/tournoi.jpg" alt=" image concours">
                             
                             <p><?php echo ACCORDEON_3_HORAIRE;?></p>
                                 <!-- Utiliser la base de donner pour créer le bon nombre de coches
@@ -136,9 +144,9 @@
                 </div>
             </div>
 
-          
-            
         </form>
+            
+        
 
         <?php
             }

@@ -184,7 +184,7 @@ define('FORM_TITRE','Contactez-nous');
 
 define('FORM_NOM_PH','Nom');
 define('FORM_MESSAGE','Votre message ici...');
-define('FORM_BUTTON','Prenom :');
+define('FORM_BUTTON','Envoyer');
 
 
 

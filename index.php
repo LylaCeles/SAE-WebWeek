@@ -1,3 +1,7 @@
+<?php
+    require_once("./lang.php");
+?>
+
 <!DOCTYPE html>
 <html lang="<?php echo $lang;?>">
 
@@ -18,7 +22,7 @@
     <body>
 
         <?php
-        require_once("./Php/header.php")
+            require_once("./Php/header.php");
         ?>
 
         <section class="main">
