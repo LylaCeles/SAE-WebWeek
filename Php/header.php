@@ -1,7 +1,4 @@
 <header>
-    <?php
-        require_once("./lang.php");
-    ?>
 
     <a href="./index.php"><img src="./Image/logo/Logo_fond_blanc.png" alt=""></a>
     <nav>
