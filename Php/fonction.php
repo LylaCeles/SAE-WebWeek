@@ -33,7 +33,7 @@ $connection = new PDO('mysql:host=localhost;port=3306;dbname=web_week','root',''
 
             
 // ***********************************    Création des tableau d'objet  *********************************************
-           
+        $listePerso = [];   
             if ($tabPersonne!= null){
                 foreach ($tabPersonne as $j) {
                 //crée des objets de la classe Personne via la base de donnée
@@ -103,11 +103,11 @@ $connection = new PDO('mysql:host=localhost;port=3306;dbname=web_week','root',''
             <thead>
                 <tr>
                     <th> </th>
-                    <th>Horaire</th>
+                    <th>'.ANIMATIONS_HORAIRE.'</th>
                   
                     <th>Date</th>
-                    <th>Nombre de place</th>
-                    <th>Tarif</th>
+                    <th>'.ANIMATIONS_NB_PLACES.'</th>
+                    <th>'.ANIMATIONS_TARIF.'</th>
                 </tr>
             </thead>
             
