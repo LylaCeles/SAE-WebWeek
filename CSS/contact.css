@@ -97,14 +97,14 @@ textarea {
 }
 
 
-@media (max-width: 970px) {
+@media screen and (max-width: 970px) {
   #map {
       flex-direction: column;
   }
 
 }
 
-@media (max-width: 604px) {
+@media screen and (max-width: 604px) {
   .inté-map iframe {
       width: 400px;
   }

@@ -63,6 +63,19 @@ ul {
   border: solid;
 }
 
+@media (max-width: 1110px) {
+
+  .right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+  }
+  .card {
+    flex-direction: column;
+  }
+
+}
 
 
 /* **************** TABLEAUX INFORMATIONS ********************** */
@@ -97,7 +110,9 @@ tbody tr:nth-child(even){
 }
 
 @media screen and (max-width: 550px) {
-
+  body {
+    align-items: flex-start;
+  }
   .table-style  {
     width: 100%;
     margin: 0px;
@@ -108,5 +123,3 @@ tbody tr:nth-child(even){
 }
 
 }
-
-
