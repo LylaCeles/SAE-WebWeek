@@ -2,9 +2,11 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 100vh;
 }
 body > h2 {
     font-size: 80px;
+    margin: 0.5em 0;
 }
 .quatre-cent-quatre {
     font-size: 300px;
