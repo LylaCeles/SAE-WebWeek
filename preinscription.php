@@ -9,6 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The European Meals Tour - Préinscription</title>
+    <meta property="og:title" content="The European Meals Tour - Préinscription" />
     <link rel="stylesheet" href="./CSS/preinscription.css">
     <link rel="stylesheet" href="./CSS/accordion.css">
     <script src="./Script/accordion.js" defer></script>
@@ -212,6 +213,8 @@
     }
         ?>
 
+        <p><?php echo CONDITIONS_PREINSCRIPTION;?></p>
+        <br>
     </div>
     
     

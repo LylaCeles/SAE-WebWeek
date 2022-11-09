@@ -1,4 +1,14 @@
-<?php
+<!DOCTYPE html> 
+<html lang="fr">
+
+	<head>
+	    <?php require_once("./Php/meta.php");?>
+		<title>The European Meals Tour</title>
+        <meta property="og:title" content="The European Meals Tour" />
+        <link rel="stylesheet" href="./CSS/ajouter.css">
+	</head>
+	<body>
+		<?php
         require_once("./Php/header.php");
         $requete = 'SELECT * FROM region';
 		$resultat = $connection ->query($requete);

@@ -6,6 +6,7 @@
         ?>
         <link rel="stylesheet" href="./CSS/404.css">
         <title>404</title>
+        <meta property="og:title" content="404" />
     </head>
 
     <body>

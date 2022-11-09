@@ -3,7 +3,8 @@
 
 	<head>
         <?php require_once("./Php/meta.php");?>
-		<title>The european meals tour</title>
+		<title>The European Meals Tour - Modification des plats</title>
+        <meta property="og:title" content="The European Meals Tour - Modification des plats" />
         <link rel="stylesheet" href="./CSS/modif_plat.css">
 		</head>
 	<body>

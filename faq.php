@@ -13,7 +13,8 @@
         <link rel = "stylesheet" href = "./CSS/faq.css">
         <link rel="stylesheet" href="./CSS/accordion.css">
         <script src="./Script/accordion.js" defer></script>
-        <title>FAQ</title>
+        <title>The European Meals Tour - FAQ</title>
+        <meta property="og:title" content="The European Meals Tour - FAQ" />
     </head>
 
     <?php

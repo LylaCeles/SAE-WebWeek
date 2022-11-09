@@ -1,6 +1,8 @@
 <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<meta property="og:type" content="text/html; charset=UTF-8" />
 <meta name="author" content="Théo LESPAGNOL, Lyvia GUERRE-GENTON, Vincent DANET, Margot FLORENT"/>
 <meta name="description" content="The European Meals Tour"/>
+<meta property="og:description" content="The European Meals Tour"/>
 <meta name="keywords" content="gastronomie, recette, salon, activités, puy-en-velay"/>
             
             <!-- Style global -->
