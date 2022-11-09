@@ -29,10 +29,10 @@
       <section id="formulaire">
           <h2 id="contact"><?php echo FORM_TITRE;?></h2>
           <form action="" method="POST">
-            <input type="text" placeholder="<?php echo FORM_CONTACT_NOM;?>" required="required">
-            <input type="email" placeholder="E-mail" required="required">
-            <textarea placeholder="<?php echo FORM_MESSAGE;?>" required="required"></textarea>
-            <button class="btn"><?php echo FORM_BUTTON;?></button>
+            <input type="text" name="nom" placeholder="<?php echo FORM_CONTACT_NOM;?>" required="required">
+            <input type="email" name="email" placeholder="E-mail" required="required">
+            <textarea name="msg" placeholder="<?php echo FORM_MESSAGE;?>" required="required"></textarea>
+            <button class="btn btn_marge"><?php echo FORM_BUTTON;?></button>
           </form>
           </div>
     
@@ -62,3 +62,14 @@
   </body>
 
 </html>
+
+<?php
+if(isset($_POST["nom"])){
+
+  $to      = 't.lespagnol@outlook.fr';
+  $subject = $_POST["nom"].'Email :'.$_POST["email"].' | contact for EMT';
+  $message = $_POST["msg"];
+
+  mail($to, $subject, $message);
+}
+?>
