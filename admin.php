@@ -29,7 +29,8 @@ $connection = new PDO('mysql:host=localhost;port=3306;dbname=web_week','root',''
 	<head>
 		<?php require_once("Php/meta.php");?>
 		<link rel="stylesheet" href="./CSS/admin.css">
-		<title>The European Meals Tour</title>
+		<title>The European Meals Tour - Admin</title>
+		<meta property="og:title" content="The European Meals Tour - Admin" />
 	</head>
 	<body>
 		<?php

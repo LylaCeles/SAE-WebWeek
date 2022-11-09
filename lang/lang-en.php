@@ -152,6 +152,10 @@ define('REP_FORMULAIRE_TITRE','Thank you for your pre-registration!');
 define('REP_FORMULAIRE_TEXTE_1','Your pre-registration has been taken into account, payment will be made on the event site.');
 define('REP_FORMULAIRE_TEXTE_2','To unsubscribe, please let us know by email.');
 
+define('CONDITIONS_PREINSCRIPTION','Your data will be used for informational purposes only to guarantee your registration.
+<br>It will not be resold or kept following our show.
+<br>To unsubscribe, please contact us using our contact form.');
+
 
 
 

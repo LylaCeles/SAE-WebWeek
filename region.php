@@ -7,6 +7,7 @@
 
 <head>
   <title>The European Meals Tour - Régions</title>
+  <meta property="og:title" content="The European Meals Tour - Régions" />
 
   <?php
   require_once("Php/meta.php");

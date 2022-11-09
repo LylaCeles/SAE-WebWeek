@@ -8,6 +8,7 @@
 <html>
     <head>
         <title>The European Meals Tour - Accueil</title>
+        <meta property="og:title" content="The European Meals Tour - Accueil" />
         <?php
             require_once("./Php/meta.php");
         ?>

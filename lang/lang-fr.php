@@ -150,6 +150,10 @@ define('REP_FORMULAIRE_TITRE','Merci pour votre préinscription !');
 define('REP_FORMULAIRE_TEXTE_1','Votre préinscription à bien été prise en compte, le réglement se fera sur le site de l\'événement.');
 define('REP_FORMULAIRE_TEXTE_2','Pour toute désinscription, veuillez nous le communiquer par mail');
 
+define('CONDITIONS_PREINSCRIPTION','Vos données seront utilisées uniquement à titre informatif pour garantir votre inscription.
+<br>Elles ne seront ni revendues ni conservées à la suite de notre salon.
+<br>Pour vous désinscrire, merci de nous contacter grâce à notre formulaire de contact.');
+
 
 
 

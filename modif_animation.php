@@ -6,7 +6,8 @@
 
 	<head>
 		<?php require_once("./Php/meta.php");?>
-		<title>The european meals tour</title>
+		<title>The European Meals Tour - Modification des animations</title>
+		<meta property="og:title" content="The European Meals Tour - Modification des animations" />
 		<link rel="stylesheet" href="./CSS/modif_animation.css">
 	</head>
 	<body>

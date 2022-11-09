@@ -3,7 +3,8 @@
 
 	<head>
 		<?php require_once("./Php/meta.php");?>
-		<title>The european meals tour</title>
+		<title>The European Meals Tour - Connexion</title>
+		<meta property="og:title" content="The European Meals Tour - Connexion" />
 		<link rel="stylesheet" href="./CSS/connexion.css">
 	</head>
 	<body>

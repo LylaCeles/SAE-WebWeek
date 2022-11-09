@@ -6,6 +6,8 @@
 <html lang="<?php echo $lang;?>">
   <head>
     <title>The European Meal Tour - Contact</title>
+    <meta property="og:title" content="The European Meal Tour - Contact" />
+    
     <?php
       require_once("Php/meta.php");
     ?>

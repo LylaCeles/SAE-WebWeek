@@ -6,7 +6,8 @@
 
 	<head>
 	    <?php require_once("./Php/meta.php");?>
-		<title>The european meals tour</title>
+		<title>The European Meals Tour</title>
+        <meta property="og:title" content="The European Meals Tour" />
         <link rel="stylesheet" href="./CSS/ajouter.css">
 	</head>
 	<body>
