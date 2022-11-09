@@ -1,4 +1,7 @@
 <header>
+    <?php
+        require_once("./lang.php");
+    ?>
 
     <a href="./index.php"><img src="./Image/logo/Logo_fond_blanc.png" alt=""></a>
     <nav>
@@ -33,8 +36,7 @@
 </header>
 
 <?php
-
 require_once("./PHP/config.php");
 
-$connection = new PDO('mysql:host='.$hote.';port='.$port.';dbname='.$nombase, $user, $mdp );
+$connection = new PDO('mysql:host=localhost;port=3306;dbname=web_week','root','');
 ?>
