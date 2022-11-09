@@ -6,8 +6,6 @@
 <html lang="<?php echo $lang;?>">
 
 <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The European Meals Tour - Préinscription</title>
     <meta property="og:title" content="The European Meals Tour - Préinscription" />
     <link rel="stylesheet" href="./CSS/preinscription.css">
