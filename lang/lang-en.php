@@ -28,6 +28,9 @@ define('BIENVENUE','Welcome to the website of "The European Meals Tour"!
         /* ***Planning*** */
 define('PLANNING','Schedule');
 define('DESCR_PLANNING','The show opens from 11h to 0h, from May 19 to 21, 2023.');
+define('NOM_ENTETE','Name');
+define('HEURE_DEBUT_ENTETE','Start time');
+define('HEURE_FIN_ENTETE','End time');
 
 /* tableau planning */
 define('NOM_ANIMATION','nom_animation_anglais');
@@ -105,7 +108,9 @@ define('ATELIER_DESCR','Come and learn how to cook culinary specialties. Food an
 define('CONCOURS','Competition');
 define('CONCOURS_DESCR','Here is the competition of the different dishes proposed by each chef of the voluntary regions. A jury composed of cooks as well as you, their public, is put in place.');
 
-
+define('ANIMATIONS_HORAIRE','Schedule');
+define('ANIMATIONS_NB_PLACES','Number of places');
+define('ANIMATIONS_TARIF','Price');
 
 
 
@@ -118,7 +123,7 @@ define('TITRE_PREINSCRIPTION','Pre-registration form');
 define('DESCR_PREINSCRIPTION','You can pre-register to participate in the various activities. Payment will be made on site.');
 
         /* ***FORMULAIRE*** */
-define('FORM_NOM_PH','Nom');
+define('FORM_NOM_PREINSCRIPTION','Name');
 define('FORM_PRENOM','First name :');
 define('FORM_MAIL','Email :');
 define('FORM_PALCES','Number of places :');
@@ -141,6 +146,7 @@ define('ACCORDEON_3_HORAIRE','Choose your hours');
 define('ACCORDEON_3_SELECT','Select a competition');
 define('ACCORDEON_3_INFOS','Need more information about the activity ?');
 define('ACCORDEON_3_INFOS_BUTTON','Learn more');
+define('INSCRIRE','Registrer');
 
 
 /* Reponse formulaire */
@@ -182,7 +188,7 @@ You can contact us with this contact form.');
 
         /* ***FORMULAIRE*** */
 define('FORM_TITRE','Contact us');
-define('FORM_NOM','Name');
+define('FORM_CONTACT_NOM','Name');
 define('FORM_MESSAGE','Your message here...');
 define('FORM_BUTTON','Send');
 

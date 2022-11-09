@@ -9,13 +9,17 @@
 	<body>
 		<?php
 		require_once("./Php/header.php");
+		session_write_close();
+		// session_name("admin");
+		session_start();
+	
 		?>
 		<h2>Vous pouvez vous connecter au compte administrateur.</h2>
 
 <!-- ************* Formulaire pour se connecter au compte admin *************** -->
         <fieldset>
             <legend><h3>Connexion</h3></legend>
-			<form action ="admin.php" method="POST">
+			<form action ="" method="POST">
 				<p>
 					<label for ="id">Votre identifiant :</label>
 					<input type="text" name ="id" placeholder="Identifiant" required="required">
@@ -32,7 +36,22 @@
         </fieldset>
 		<br>
 
-		<?php require_once("./Php/footer.php")?>
+		<?php 
+		if (isset($_POST["id"])){
+			$nom_admin = $_POST["id"];
+			$mdp = $_POST["mdp"];
+			// Vérification du mdp et du nom du compte
+			if ($mdp == "SAE_W€bW€€k" && $nom_admin=="MageNoirToutPuissant"){
+				
+
+			$_SESSION["id"]= $nom_admin;
+			$_SESSION["mdp"]=$mdp;
+			header('location:admin.php');
+			exit();
+			
+		}
+	}
+		require_once("./Php/footer.php")?>
 
         
     </body>

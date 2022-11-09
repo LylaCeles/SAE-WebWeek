@@ -28,6 +28,9 @@ define('BIENVENUE','Bienvenue sur le site du salon "The European Meals Tour" !
         /* ***Planning*** */
 define('PLANNING','Planning');
 define('DESCR_PLANNING','Le salon ouvre de 11h à 24h, du 19 au 21 mai 2023.');
+define('NOM_ENTETE','Nom');
+define('HEURE_DEBUT_ENTETE','Heure de début');
+define('HEURE_FIN_ENTETE','Heure de fin');
 
 /* tableau planning */
 define('NOM_ANIMATION','nom_animation');
@@ -105,6 +108,9 @@ define('ATELIER_DESCR','Venez apprendre à cuisiner des spécialités culinaires
 define('CONCOURS','Concours');
 define('CONCOURS_DESCR','Voici le concours des différents plats proposés par chaque chef des régions volontaires. Un jury composé de cuisiniers ainsi que de vous, leur public, est mis en place.');
 
+define('ANIMATIONS_HORAIRE','Horaires');
+define('ANIMATIONS_NB_PLACES','Nombre de places');
+define('ANIMATIONS_TARIF','Tarif');
 
 /* ********************** PREINSCRIPTION ********************** */
 
@@ -112,10 +118,10 @@ define('CONCOURS_DESCR','Voici le concours des différents plats proposés par c
 
 /* descripation page */
 define('TITRE_PREINSCRIPTION','Formulaire de préinscription');
-define('DESCR_PREINSCRIPTION','Vous pouvez vous préinscrire pour participer aux différentes animations. Le réglement se fera sur place ');
+define('DESCR_PREINSCRIPTION','Vous pouvez vous préinscrire pour participer aux différentes animations. Le réglement se fera sur place.');
 
         /* ***FORMULAIRE*** */
-define('FORM_NOM','Nom :');
+define('FORM_NOM_PREINSCRIPTION','Nom :');
 define('FORM_PRENOM','Prenom :');
 define('FORM_MAIL','Adresse mail :');
 define('FORM_PALCES','Nombre de places :');
@@ -138,6 +144,7 @@ define('ACCORDEON_3_HORAIRE','Choisissez votre horaire');
 define('ACCORDEON_3_SELECT','Selectionez un coucour');
 define('ACCORDEON_3_INFOS','Besoin de plus d\'informations sur l\'activité  ?');
 define('ACCORDEON_3_INFOS_BUTTON','En savoir plus');
+define('INSCRIRE','S\'incrire');
 
 
 /* Reponse formulaire */
@@ -184,7 +191,7 @@ Vous pouvez nous contacter avec ce formulaire de contact');
 define('FORM_TITRE','Contactez-nous');
 
 
-define('FORM_NOM_PH','Nom');
+define('FORM_CONTACT_NOM','Nom');
 define('FORM_MESSAGE','Votre message ici...');
 define('FORM_BUTTON','Envoyer');
 
