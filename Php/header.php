@@ -36,7 +36,7 @@
 </header>
 
 <?php
-require_once("./PHP/config.php");
+require_once("./Php/config.php");
 
 $connection = new PDO('mysql:host=localhost;port=3306;dbname=web_week','root','');
 ?>
