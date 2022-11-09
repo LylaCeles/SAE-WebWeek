@@ -44,7 +44,7 @@
           </div>
 
         <?php affichageGlobalAnimation($listeAnim, "Spectacle")?>
-          
+
 
         
 
