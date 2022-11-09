@@ -131,7 +131,7 @@
 
 
             <p><?php echo REPONSE_TEXT;?></p>
-                <a href="contact.php">
+                <a class="a_btn" href="contact.php">
                 <button class="btn" type="button"><?php echo REPONSE_TEXT_BUTTON;?></button>
                 </a>
 
