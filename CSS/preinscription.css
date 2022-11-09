@@ -6,7 +6,7 @@
 }
 
 .container > p{
-    margin-bottom: 60px;
+    margin : 60px;
 }
 
 form{
@@ -51,6 +51,7 @@ img {
 
     .btn {
         width: 55%;
+        padding: 8px 35px;
     }
 
 }
