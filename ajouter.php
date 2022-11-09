@@ -1,6 +1,3 @@
-
-
-
 <!DOCTYPE html> 
 <html lang="fr">
 
@@ -35,6 +32,18 @@
                 
 
         ?>
+
+
+<!DOCTYPE html> 
+<html lang="fr">
+
+	<head>
+	    <?php require_once("./Php/meta.php");?>
+		<title>The european meals tour</title>
+        <link rel="stylesheet" href="./CSS/ajouter.css">
+	</head>
+	<body>
+		
 					<?php
                         if ($typeAjout=="animation") {
                     ?>
@@ -139,7 +148,7 @@
                         
                         <fieldset>
                             <legend><h3>Ajouter un plat</h3></legend>
-                            <form action="" method="POST">
+                            <form action="" method="POST" enctype="multipart/form-data">
                                 
                             <p>
                             <label for ="nom">Nom :</label>
@@ -157,6 +166,13 @@
                             <br>
                             <textarea type="text" name ="ingredient" placeholder="Veuillez les séparer d'une virgule !!"></textarea>
                             </p>
+
+                            <p>
+                            <label for ="ingredient">Image :</label>
+                            <br>
+                            </p>
+                            <input type="file" accept="image/png,image/webp,image/jpg" name ="image">
+                            
                             
                             <select name="region">
                                 <?php
@@ -171,7 +187,7 @@
 
                             <br>
                         <input type="submit" name="envoie" id="envoie_co" class="btn">
-                                    
+                            </form>
                                 </fieldset>
                                 <?php
 
@@ -193,8 +209,9 @@
                             }
 
                             if (isset($protection)==false){
-
-                                creationPlat($nom, $description,$ingredient, $region);
+                                move_uploaded_file($_FILES['image']['tmp_name'], 'Image/plat/'. basename($_FILES['image']['name']));
+                                $url = 'Image/plat/'. basename($_FILES['image']['name']);
+                                creationPlat($nom, $description,$ingredient, $region, $url);
                             }
 
 

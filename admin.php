@@ -17,6 +17,8 @@ $connection = new PDO('mysql:host=localhost;port=3306;dbname=web_week','root',''
 		$tabAnimation = $resultat -> fetchAll();
 		$resultat -> closeCursor();
 
+		//Création d'une session
+		
 
 
 ?>
@@ -38,12 +40,9 @@ $connection = new PDO('mysql:host=localhost;port=3306;dbname=web_week','root',''
 
 
 			// Protection pour que personne ne puisse accèder a la page s'il n'est pas passé par le formulaire de la page connexion.php
-			if (isset($_POST["id"])){
-				$nom_admin = $_POST["id"];
-				$mdp = $_POST["mdp"];
-				// Vérification du mdp et du nom du compte
-				if ($mdp == "" && $nom_admin==""){
-					?>
+			if (isset($_SESSION["mdp"])){
+				
+			?>
 
 					<h2>Vous pouvez modifier certaines informations présente sur le site.</h2>
 					<h3>Cliquez sur les éléments que vous souhaiter changer.</h3>
@@ -113,11 +112,9 @@ $connection = new PDO('mysql:host=localhost;port=3306;dbname=web_week','root',''
 					}
 
 
-					else{
-						header('Location: connexion.php');
-						exit();}
+					
 				
-				}
+				
 				else{
 					header('Location: connexion.php');
 					exit();

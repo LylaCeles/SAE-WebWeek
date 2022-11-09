@@ -20,6 +20,8 @@ define('EN','English');
 
 /* descripation page */
 define('BIENVENUE','Bienvenue sur le site du salon "The European Meals Tour" !
+        <br><br>Le salon qui vous fait découvrir (ou redécouvrir) les spécialités des régions de chaque pays européen depuis 2002.
+        <br><br>Venez découvrir la gastronomie française lors de cette édition au Puy-en-Velay !        
         <br><br>Vous pourrez retrouver les différentes animations proposées avec leur date et horaires. De plus, chaque plat proposé par les chefs des régions est détaillé.
         <br><br>N\'hésitez pas à vous pré-inscrire aux nombreuses activités !');
 

@@ -20,8 +20,10 @@ define('EN','English');
 
 /* descripation page */
 define('BIENVENUE','Welcome to the website of "The European Meals Tour"!
-<br><br>You will be able to find the various activities offered with their date and times. In addition, each dish proposed by the chefs of the regions is detailed.
-<br><br>Do not hesitate to pre-register for the many activities!');
+        <br><br>The show that makes you discover (or rediscover) the specialties of the regions of each European country since 2002.
+        <br><br>Come and discover the French gastronomy during this edition in Puy-en-Velay!   
+        <br><br>You will be able to find the various activities offered with their date and times. In addition, each dish proposed by the chefs of the regions is detailed.
+        <br><br>Do not hesitate to pre-register for the many activities!');
 
         /* ***Planning*** */
 define('PLANNING','Schedule');
