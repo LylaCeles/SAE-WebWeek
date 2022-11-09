@@ -81,7 +81,7 @@
 
                             
                             <div class="flex">
-                            <button class="btn" type="text"><a href="./animation.php"><?php echo ACCORDEON_1_INFOS_BUTTON;?></a></button>
+                            <button class="btn btn_marge" type="text"><a href="./animation.php"><?php echo ACCORDEON_1_INFOS_BUTTON;?></a></button>
                             <input class="btn" value =<?php echo INSCRIRE;?> type="submit" name="btn">
                             </div>
                             
@@ -109,7 +109,7 @@
 
                             
                             <div class="flex">
-                            <button class="btn" type="text"><a href="./animation.php"><?php echo ACCORDEON_2_INFOS_BUTTON;?></a></button>
+                            <button class="btn btn_marge" type="text"><a href="./animation.php"><?php echo ACCORDEON_2_INFOS_BUTTON;?></a></button>
                             <input class="btn" value =<?php echo INSCRIRE;?> type="submit" name="btn">
                             </div>
                         </div>
@@ -135,7 +135,7 @@
 
                             
                             <div class="flex">
-                            <button class="btn" type="text"><a href="./animation.php"><?php echo ACCORDEON_3_INFOS_BUTTON;?></a></button>
+                            <button class="btn btn_marge" type="text"><a href="./animation.php"><?php echo ACCORDEON_3_INFOS_BUTTON;?></a></button>
                             <input class="btn" value =<?php echo INSCRIRE;?> type="submit" name="btn">
                             </div>
                         </div>
