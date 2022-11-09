@@ -32,19 +32,20 @@
 
     <div class="content">
           <div class="card">
-              <div class="left">
+               <div class="left">
                   <h2><?php echo THEATRE;?></h2>
                   <p><?php echo THEATRE_DESCR;?></p>
-                  <a href="preinscription.php"> <button  class="btn"><?php echo PREINSCRIRE;?></button></a>              </div>
+                  <a href="preinscription.php"> <button  class="btn"><?php echo PREINSCRIRE;?></button></a>
+                </div>
               <div class="right">
-                  <img src="./Image/theatre.jpg" alt="">
+                  <img src="./Image/theatre.jpg" alt="Image théatre">
               </div>
           </div>
 
         <?php affichageGlobalAnimation($listeAnim, "Spectacle")?>
           
 
-        <div id="premierTrait"></div>
+        
 
 
           <div class="card">
@@ -54,14 +55,14 @@
                   <a href="preinscription.php"> <button  class="btn"><?php echo PREINSCRIRE;?></button></a>
               </div>
               <div class="right">
-                  <img src="./Image/atelier.jpg" alt="">
+                  <img src="./Image/atelier.jpg" alt="Image apprentissage">
               </div>
           </div>
 
 
           <?php affichageGlobalAnimation($listeAnim, "Apprentissage")?>
 
-        <div id="premierTrait"></div>
+        
         
         <div class="card">
           <div class="left">
@@ -69,7 +70,7 @@
               <p><?php echo CONCOURS_DESCR;?></p>
               <a href="preinscription.php"> <button  class="btn"><?php echo PREINSCRIRE;?></button></a>          </div>
           <div class="right">
-              <img src="./Image/tournoi.jpg" alt="">
+              <img src="./Image/tournoi.jpg" alt="Image concours">
           </div>
       </div>
 
