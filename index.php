@@ -58,7 +58,7 @@
                     echo'</table>';
                 ?>
 
-                <a href="animation.php"><button class="btn"><?php echo BTN_PLANNING;?></button></a>
+                <a class="a_btn" href="animation.php"><button class="btn"><?php echo BTN_PLANNING;?></button></a>
             </section>
             <section class="plat">
                 <h2><?php echo PLATS;?></h2>
@@ -95,7 +95,7 @@
                     }   
                 ?>
                 </div>
-                <a href="region.php"><button class="btn"><?php echo BTN_PLATS;?></button></a>
+                <a class="a_btn" href="region.php"><button class="btn"><?php echo BTN_PLATS;?></button></a>
             </section>
 
             <!-- FAQ -->
@@ -151,7 +151,7 @@
                     </div>
                 </div>
 
-                <a href="faq.php"><button class="btn"><?php echo BTN_FAQ;?></button></a>
+                <a class="a_btn" href="faq.php"><button class="btn"><?php echo BTN_FAQ;?></button></a>
             </section>
 
             <!-- Sponsors -->

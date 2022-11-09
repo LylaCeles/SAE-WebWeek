@@ -11,10 +11,12 @@
 
     <body>
         <h2>Error</h2>
-        <h2 class="quatre-cent-quatre">4
-            <img src="Image/logo/Logo_fond_blanc.png" alt="logo" height="250px">
-        4</h2>
-        <a href="index.php"><button class="btn">Back to website</button></a>
+        <div>
+            <h2 class="quatre-cent-quatre">4
+                <img src="Image/logo/Logo_fond_blanc.png" alt="logo" height="250px">
+            4</h2>
+        </div>
+        <a class="a_btn" href="index.php"><button class="btn">Back to website</button></a>
 
     </body>
 
