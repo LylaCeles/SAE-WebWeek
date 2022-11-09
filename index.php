@@ -51,7 +51,7 @@
                     $nbAnimation=count($tabAnimation);
 
                     // Tableau planning
-                    echo'<table id="planning">'.'<th id="entete">'."Date".'</th>'.'<th id="entete">'."Nom".'</th>'.'<th id="entete">'."Heure de début".'</th>'.'<th id="entete">'."Heure de fin".'</th>';
+                    echo'<table id="planning">'.'<th id="entete">'."Date".'</th>'.'<th id="entete">'.NOM_ENTETE.'</th>'.'<th id="entete">'.HEURE_DEBUT_ENTETE.'</th>'.'<th id="entete">'.HEURE_FIN_ENTETE.'</th>';
                     for($i=0; $i<$nbAnimation; $i++){
                         echo'<tr id="ligne">'.'<td>'.$tabAnimation[$i]["date_animation"].'</td>'.'<td>'.$tabAnimation[$i][NOM_ANIMATION].'</td>'.'<td>'.$tabAnimation[$i]["horaire_debut"].'</td>'.'<td>'.$tabAnimation[$i]["horaire_fin"].'</td>'.'</tr>';
                     }
