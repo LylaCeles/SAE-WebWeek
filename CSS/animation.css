@@ -110,9 +110,7 @@ tbody tr:nth-child(even){
 }
 
 @media screen and (max-width: 550px) {
-  body {
-    align-items: flex-start;
-  }
+
   .table-style  {
     width: 100%;
     margin: 0px;
@@ -121,5 +119,19 @@ tbody tr:nth-child(even){
   th, td {
     padding: 10px 7px;
 }
+
+
+
+}
+
+
+
+
+@media (max-width: 690px) {
+
+p {
+  width: 50%;
+}
+
 
 }

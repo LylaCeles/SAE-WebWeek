@@ -33,7 +33,7 @@ $connection = new PDO('mysql:host=localhost;port=3306;dbname=web_week','root',''
 
             
 // ***********************************    Création des tableau d'objet  *********************************************
-           
+        $listePerso = [];   
             if ($tabPersonne!= null){
                 foreach ($tabPersonne as $j) {
                 //crée des objets de la classe Personne via la base de donnée
@@ -103,11 +103,11 @@ $connection = new PDO('mysql:host=localhost;port=3306;dbname=web_week','root',''
             <thead>
                 <tr>
                     <th> </th>
-                    <th>Horaire</th>
+                    <th>'.ANIMATIONS_HORAIRE.'</th>
                   
                     <th>Date</th>
-                    <th>Nombre de place</th>
-                    <th>Tarif</th>
+                    <th>'.ANIMATIONS_NB_PLACES.'</th>
+                    <th>'.ANIMATIONS_TARIF.'</th>
                 </tr>
             </thead>
             
@@ -260,13 +260,14 @@ function creationAnim($nom, $description, $date, $horaireD, $horaireF, $type, $n
 
 
 
-function creationPlat($nom, $description,$ingredient, $region){
+function creationPlat($nom, $description,$ingredient, $region, $url){
     //Création de plat dans la bdd
     $connection = new PDO('mysql:host=localhost;port=3306;dbname=web_week','root','');
-    $reqpreparee = $connection->prepare("INSERT INTO plat(nom_plat, description_plat, ingredients_plat, id_region) VALUES(:nom_plat, :description_plat, :ingredient_plat, :id_region)");
+    $reqpreparee = $connection->prepare("INSERT INTO plat(nom_plat, description_plat, ingredients_plat, image_plat, id_region) VALUES(:nom_plat, :description_plat, :ingredient_plat,:image_plat, :id_region)");
     $reqpreparee->bindParam(':nom_plat', $nom, PDO::PARAM_STR); 
     $reqpreparee->bindParam(':description_plat', $description, PDO::PARAM_STR);
     $reqpreparee->bindParam(':ingredient_plat', $ingredient, PDO::PARAM_STR);
+    $reqpreparee->bindParam(':image_plat', $url, PDO::PARAM_STR);
     $reqpreparee->bindParam(':id_region', $region, PDO::PARAM_STR);
     $succes=$reqpreparee->execute();
 /*     if($succes==true){
@@ -285,10 +286,10 @@ function creationPlat($nom, $description,$ingredient, $region){
 function supprPerso($idPerso, $idAnim){
     $connection = new PDO('mysql:host=localhost;port=3306;dbname=web_week','root','');
 
-                $requete='DELETE FROM `preinscrit` WHERE `preinscrit`.`id_personne` ='.$idPerso.' AND `preinscrit`.`id_animation`='.$idAnim;
-                $resultat = $connection ->query($requete);
-                header('Location: modif_animation.php?id='.$idAnim);
-					exit();
+    $requete='DELETE FROM `preinscrit` WHERE `preinscrit`.`id_personne` ='.$idPerso.' AND `preinscrit`.`id_animation`='.$idAnim;
+    $resultat = $connection ->query($requete);
+    header('Location: modif_animation.php?id='.$idAnim);
+	exit();
 		        // $tabRegion = $resultat -> fetchAll();
 		        // $resultat -> closeCursor();
             
@@ -297,18 +298,28 @@ function supprAnimation($id){
    
     $connection = new PDO('mysql:host=localhost;port=3306;dbname=web_week','root','');
     $requete='DELETE FROM `animation` WHERE `animation`.`id_animation` ='.$id;
-                $resultat = $connection ->query($requete);
-                header('Location: admin.php');
-					exit();
+    $resultat = $connection ->query($requete);
+    header('Location: admin.php');
+	exit();
 }
 
 function supprPlat($id){
     
     $connection = new PDO('mysql:host=localhost;port=3306;dbname=web_week','root','');
+    //On récup' le chemin de l'image
+    $requete='SELECT image_plat FROM `plat` WHERE `plat`.`id_plat` ='.$id;
+    $resultat = $connection ->query($requete);
+    $url = $resultat -> fetch();
+    $resultat -> closeCursor();
+
+    //On supprime l'image avec unlink(url de l'image)
+    unlink($url['image_plat']);
+    //On supprime le plat
     $requete='DELETE FROM `plat` WHERE `plat`.`id_plat` ='.$id;
-                $resultat = $connection ->query($requete);
-                header('Location: admin.php');
-					exit();
+    $resultat = $connection ->query($requete);
+    
+    header('Location: admin.php');
+	exit();
 }
                     
 ?>           

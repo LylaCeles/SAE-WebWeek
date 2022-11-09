@@ -20,14 +20,14 @@
         <div class="bloc footer-horaire">
           <h3><?php echo HORAIRES;?></h3>
           <ul class="horaire-list">
-            <li> 19 mai 11h-0h</li>
-            <li> 20 mai 11h-0h</li>
-            <li> 21 mai 11h-0h</li>
+            <li><?php echo HORAIRES1;?></li>
+            <li><?php echo HORAIRES2;?></li>
+            <li><?php echo HORAIRES3;?></li>
           </ul>
         </div>
 
         <div class="bloc footer-reseaux">
-          <h3>Suivez-nous</h3>
+          <h3><?php echo FOLLOW;?></h3>
           <ul class="reseaux-list">
             <a href="http://www.instagram.com"><i class="fa fa-instagram"></i></a>
             <a href="http://www.facebook.fr"><i class="fa fa-facebook"></i></a>

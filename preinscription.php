@@ -41,7 +41,7 @@
 
         <form action="" method="POST">
             <div class="form_group">
-                <label for="nom"><?php echo FORM_NOM;?></label>
+                <label for="nom"><?php echo FORM_NOM_PREINSCRIPTION;?></label>
                 <input type="text" name="nom" required>
             </div>
             <div class="form_group">
@@ -83,7 +83,7 @@
                             
                             <div class="flex">
                             <button class="btn"><a href="#"><?php echo ACCORDEON_1_INFOS_BUTTON;?></a></button>
-                            <input class="btn" value ="S'inscrire"type="submit" name="btn">
+                            <input class="btn" value =<?php echo INSCRIRE;?> type="submit" name="btn">
                             </div>
                             
 
@@ -111,7 +111,7 @@
                             
                             <div class="flex">
                             <button class="btn"><a href="#"><?php echo ACCORDEON_2_INFOS_BUTTON;?></a></button>
-                            <input class="btn" value ="S'inscrire"type="submit" name="btn">
+                            <input class="btn" value =<?php echo INSCRIRE;?> type="submit" name="btn">
                             </div>
                         </div>
                     </div>
@@ -137,7 +137,7 @@
                             
                             <div class="flex">
                             <button class="btn"><a href="#"><?php echo ACCORDEON_3_INFOS_BUTTON;?></a></button>
-                            <input class="btn" value ="S'inscrire"type="submit" name="btn">
+                            <input class="btn" value =<?php echo INSCRIRE;?> type="submit" name="btn">
                             </div>
                         </div>
                     </div>
