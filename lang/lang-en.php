@@ -212,6 +212,18 @@ define('HORAIRES3','may 21 11h-0h');
 define('FOLLOW','Follow us');
 
 
+
+
+/* ********************** CGU ********************** */
+define('CGU','Legal informations');
+define('HEBERGEUR','Host');
+define('TXT_HEBERGEUR','Site host : Alwaysdata');
+define('D_INTELECTUELLE','Intellectual property');
+define('TXT_D_INTELECTUELLE','We inform you that any reproduction or representation, in whole or in part, by any means whatsoever, of this site, the logos and images that may appear on it is prohibited without the express authorisation of The European Meals Tour and would constitute an infringement punishable under Articles L 335-2 et seq. of the Intellectual Property Code.');
+define('D_PERSONNELLES','Protection of personal data');
+define('TXT_D_PERSONNELLES','Your personal information is only used on our site. It is not passed on to third party services or resold in any way. You can request the deletion of this information by <a href="./contact.php">contacting us</a>.');
+define('ENVIRONNEMENT','Environment');
+define('TXT_ENVIRONNEMENT','We are committed to redistributing food scraps to associations competent in the redistribution of these resources.');
 ?>
 
 

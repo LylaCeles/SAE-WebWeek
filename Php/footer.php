@@ -12,6 +12,7 @@
             <li><a href="./preinscription.php"><?php echo PREINSCRIPTION;?></a></li>
             <li><a href="./faq.php"><?php echo FAQ;?></a></li>
             <li><a href="./contact.php" ><?php echo CONTACT;?></a></li>
+            <li><a href="./cgu.php" ><?php echo CGU;?></a></li>
             <li><a href="./connexion.php" ><?php echo ADMINISTRATION;?></a></li>
           </ul>
         </div>

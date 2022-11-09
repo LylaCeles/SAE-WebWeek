@@ -1,0 +1,23 @@
+.cgu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cgu > div{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+}
+
+.cgu a{
+    color: #e8a670;
+}
+.cgu a:hover{
+    text-decoration: underline;
+}
+
+h4{
+    margin-bottom: 1em;
+}

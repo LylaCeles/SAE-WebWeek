@@ -6,11 +6,11 @@
   justify-content: center;
   align-content: center;
 }
-a{
+.container a{
   color:#e8a670;
 }
-a:hover {
-  color:#000;
+.container a:hover{
+  text-decoration: underline;
 }
 
 /* **************** Intro ************* */
