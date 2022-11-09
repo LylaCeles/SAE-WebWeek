@@ -260,13 +260,16 @@ function creationAnim($nom, $description, $date, $horaireD, $horaireF, $type, $n
 
 
 
-function creationPlat($nom, $description,$ingredient, $region, $url){
+function creationPlat($nom, $description,$ingredient, $nomEn, $descriptionEn, $ingredientEn, $region, $url){
     //Création de plat dans la bdd
     $connection = new PDO('mysql:host=localhost;port=3306;dbname=web_week','root','');
-    $reqpreparee = $connection->prepare("INSERT INTO plat(nom_plat, description_plat, ingredients_plat, image_plat, id_region) VALUES(:nom_plat, :description_plat, :ingredient_plat,:image_plat, :id_region)");
+    $reqpreparee = $connection->prepare("INSERT INTO plat(nom_plat, nom_plat_anglais, description_plat, description_plat_anglais, ingredients_plat, ingredients_plat_anglais, image_plat, id_region) VALUES(:nom_plat,:nom_plat_anglais, :description_plat, :description_plat_anglais, :ingredients_plat, :ingredients_plat_anglais, :image_plat, :id_region)");
     $reqpreparee->bindParam(':nom_plat', $nom, PDO::PARAM_STR); 
+    $reqpreparee->bindParam(':nom_plat_anglais', $nomEn, PDO::PARAM_STR); 
     $reqpreparee->bindParam(':description_plat', $description, PDO::PARAM_STR);
-    $reqpreparee->bindParam(':ingredient_plat', $ingredient, PDO::PARAM_STR);
+    $reqpreparee->bindParam(':description_plat_anglais', $descriptionEn, PDO::PARAM_STR);
+    $reqpreparee->bindParam(':ingredients_plat', $ingredient, PDO::PARAM_STR);
+    $reqpreparee->bindParam(':ingredients_plat_anglais', $ingredientEn, PDO::PARAM_STR);
     $reqpreparee->bindParam(':image_plat', $url, PDO::PARAM_STR);
     $reqpreparee->bindParam(':id_region', $region, PDO::PARAM_STR);
     $succes=$reqpreparee->execute();

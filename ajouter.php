@@ -156,15 +156,36 @@
                             <br>
                             <input type="text" name ="nom" placeholder="Nom du plat">
                             </p>
+
+                            <p>
+                            <label for ="nomEn">Nom en anglais :</label>
+                            <br>
+                            <br>
+                            <input type="text" name ="nomEn" placeholder="In english">
+                            </p>
+
                             <p>
                             <label for ="description">Description :</label>
                             <br>
                             <textarea type="text" name ="description" placeholder="Ce plat..."></textarea>
                             </p>
+
+                            <p>
+                            <label for ="descriptionEn">Description en anglais :</label>
+                            <br>
+                            <textarea type="text" name ="descriptionEn" placeholder="In english"></textarea>
+                            </p>
+
                             <p>
                             <label for ="ingredient">Ingredients :</label>
                             <br>
                             <textarea type="text" name ="ingredient" placeholder="Veuillez les séparer d'une virgule !!"></textarea>
+                            </p>
+
+                            <p>
+                            <label for ="ingredientEn">Ingredients en anglais :</label>
+                            <br>
+                            <textarea type="text" name ="ingredientEn" placeholder="In english"></textarea>
                             </p>
 
                             <p>
@@ -196,6 +217,9 @@
                             $nom = $_POST["nom"];
                             $description = $_POST["description"];
                             $ingredient = $_POST["ingredient"];
+                            $nomEn = $_POST["nomEn"];
+                            $descriptionEn = $_POST["descriptionEn"];
+                            $ingredientEn = $_POST["ingredientEn"];
                             $region = $_POST["region"];
                             
 
@@ -211,7 +235,7 @@
                             if (isset($protection)==false){
                                 move_uploaded_file($_FILES['image']['tmp_name'], 'Image/plat/'. basename($_FILES['image']['name']));
                                 $url = 'Image/plat/'. basename($_FILES['image']['name']);
-                                creationPlat($nom, $description,$ingredient, $region, $url);
+                                creationPlat($nom, $description,$ingredient, $nomEn, $descriptionEn, $ingredientEn, $region, $url);
                             }
 
 
