@@ -5,7 +5,6 @@
 <!DOCTYPE html>
 <html lang="<?php echo $lang;?>">
 
-<html>
     <head>
         <title>The European Meals Tour - Accueil</title>
         <?php

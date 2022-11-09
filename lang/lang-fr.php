@@ -25,7 +25,7 @@ define('BIENVENUE','Bienvenue sur le site du salon "The European Meals Tour" !
 
         /* ***Planning*** */
 define('PLANNING','Planning');
-define('DESCR_PLANNING','Le salon ouvre de 11h à 24h, du 19 au 21 mai 2023.');
+define('DESCR_PLANNING','Le salon ouvre de 11h à 00h, du 19 au 21 mai 2023.');
 
 /* tableau planning */
 define('NOM_ANIMATION','nom_animation');
@@ -205,5 +205,19 @@ define('HORAIRES1','19 mai 11h-0h');
 define('HORAIRES2','20 mai 11h-0h');
 define('HORAIRES3','21 mai 11h-0h');
 define('FOLLOW','Suivez-nous');
+
+
+
+
+/* ********************** CGU ********************** */
+define('CGU','Mentions légales');
+define('HEBERGEUR','Hébergeur');
+define('TXT_HEBERGEUR','Hébergeur du site : Alwaysdata');
+define('D_INTELECTUELLE','Propriété intellectuelle');
+define('TXT_D_INTELECTUELLE','Nous vous informons que toute reproduction ou représentation totale ou partielle, par quelque procédé que ce soit, de ce site, des logos, des images pouvant y figurer est interdite sans l’autorisation expresse de The European Meals Tour et constituerait une contrefaçon sanctionnée par les articles L 335-2 et suivants du Code de la propriété intellectuelle.');
+define('D_PERSONNELLES','Protection des données personnelles');
+define('TXT_D_PERSONNELLES','Vos informations personnelles sont uniquement utilisées sur notre site. Elle ne sont en aucun cas communiquées à des services tiers ni revendues. Vous pouvez effectuer une demande de suppression de celles-ci en nous <a href="./contact.php"> contactant</a>.');
+define('ENVIRONNEMENT','Environnement');
+define('TXT_ENVIRONNEMENT','Nous nous engageons à resdistribuer les restes alimentaires à des associations compétentent dans la redistribution de ces ressources.');
 ?>
 
