@@ -324,5 +324,30 @@ function supprPlat($id){
     header('Location: admin.php');
 	exit();
 }
-                    
+       
+// ***********************************    Création des fonction pour modifier des elements dans la BDD *********************************************
+function modifPlat($id, $nom, $description,$ingredient, $nomEn, $descriptionEn, $ingredientEn, $region, $url){
+    
+    $connection = new PDO('mysql:host=localhost;port=3306;dbname=web_week','root','');
+    //On récup' le chemin de l'image
+    $requete='SELECT image_plat FROM plat WHERE id_plat ='.$id;
+    $resultat = $connection ->query($requete);
+    $chemin = $resultat -> fetch();
+    $resultat -> closeCursor();
+    
+    if ($chemin['image_plat'] != $url){
+    // On supprime l'image qui est enregistrer dans le dossier
+    unlink($chemin['image_plat']);
+    }
+
+
+    $requete ='UPDATE plat SET nom_plat ="'.$nom.'", nom_plat_anglais="'.$nomEn.'", description_plat="'.$description.'" , description_plat_anglais="'.$descriptionEn.'", ingredients_plat="'.$ingredient.'", ingredients_plat_anglais="'.$ingredientEn.'", id_region="'.$region.'", image_plat="'.$url.'" WHERE id_plat='.$id;
+    $modif = $connection->exec($requete);
+
+
+}
+
+
+
+
 ?>           

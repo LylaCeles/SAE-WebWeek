@@ -2,11 +2,34 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-body > h2 {
-    font-size: 80px;
+    height: 100vh;
 }
 .quatre-cent-quatre {
     font-size: 300px;
     margin: 0px;
+}
+.quatre-cent-quatre > img{
+    height: 250px;
+}
+
+@media screen and (max-width: 780px) {
+
+    .quatre-cent-quatre {
+        font-size: 200px;
+        margin: 0px;
+    }
+    .quatre-cent-quatre > img{
+        height: 192px;
+    }
+}
+
+@media screen and (max-width: 590px) {
+
+    .quatre-cent-quatre {
+        font-size: 100px;
+        margin: 0px;
+    }
+    .quatre-cent-quatre > img{
+        height: 87px;
+    }
 }

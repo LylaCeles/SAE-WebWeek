@@ -6,8 +6,6 @@
 <html lang="<?php echo $lang;?>">
 
 <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The European Meals Tour - Préinscription</title>
     <meta property="og:title" content="The European Meals Tour - Préinscription" />
     <link rel="stylesheet" href="./CSS/preinscription.css">
@@ -83,7 +81,7 @@
 
                             
                             <div class="flex">
-                            <button class="btn"><a href="#"><?php echo ACCORDEON_1_INFOS_BUTTON;?></a></button>
+                            <button class="btn btn_marge" type="text"><a href="./animation.php"><?php echo ACCORDEON_1_INFOS_BUTTON;?></a></button>
                             <input class="btn" value =<?php echo INSCRIRE;?> type="submit" name="btn">
                             </div>
                             
@@ -111,7 +109,7 @@
 
                             
                             <div class="flex">
-                            <button class="btn"><a href="#"><?php echo ACCORDEON_2_INFOS_BUTTON;?></a></button>
+                            <button class="btn btn_marge" type="text"><a href="./animation.php"><?php echo ACCORDEON_2_INFOS_BUTTON;?></a></button>
                             <input class="btn" value =<?php echo INSCRIRE;?> type="submit" name="btn">
                             </div>
                         </div>
@@ -137,7 +135,7 @@
 
                             
                             <div class="flex">
-                            <button class="btn"><a href="#"><?php echo ACCORDEON_3_INFOS_BUTTON;?></a></button>
+                            <button class="btn btn_marge" type="text"><a href="./animation.php"><?php echo ACCORDEON_3_INFOS_BUTTON;?></a></button>
                             <input class="btn" value =<?php echo INSCRIRE;?> type="submit" name="btn">
                             </div>
                         </div>
