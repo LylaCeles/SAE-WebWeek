@@ -23,9 +23,18 @@ section.flex > h3{
 
 /* **************** FRESQUE ************* */
 
-.img{
+.fresque{
   width: 60%; 
 }
+
+@media screen and (max-width: 680px) {
+
+  .fresque{
+    width: 80%; 
+  }
+
+}
+
 /* ******************* CARTES ******************** */
 
 .container {
