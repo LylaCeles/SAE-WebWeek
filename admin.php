@@ -1,6 +1,7 @@
 <?php
 
-$connection = new PDO('mysql:host=localhost;port=3306;dbname=web_week','root','');
+require_once("./Php/config.php");
+$connection = new PDO('mysql:host='.$hote.';port='.$port.';dbname='.$nombase, $user, $mdp );
 		$requete = 'SELECT * FROM region';
 		$resultat = $connection ->query($requete);
 		$tabRegion = $resultat -> fetchAll();

@@ -16,7 +16,9 @@
 				$id_plat = $_GET["id"];
                 
 
-                $connection = new PDO('mysql:host=localhost;port=3306;dbname=web_week','root','');
+                require_once("./Php/config.php");
+                $connection = new PDO('mysql:host='.$hote.';port='.$port.';dbname='.$nombase, $user, $mdp );
+
                 $requete = 'SELECT * FROM plat WHERE id_plat ='. $id_plat;
                 $resultat = $connection ->query($requete);
                 $tabPlat = $resultat -> fetchAll();
