@@ -102,7 +102,7 @@
                             
 
                                 <br>
-				            <input type="submit" name="envoie" id="envoie_co" class="btn">
+				            <input type="submit" name="envoie" id="envoie_co" class="btn btn_marge">
                                         
                                     </fieldset>
                                     <?php
@@ -207,7 +207,7 @@
                         
 
                             <br>
-                        <input type="submit" name="envoie" id="envoie_co" class="btn">
+                        <input type="submit" name="envoie" id="envoie_co" class="btn btn_marge">
                             </form>
                                 </fieldset>
                                 <?php
