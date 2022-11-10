@@ -30,7 +30,7 @@
 					<input type="password" name ="mdp" placeholder="Confidenciel !" required="required">
 				</p>
 				<br>
-				<input type="submit" name="envoie" class="btn">
+				<input type="submit" name="envoie" class="btn btn_marge">
 
 
 			</form>
