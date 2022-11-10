@@ -1,6 +1,8 @@
 <?php
 
-$connection = new PDO('mysql:host=localhost;port=3306;dbname=web_week','root','');
+require_once("./Php/config.php");
+
+$connection = new PDO('mysql:host='.$hote.';port='.$port.';dbname='.$nombase.'',$user,$mdp);
                 require_once("./Php/class_animation.php");
                 require_once("./Php/class_personne.php");
                 
@@ -165,7 +167,8 @@ $connection = new PDO('mysql:host=localhost;port=3306;dbname=web_week','root',''
 
 function insertion($nom,$prenom,$email){
     //Création de la personne dans la BDD
-    $connection = new PDO('mysql:host=localhost;port=3306;dbname=web_week','root','');
+
+    $connection = new PDO('mysql:host='.$GLOBALS["hote"].';port='.$GLOBALS["port"].';dbname='.$GLOBALS["nombase"], $GLOBALS["user"], $GLOBALS["mdp"] );
 
     $reqpreparee = $connection->prepare("INSERT INTO personne(nom_personne, prenom_personne, email_personne) VALUES(:nom, :prenom, :email)");
     $reqpreparee->bindParam(':nom', $nom, PDO::PARAM_STR); 
@@ -192,7 +195,9 @@ function insertion($nom,$prenom,$email){
 
 function preInscription ($idAnim, $idPerso, $nb_places){
     // Création du lien personne - animation
-$connection = new PDO('mysql:host=localhost;port=3306;dbname=web_week','root','');
+
+    $connection = new PDO('mysql:host='.$GLOBALS["hote"].';port='.$GLOBALS["port"].';dbname='.$GLOBALS["nombase"], $GLOBALS["user"], $GLOBALS["mdp"] );
+
 $requete = 'SELECT * FROM preinscrit WHERE id_personne='.$idPerso.' AND id_animation = '.$idAnim; // relation correspond a la table intermediaire
 //  $requete= 'SELECT * FROM preinscrit';
 
@@ -235,7 +240,7 @@ $resultat -> closeCursor();
 function creationAnim($nom, $description, $date, $horaireD, $horaireF, $type, $nb_place, $tarif){
     // Création de l'animation dans la bdd
     
-    $connection = new PDO('mysql:host=localhost;port=3306;dbname=web_week','root','');
+ $connection = new PDO('mysql:host='.$GLOBALS["hote"].';port='.$GLOBALS["port"].';dbname='.$GLOBALS["nombase"], $GLOBALS["user"], $GLOBALS["mdp"] );
     $reqpreparee = $connection->prepare("INSERT INTO animation(nom_animation, description_animation, type_animation, date_animation, horaire_debut, horaire_fin, nb_places, tarif) VALUES(:nom_animation, :description_animation, :type_animation, :date_animation, :horaire_debut, :horaire_fin, :nb_places, :tarif)");
     $reqpreparee->bindParam(':nom_animation', $nom, PDO::PARAM_STR); 
     $reqpreparee->bindParam(':description_animation', $description, PDO::PARAM_STR);
@@ -262,7 +267,7 @@ function creationAnim($nom, $description, $date, $horaireD, $horaireF, $type, $n
 
 function creationPlat($nom, $description,$ingredient, $nomEn, $descriptionEn, $ingredientEn, $region, $url){
     //Création de plat dans la bdd
-    $connection = new PDO('mysql:host=localhost;port=3306;dbname=web_week','root','');
+ $connection = new PDO('mysql:host='.$GLOBALS["hote"].';port='.$GLOBALS["port"].';dbname='.$GLOBALS["nombase"], $GLOBALS["user"], $GLOBALS["mdp"] );
     $reqpreparee = $connection->prepare("INSERT INTO plat(nom_plat, nom_plat_anglais, description_plat, description_plat_anglais, ingredients_plat, ingredients_plat_anglais, image_plat, id_region) VALUES(:nom_plat,:nom_plat_anglais, :description_plat, :description_plat_anglais, :ingredients_plat, :ingredients_plat_anglais, :image_plat, :id_region)");
     $reqpreparee->bindParam(':nom_plat', $nom, PDO::PARAM_STR); 
     $reqpreparee->bindParam(':nom_plat_anglais', $nomEn, PDO::PARAM_STR); 
@@ -287,7 +292,7 @@ function creationPlat($nom, $description,$ingredient, $nomEn, $descriptionEn, $i
 // ***********************************    Création des fonction pour supprimer des elements dans la BDD *********************************************
 
 function supprPerso($idPerso, $idAnim){
-    $connection = new PDO('mysql:host=localhost;port=3306;dbname=web_week','root','');
+ $connection = new PDO('mysql:host='.$GLOBALS["hote"].';port='.$GLOBALS["port"].';dbname='.$GLOBALS["nombase"], $GLOBALS["user"], $GLOBALS["mdp"] );
 
     $requete='DELETE FROM `preinscrit` WHERE `preinscrit`.`id_personne` ='.$idPerso.' AND `preinscrit`.`id_animation`='.$idAnim;
     $resultat = $connection ->query($requete);
@@ -299,7 +304,7 @@ function supprPerso($idPerso, $idAnim){
         }
 function supprAnimation($id){
    
-    $connection = new PDO('mysql:host=localhost;port=3306;dbname=web_week','root','');
+ $connection = new PDO('mysql:host='.$GLOBALS["hote"].';port='.$GLOBALS["port"].';dbname='.$GLOBALS["nombase"], $GLOBALS["user"], $GLOBALS["mdp"] );
     $requete='DELETE FROM `animation` WHERE `animation`.`id_animation` ='.$id;
     $resultat = $connection ->query($requete);
     header('Location: admin.php');
@@ -308,7 +313,7 @@ function supprAnimation($id){
 
 function supprPlat($id){
     
-    $connection = new PDO('mysql:host=localhost;port=3306;dbname=web_week','root','');
+ $connection = new PDO('mysql:host='.$GLOBALS["hote"].';port='.$GLOBALS["port"].';dbname='.$GLOBALS["nombase"], $GLOBALS["user"], $GLOBALS["mdp"] );
     //On récup' le chemin de l'image
     $requete='SELECT image_plat FROM `plat` WHERE `plat`.`id_plat` ='.$id;
     $resultat = $connection ->query($requete);
@@ -328,7 +333,7 @@ function supprPlat($id){
 // ***********************************    Création des fonction pour modifier des elements dans la BDD *********************************************
 function modifPlat($id, $nom, $description,$ingredient, $nomEn, $descriptionEn, $ingredientEn, $region, $url){
     
-    $connection = new PDO('mysql:host=localhost;port=3306;dbname=web_week','root','');
+ $connection = new PDO('mysql:host='.$GLOBALS["hote"].';port='.$GLOBALS["port"].';dbname='.$GLOBALS["nombase"], $GLOBALS["user"], $GLOBALS["mdp"] );
     //On récup' le chemin de l'image
     $requete='SELECT image_plat FROM plat WHERE id_plat ='.$id;
     $resultat = $connection ->query($requete);
