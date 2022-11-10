@@ -20,7 +20,7 @@
       require_once("./Php/fonction.php");
     ?>
 
-<section>
+<section class="intro">
     <div id="principale">
         <h2><?php echo ANIMATIONS;?></h2>
         <div id="premierTrait"></div>
