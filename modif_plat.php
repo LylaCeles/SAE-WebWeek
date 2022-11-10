@@ -95,8 +95,8 @@
                             </select><br>
 
 
-				            <input type="submit" name="envoie" id="envoie_co" class="btn">
-                            <input type='submit' name='supression' value="Supprimer le plat" class="btn">
+				            <input type="submit" name="envoie" id="envoie_co" class="btn btn_marge">
+                            <input type='submit' name='supression' value="Supprimer le plat" class="btn btn_marge">
 
 
                         <form>
