@@ -36,8 +36,15 @@
         ?>
 
 					<fieldset>
-                        <form enctype="multipart/form-data" action="" method="POST">
+                        <form enctype="multipart/form-data" action="modif_plat.php?id=<?php echo($id_plat); ?>" method="POST">
             		    <legend><h3><?php echo $tabPlat[0]["nom_plat"] ?></h3></legend>
+
+
+                        <img src='<?php echo( $tabPlat[0]["image_plat"]); ?>'>
+                        <br>
+                        <input type="file" accept="image/png,image/webp,image/jpeg" name ="image">
+
+
                             <p>
                                 <label for ="nom">Nom :</label>
                                 <input type="text" name="nom" value='<?php echo($tabPlat[0]["nom_plat"]);?>'>
@@ -71,8 +78,6 @@
                                 <textarea type="text"  name ="ingredientEn"><?php echo($tabPlat[0]["ingredients_plat_anglais"]); ?></textarea>
                             </p>
 
-                            <input type="file" accept="image/png,image/webp,image/jpg" name ="image">
-
 
                             <select name="region">
                                 <?php
@@ -100,6 +105,8 @@
 
 
                         <form>
+
+                        
 				</fieldset>
 
 					<?php
@@ -119,26 +126,39 @@
                     $descriptionEn = $_POST["descriptionEn"];
                     $ingredientEn = $_POST["ingredientEn"];
                     $region = $_POST["region"];
-                    print_r($_FILES);
-                
-                    if (isset($_FILES['image'])) {
-                        //Si l'image a était modifié, on l'enregistre
-                        move_uploaded_file($_FILES['image']['tmp_name'], 'Image/plat/'. basename($_FILES['image']['name']));
-                        $url = 'Image/plat/'. basename($_FILES['image']['name']);
-                    }
+                    //print_r($_FILES);
 
+                    
+                        //Si l'image a était modifié, on l'enregistre
+                        $url = './Image/plat/'. basename($_FILES['image']['name']);
+                       
+                    
+                    if ($url != './Image/plat/'){
+                        //Si l'url contient une nouvelle image, alors on l'enregistre
+                        move_uploaded_file($_FILES['image']['tmp_name'], $url);
+
+                    }
                     else{
+                        //Sinon on concerve le meme url
                         $url = $tabPlat[0]["image_plat"];
                     }
                     //Fonction qui modifie la base de donnée
                     modifPlat($id_plat, $nom, $description,$ingredient, $nomEn, $descriptionEn, $ingredientEn, $region, $url);
+                    echo('<script type="text/javascript">
+                        function RedirectionJavascript(){
+                                document.location.href="modif_plat.php?id='.$id_plat.'";
+                             }
+                             RedirectionJavascript();
+                     </script>');
                     
-                    // header('location:admin.php');
-                    // exit();
+                     
+                                 
+                    
                 }
                 if(isset($_POST["supression"])){
                     supprPlat($id_plat);
                 }
+                
 			
                 require_once("./Php/footer.php")
 

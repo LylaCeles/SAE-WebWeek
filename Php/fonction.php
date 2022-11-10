@@ -334,12 +334,17 @@ function modifPlat($id, $nom, $description,$ingredient, $nomEn, $descriptionEn, 
     $resultat = $connection ->query($requete);
     $chemin = $resultat -> fetch();
     $resultat -> closeCursor();
-// On supprime l'image qui est enregistrer dans le dossier
+    
+    if ($chemin['image_plat'] != $url){
+    // On supprime l'image qui est enregistrer dans le dossier
     unlink($chemin['image_plat']);
+    }
 
-    echo($url);
+
     $requete ='UPDATE plat SET nom_plat ="'.$nom.'", nom_plat_anglais="'.$nomEn.'", description_plat="'.$description.'" , description_plat_anglais="'.$descriptionEn.'", ingredients_plat="'.$ingredient.'", ingredients_plat_anglais="'.$ingredientEn.'", id_region="'.$region.'", image_plat="'.$url.'" WHERE id_plat='.$id;
     $modif = $connection->exec($requete);
+
+
 }
 
 
