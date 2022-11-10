@@ -41,8 +41,8 @@
                            		<?php selectPerso($id_anim,$listePerso, $listeAnim); ?>					
 								
 								<select>
-								<input type='submit' name='envoie' value="Supprimer l'inscription">
-								<input type='submit' name='supression' value="Supprimer l'animation">
+								<input class="btn btn_marge" type='submit' name='envoie' value="Supprimer l'inscription">
+								<input class="btn btn_marge" type='submit' name='supression' value="Supprimer l'animation">
 							</form>
 						
 			</fieldset>

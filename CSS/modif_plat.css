@@ -7,3 +7,7 @@ textarea {
     font-family: "Josefin Sans" ;
     margin: 2% 0% 2% 0%;
 }
+.img_add{
+    height: 350px;
+    border-radius: 10px;
+}

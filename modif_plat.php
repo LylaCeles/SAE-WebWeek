@@ -42,7 +42,7 @@
             		    <legend><h3><?php echo $tabPlat[0]["nom_plat"] ?></h3></legend>
 
 
-                        <img src='<?php echo( $tabPlat[0]["image_plat"]); ?>'>
+                        <img class="img_add" src='<?php echo( $tabPlat[0]["image_plat"]); ?>'>
                         <br>
                         <input type="file" accept="image/png,image/webp,image/jpeg" name ="image">
 

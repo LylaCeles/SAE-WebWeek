@@ -45,6 +45,11 @@ tbody tr:nth-child(even){
     background-color: #f3f3f3;
 }
 
+.btn{
+  display: inline;
+  margin: 50px;
+}
+
 @media screen and (max-width: 550px) {
   body {
     align-items: flex-start;
