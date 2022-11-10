@@ -326,8 +326,12 @@ function supprPlat($id){
     $requete='DELETE FROM `plat` WHERE `plat`.`id_plat` ='.$id;
     $resultat = $connection ->query($requete);
     
-    header('Location: admin.php');
-	exit();
+    echo('<script type="text/javascript">
+        function RedirectionJavascript(){
+                document.location.href="admin.php";
+            }
+            RedirectionJavascript();
+    </script>');
 }
        
 // ***********************************    Création des fonction pour modifier des elements dans la BDD *********************************************
