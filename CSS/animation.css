@@ -4,10 +4,18 @@ ul {
 }
 
 /* **************** IMAGE PRINCIPALE ************* */
+
+.intro{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
 #principale {
   padding-top: 60px;
   background-size: cover;
-  height: 100px;
 }
 #principale > h1 {
   font-family: 'Dancing Script', cursive;
@@ -30,7 +38,6 @@ ul {
 /* **************** ANIMATIONS ********************** */
 
 .main{
-  margin-top: 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -48,6 +55,8 @@ ul {
  background-color:#e7e7e7;
  border: 2px solid rgb(0, 0, 0);
  
+
+
 
 }
 .right img{
